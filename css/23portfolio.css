@@ -11,50 +11,21 @@ main css file
     box-sizing: border-box;
    }
     
-/*  for mobile images */    
-.mimg
-{
-  width: 80%;
-  height: auto;
-  border: 1px solid #000;
-  margin:  5px;
-}
-
 html
 {
     background: url('./img/waves.jpg') #6600ff; 
     background-size: 100% auto;
     background-position: top left;
      background-repeat: no-repeat;
-    /* image from https://app.haikei.app/ */
-    /*
-    background-image: linear-gradient(hsl(10,90,66));
-    mix-blend-mode: darken;
-    background-size: 100% auto;
-    background-attachment: fixed;
-    height: 100%;  
-    */
 }
 
 
-    body
+body
     {
-       
-        /* background: linear-gradient(to right,rgba(255, 255, 121, 0.3), rgba(56, 3, 250, 0.6)), url('../img/code.jpg'); default good */
-        /* background-size: cover; */
-        /* difference overlay */
-        /* background-blend-mode:overlay; */
-        /* background-position: left top;
-        background-repeat: no-repeat;
-        background-attachment:fixed; */
         font-size: 1.1em;
         line-height: 1.6;
         font-family: 'Ubuntu', sans-serif;
-        /* animation: ripple 12s linear infinite; */
     }
-
-     
-  }
 
 main
     {
@@ -67,27 +38,6 @@ margin:0 auto;
     }
 
    
-
-#thetop
-{
-position: fixed;
-bottom:0;
-right:0;
-border: 1px solid #6600ff;
-}
-
-#toplink
-{
-padding:3px;
-background-color: rgba(255, 255, 255, .7);
-position: fixed;
-bottom:0;
-right:0;
-margin-right:20px; /* to avoid hitting scroll bar */
-margin-bottom:5px;
-border: 1px solid #6600ff;
-}
-
 /*
 *****************************
 basic body links
