@@ -1,0 +1,622 @@
+/*
+*****************************
+main css file 
+*****************************
+*/
+
+* {
+  /* only put non-inherited properties here */  
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+    
+/*  for mobile images */    
+.mimg
+{
+  width: 80%;
+  height: auto;
+  border: 1px solid #000;
+  margin:  5px;
+}
+
+html
+{
+    background: url('./img/stacked-waves-haikei.svg') #6600ff; 
+    background-size: 100% auto;
+    background-position: top left;
+     background-repeat: no-repeat;
+    /* image from https://app.haikei.app/ */
+    /*
+    background-image: linear-gradient(hsl(10,90,66));
+    mix-blend-mode: darken;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    height: 100%;  
+    */
+}
+
+
+    body
+    {
+       
+        /* background: linear-gradient(to right,rgba(255, 255, 121, 0.3), rgba(56, 3, 250, 0.6)), url('../img/code.jpg'); default good */
+        /* background-size: cover; */
+        /* difference overlay */
+        /* background-blend-mode:overlay; */
+        /* background-position: left top;
+        background-repeat: no-repeat;
+        background-attachment:fixed; */
+        font-size: 1.1em;
+        line-height: 1.6;
+        font-family: 'Ubuntu', sans-serif;
+        /* animation: ripple 12s linear infinite; */
+    }
+
+    #bg {
+        /*
+    background: linear-gradient(-45deg, #3374ff, #bdbec1, #a6fd59, #6b59fd);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+      animation-name: bgani;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+      background-size: cover;
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-attachment:fixed; 
+      */
+      
+  }
+    .container
+    {
+    display:flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap; 
+    justify-content: center;        
+    margin-top: 4em;
+    margin-bottom: 1em;
+    opacity: 1;
+    }
+
+    .item{
+    width: min(100% - 2rem, 70rem);
+    margin-inline:auto;
+    background-color: rgba(255, 255,255, 0.9);
+    border-left: 5px dotted #6600ff;
+    border-right: 5px dotted #6600ff;
+    
+    }
+
+    header {
+    order:1;
+    border-radius: 0 30px 0px 0px;
+    padding-left: 1em;
+    padding-top: 0.1em;
+    }
+
+    nav{
+    order: 2;
+    padding: 1em 1.5em;
+    }
+
+    main {
+    order: 3;
+    padding: 1em 1.5em;
+    }
+
+    footer {
+    border-radius: 0 0 30px 30px; 
+    text-align: center;
+    order: 4;
+    padding:0px;
+    margin:0px;
+    background-color: rgba(146, 146, 146, 0.5);
+    border-top: 5px dotted #6600ff;
+    }
+
+.pctitle
+{
+    font-family: 'Press Start 2P', cursive;
+    font-size:2em;
+    color:#6600ff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+#thetop
+{
+position: fixed;
+bottom:0;
+right:0;
+border: 1px solid #6600ff;
+}
+
+#toplink
+{
+padding:3px;
+background-color: rgba(255, 255, 255, .7);
+position: fixed;
+bottom:0;
+right:0;
+margin-right:20px; /* to avoid hitting scroll bar */
+margin-bottom:5px;
+border: 1px solid #6600ff;
+}
+
+/*
+*****************************
+basic body links
+*****************************
+*/
+
+.nolink {
+text-decoration: none;
+padding: 0;
+margin:0;
+border: 0;
+}
+
+
+a:link
+{
+  transition: .5s;
+  text-decoration:underline;
+  color: #000;
+  padding:3px;
+  border:1px solid rgba(255, 255,255, 0);
+}
+
+a:hover
+{
+  background-color: rgba(80, 80,255, 0.8);
+  transition: .5s;
+  text-decoration: none;
+  color:#fff;
+  padding:3px;
+  border:1px dashed #000;
+}
+
+/*
+*****************************
+dev page classes 
+****************************
+*/
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+    margin-bottom: 3em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+code {
+    border: 1px solid #999;
+    padding: 1em;
+    margin: 1em;
+    width: 95%;
+}
+
+#json {
+    width: 454px;
+}
+
+.codebox {
+    display: block;
+    overflow: hidden;
+    resize: none;
+    padding: 1em;
+    border: dashed 2px springgreen;
+    background-color: rgba(0, 0, 0, .8);
+    color: springgreen;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.dgbutton {
+    width: 150px;
+    height: auto;
+    border: 2px solid #6600ff;
+    color: #000;
+    background: gainsboro;
+    padding: 4px;
+    margin: 4px;
+}
+
+/*
+************************
+header page classes
+********************
+*/
+.dave {
+    font-size: 3em;
+    line-height: 0.2em;
+    font-family: 'Press Start 2P', cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    /* mix-blend-mode:hard-light; */
+}
+
+
+.guzda {
+	background: linear-gradient(-45deg, #6600ff, #ffffff, #0C19A8, #c0c0c0);
+	background-size: 300%;
+	font-family: 'Press Start 2P', cursive;
+  font-weight: bolder;
+  font-size: 2.5em;
+  line-height: 0.2em;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+
+
+.portfolio {
+    font-kerning: 2em;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 0.8em;
+    /* 0 em */
+    font-family: 'Press Start 2P', cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+   /* mix-blend-mode:hard-light; */
+}
+
+.nounderline
+{
+    text-decoration: none;
+}
+
+#invader
+{
+    /* hue-rotate(86deg) */
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(15deg) brightness(118%) contrast(119%);
+    width:70px;
+    height:50px;
+}
+
+/*
+***********************
+Contact page classes
+***********************
+*/
+#showme,
+.showme {
+    width: 300px;
+    background-color: white;
+    border: 1px #6600ff solid;
+    padding: 10px 5px 10px 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+
+
+/*
+**********************
+Nav section classes from (modified)
+https://webcodeflow.com/responsive-navbar-with-dropdown/
+***********************
+*/
+
+:root {
+    --primary-color: rgba(105, 0, 255, 0.1);
+    --secondary-color: rgba(143, 143, 143, 0.9);
+  }
+
+/* 
+off state
+*/
+
+
+#navbar .navitem a {
+  color: #333;
+  background: none;
+  border:0;
+  font-weight: bold;
+}
+
+#navbar .navitem a:hover {
+  color: #333;
+  background: none;
+  border:0;
+  font-weight: bold;
+}
+
+/*
+actions
+*/
+
+  #navbar .navitem {
+    color: #333;
+    display: inline;
+    padding: 1rem; /* all padding */
+    border: 2px solid #6600ff;
+    background: var(--primary-color);
+    -webkit-transition: .5s;
+    transition: .5s;
+    width: 15%;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+   #navbar .navitem a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding:0;
+    margin:0;
+    font-size: 1em;
+    font-weight: bold;
+   }
+
+  #navbar .navitem:hover {
+      /* good */
+    cursor: pointer;
+    background: #6600ff;
+    color: #fff;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-radius: 25px; 
+    font-size: 1em;
+  }
+
+
+  /*
+**********************************
+  Experience page classes
+***********************************
+  */
+
+.job
+{
+padding-top: 1em;
+}
+
+.points
+{
+padding-bottom: 1em;
+border-bottom: 4px dotted #6600ff;
+margin-top: .25em;
+}
+
+  /*
+  Contact page classes
+  */
+  input,textarea
+{
+    font-family: var(--dag-body);
+    font-size: 1.25rem;
+    padding:5px;
+    margin:3px;
+    border: 1px solid #6600ff;
+    background-color:rgba(105, 0, 255, 0.1);
+    caret-color: #6600dd;
+    transition: 1s;
+}
+
+input:hover,textarea:hover
+{
+    font-family: var(--dag-body);
+    font-size: 1.25rem;
+    padding:5px;
+    margin:3px;
+    border: 1px solid #000;
+    background-color:rgba(255, 255, 255, 0.1);
+    caret-color: #6600dd;
+    transition: 1s;
+}
+
+.submit
+{
+    font-weight: bold;
+    background-color:rgba(105, 0, 255, 0.8);
+    padding:1em;
+    color:white;
+    caret-color: #6600dd;
+    transition: 1s;
+}
+
+/* make it more dynamic for mobile otherwise it wrecks the horizontal layout */ 
+.textarea-wrapper
+{
+    padding: 0px 10px 0 0;
+}
+
+.textarea
+{
+    width:70%;
+}
+
+.submit:hover
+{
+    font-weight: bold;
+    background-color:white;
+    padding:1em;
+    color: #6600ff;
+    transition: 1s;
+}
+
+
+.error
+{
+    font-family: var(--dag-body);
+    font-size: 1.25rem;
+color:red;
+}
+
+
+
+  /*
+  ***********************
+  Media queries for mobile
+***************************
+  */
+
+
+  @media (max-width: 700px) 
+  {
+/* hmm */
+}
+
+
+/* less than 800 wide make header size smaller */
+@media (max-width: 800px) {
+  .dave {
+    font-size: 1.5em;
+}
+
+.guzda {
+    font-size: 1.5em;
+}
+
+.portfolio {
+    font-size: 1.5em;
+}
+
+.pctitle {
+font-size: 1em;
+}
+
+
+#invader
+{
+  font-size: 1.5em;
+}
+
+  
+  #navbar .navitem {
+    display: block;
+    width: 95%;
+    margin-bottom: 3px;
+    font-size: 1em;
+  }
+
+}
+
+
+
+/* less than 920 wide make header size smaller */
+  @media (max-width: 920px) {
+    .dave {
+      font-size: 2em;
+  }
+  
+  .guzda {
+      font-size: 2em;
+  }
+  
+  .portfolio {
+      font-size: 2em;
+  }
+
+  #invader
+{
+  font-size: 2em;
+}
+
+  #navbar .navitem {
+  font-size: .75em;
+  }
+
+}
+
+
+
+/*
+bg circles 
+https://codepen.io/vaibhavarora/pen/xmpxjp
+*/
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
+
