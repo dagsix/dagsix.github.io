@@ -13,7 +13,7 @@ main css file
     
 html
 {
-    background: url('./img/waves.jpg') #6600ff; 
+    background: url('../img/waves.jpg') #6600ff; 
     background-size: 100% auto;
     background-position: top left;
      background-repeat: no-repeat;
