@@ -55,7 +55,8 @@ html
 
      
   }
-    .container
+
+main
     {
 display: flex;
 flex-direction: column;
@@ -113,8 +114,4 @@ a:hover
   border:1px dashed #000;
 }
 
-/*
-*****************************
-dev page classes 
-****************************
-*/
+
