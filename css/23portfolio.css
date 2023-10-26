@@ -52,6 +52,9 @@ Make Swanky Code!
     border-right: 1px solid var(--accent-colour);
     background-color:  var(--bg-colour);
     width: 100%;
+    font-size: 1em;
+    line-height: 1.2;
+    font-family: 'Roboto',Verdana,Arial,sans-serif;
     }
     
     header
