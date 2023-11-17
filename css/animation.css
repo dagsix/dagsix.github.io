@@ -1,0 +1,134 @@
+/* border below header ani */
+
+@keyframes borderani {
+    0% {border-bottom: 4px #000000 dashed;}
+    25% {border-bottom: 4px slateblue solid;}
+    50% {border-bottom: 4px cornflowerblue dashed;}
+    75% {border-bottom: 4px darkseagreen solid;}
+    100% {border-bottom: 4px #000000 dashed;}
+  }
+  
+/* header background */
+
+  @keyframes omgwtfbbq {
+    0%, 100%  { -webkit-filter: blur(0px) hue-rotate(0deg) saturate(none); }
+    50% { -webkit-filter: blur(5px) hue-rotate(180deg) saturate(5); }
+  }
+
+/* header text */
+
+  @keyframes dagsix {
+    0%  { -webkit-filter: opacity(1); color:#6600ff; margin-left: 0%; width: 89%;}
+    50% { -webkit-filter: opacity(0.3); color:#ffffff; margin-left: 5%; width:90%;}
+    100%  { -webkit-filter: opacity(1); color:#6600ff; margin-left: 0%; width: 89%;}
+  }
+  
+/* invader animation */
+
+@keyframes invaderani {
+    0% { filter: hue-rotate(0deg); top:-40px; left: 800px; opacity: 1;}
+    20% { filter: hue-rotate(90deg); top: 150px; left: 800px; opacity: 1;}
+    60% { filter: hue-rotate(180deg); top: 150px; left:1100px; opacity: 1;}
+    100% { filter: hue-rotate(270deg); filter:blur(30px); top: 391px; left:1100px; opacity: 0;}
+
+  }
+
+
+  /*****
+  HERO RESIZING! 
+  **************/
+  
+  /* all below 299px */
+  @media only screen and (max-width: 299px) {
+    .hero
+   {
+    height:50px;
+   } 
+  }
+  
+  
+  /* 300 - 399px */
+  @media only screen and (min-width: 300px) {
+    .hero
+   {
+    height:80px;
+   } 
+  }
+  
+  
+  /* 480 - 640px */
+  @media only screen and (min-width: 480px) {
+    .hero
+   {
+    height:100px;
+   } 
+  }
+  
+  
+  /* 641 - 800px */
+  @media only screen and (min-width: 640px) {
+    .hero
+   {
+    height:150px;
+   } 
+  }
+  
+  
+  /* 801 - 980px */
+  @media only screen and (min-width: 800px) {
+    .hero
+   {
+    height:180px;
+   } 
+  }
+  
+  /* 981 - 1200px */
+  @media only screen and (min-width: 980px) {
+    .hero
+   {
+    height:220px;
+   } 
+  }
+  
+  /* 981 - 1200px */
+  @media only screen and (min-width: 1024px) {
+    .hero
+   {
+    height:250px;
+   } 
+  }
+  
+  
+  /* 981 - 1200px */
+  @media only screen and (min-width: 1200px) {
+    .hero
+   {
+    height:300px;
+   } 
+  }
+  
+  
+  /* 1201 - 1400px */
+  @media only screen and (min-width: 1400px) {
+    .hero
+   {
+    height:325px;
+   } 
+  }
+  
+  
+  /* 1401 - 1600px */
+  @media only screen and (min-width: 1500px) {
+    .hero
+   {
+    height:351px;
+   } 
+  }
+  
+  /* >1600px  */
+  @media only screen and (min-width: 1600px) {
+    .hero
+   {
+    height:391px;
+   } 
+  }

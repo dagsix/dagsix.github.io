@@ -1,0 +1,291 @@
+
+html {
+    margin:0;
+    padding:0;
+    border:0; 
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin:0;
+    font-family: system-ui;
+    font-size: 1.125rem;
+    background: url('../img/trianglify.png');
+    background-size: cover;
+  }
+  
+/* *******************************************
+CONTEXT GRID 
+******************************************* */ 
+
+  .content
+  {
+    /* grid doc: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout */
+    /* https://mastery.games/post/overlapping-grid-items/ */
+    display: grid;
+  /* header nav main footer */
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+  grid-auto-rows: fit-content;
+  grid-auto-columns: fit-content;
+  column-gap: 0px;
+  row-gap: 0px;
+  }
+  
+  .content > * {
+    grid-column: 1;
+    background-color: rgba(255, 255, 255, .5);
+  }
+  
+  .full {
+    grid-column: 1/5;
+    background-color: aquamarine;
+  }
+  
+  /* full page width */
+  .full {
+    margin:0;
+    padding:0;
+    border:0;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* typical content class */
+  .asection {
+    margin: auto 2em;
+    padding:1em;
+  }
+  
+  /* top class - essentially the container */
+  .content {
+    margin: 0;
+    padding:0;
+    border:0; 
+  }
+  
+  
+  header
+  {
+  grid-row:1/2;
+  grid-column: 1;
+  z-index:1;
+  }
+  
+/* *******************************************
+HEADER TEXT
+******************************************* */ 
+
+  .headertext
+  {
+  grid-row: 1/2;
+  grid-column: 1;
+  text-align: right;
+  margin-top: 1em;
+  margin-right: 1em;
+  z-index:2; /* above */
+  display: block;
+  font-size: 3em;
+  padding: 0;
+  border: 0;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+  line-height: 0; /* otherwise it creates unwanted padding */
+  animation: dagsix 4s infinite ease-in-out;
+  }
+  
+
+/* *******************************************
+HERO
+******************************************* */ 
+
+  .hero
+  {
+  animation: omgwtfbbq 5s infinite; 
+  /* https://codepen.io/Zharkov/pen/LRKGvq?editors=1100 */
+  width:100%;
+  margin:0;
+  padding:0;
+  grid-row: 1/2;
+  grid-column: 1;
+  }
+  
+  .hero:hover
+  {
+   filter: hue-rotate(180deg);
+  }
+
+/* *******************************************
+INVADER
+******************************************* */ 
+.invader
+{
+    margin:0;
+    padding:0;
+    grid-row: 1/2;
+    grid-column: 1; 
+    background-color: rgba(255, 255, 255, 0);
+    z-index:3;
+    display: block;
+    color: #6600ff;
+}
+
+.invaderani
+{
+    width:45px;
+    height:45px;
+    color: #6600ff;
+    animation: invaderani 8s infinite; 
+    position:relative;left:800px;top:-20px;
+}
+
+
+/* *******************************************
+NAV
+******************************************* */ 
+  
+  nav
+  {
+  grid-row: 2/3;
+  grid-column: 1;
+  border-left: 1px solid #000000; 
+  border-right: 1px solid #000000; 
+  text-align: center;
+  }
+
+/* *******************************************
+MAIN
+******************************************* */  
+  
+  main
+  {
+  grid-row: 3/5;
+  grid-column: 1;
+  border-left: 1px solid #000000; 
+  border-right: 1px solid #000000; 
+  }
+
+/* *******************************************
+FOOTER
+******************************************* */   
+
+  footer
+  {
+  grid-row: 5/6;
+  grid-column: 1;
+  border-left: 1px solid #000000; 
+  border-right: 1px solid #000000; 
+  border-bottom: 5px solid #000000;
+  border-top: 1px dashed #000000;
+  text-align: center;
+  }
+  
+  h1 {
+    color:aliceblue;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  /* bottom border */
+  .bborder
+  {
+    border-bottom: solid 4px;
+    animation: borderani 5s infinite alternate;
+  }
+  
+/* *******************************************
+NAV BUTTONS
+******************************************* */ 
+
+  /* contact nav button */
+  
+  .contact
+  {
+  border: 2px solid #000;
+  background-color: cornflowerblue;
+  margin:1em;
+  padding: 1em;
+  color:#000;
+  text-decoration: none;
+  transition: 1s;
+  }
+  
+  .contact:hover
+  {
+  border: 2px dashed #000;
+  background-color: #ffffff;
+  margin:1em;
+  padding: 1em;
+  text-decoration: none;
+  }
+  
+  /* work nav button */
+  
+  .work
+  {
+  border: 2px solid #000;
+  background-color:slateblue;
+  margin:1em;
+  padding: 1em;
+  color:#000;
+  text-decoration: none;
+  transition: 1s;
+  }
+  
+  .work:hover
+  {
+  border: 2px dashed #000;
+  background-color: #ffffff;
+  margin:1em;
+  padding: 1em;
+  text-decoration: none;
+  }
+  
+  /* testing nav button */
+  
+  .testing
+  {
+  border: 2px solid #000;
+  background-color:darkseagreen;
+  margin:1em;
+  padding: 1em;
+  color:#000;
+  text-decoration: none;
+  transition: 1s;
+  }
+  
+  .testing:hover
+  {
+  border: 2px dashed #000;
+  background-color: #ffffff;
+  margin:1em;
+  padding: 1em;
+  text-decoration: none;
+  }
+  
+  /* home nav button */
+  
+  .home
+  {
+  border: 2px solid #000;
+  background-color:lightslategrey;
+  margin:1em;
+  padding: 1em;
+  color:#000;
+  text-decoration: none;
+  transition: 1s;
+  }
+  
+  .home:hover
+  {
+  border: 2px dashed #000;
+  background-color: #ffffff;
+  margin:1em;
+  padding: 1em;
+  text-decoration: none;
+  }

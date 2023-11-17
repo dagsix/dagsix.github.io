@@ -1,97 +1,43 @@
-<!doctype html>
-<html lang="en" id="thetop">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>[ dave GUZDA portfolio - Web Developer - Bolton, Ontario, Canada ]</title>
-<!--
-*************************************************************
-*
-*
-Coding by DAG unless otherwise mentioned
-~ Make Swanky Code ! ~
-favicon - create at https://favicon.io/favicon-converter/ 
-Layout inspired by #36 CSS Flexbox Tutorial for Beginners [Complete Guide] - CSS Full Tutorial >> https://www.youtube.com/watch?v=-DNLYk5uzl8 
-     | |               (_)           (_) | | |         | |    (_)      
-   __| | __ _  __ _ ___ ___  __  __ _ _| |_| |__  _   _| |__   _  ___  
-  / _` |/ _` |/ _` / __| \ \/ / / _` | | __| '_ \| | | | '_ \ | |/ _ \ 
- | (_| | (_| | (_| \__ \ |>  < | (_| | | |_| | | | |_| | |_) || | (_) |
-  \__,_|\__,_|\__, |___/_/_/\_(_)__, |_|\__|_| |_|\__,_|_.__(_)_|\___/ 
-               __/ |             __/ |                                 
-              |___/             |___/                                  
-ASCII art by:
-http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
-*
-*
-*************************************************************
-1. git add *
-2. git commit -m "I've updated the header"
-3. git push origin main
-> Everything up-to-date
--->
-<!-- META tags -->
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The portfolio website for Dave Guzda. A web developer in Bolton, Ontario, Canada. North of Toronto.">
-<meta name="keywords" content="Web, Developer, Development, Websites, Dev, Canada, Ontario, Toronto, Bolton, Caledon, HTML, CSS, PHP, JS, JavaScript, website">
-<meta name="author" content="Dave Guzda">
-<!-- portfolio page styles and media queries -->
-<link rel="stylesheet" type="text/css" href="css/23portfolio.css">
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" id="theme-style" href="./css/animation.css" />
+  <link rel="stylesheet" id="theme-style" href="./css/23github.css" />
+  <!-- google fonts! -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FG6KTYW0VW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FG6KTYW0VW');
-</script>
-<!-- end Google Tag -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Pixelify+Sans&family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+<title>dagsix.github.io - Dave Allan Guzda's portfolio</title>
 </head>
-<body>
-<!-- start of Flex container -->
-<div class="container">
-<!-- 
-    HEADER 
--->    
-<header>
-<h1>dagsix.github.io</h1>
+<body class="content">
+<!-- HEADER r1-->
+ <header class="full bborder">
+<img src="./img/23dagsix.jpg" class="hero">
+<!-- overlapping text -->
 </header>
-<!-- 
-    NAV 
--->
-<nav>
-<h1><a href="index.html">Home</a></h1>
+<!-- headertext -->
+<section class="headertext">
+  dagsix.github.io
+</section>
+<!-- invader -->
+<section class="invader">
+  <img src="./img/invader.png" class="invaderani">
+</section>
+<!-- NAV r2 -->
+<nav class="asection">
+<p><a href="index.html" class="home">home</a> <a href="#" class="contact">contact</a> <a href="#" class="work">work</a> <a href="#" class="testing">testing</a></p>
 </nav>
-<!-- 
-    MAIN 
--->
-<main>
-<h1>
-<p>This is the future home of Dave Guzda's portfolio site. It is presently under construction. I've finally figured out git's new remote token system. *joy!*</p>
-<p>I had a site coded already, but, it was heavily dependant upon PHP. Since the portfolio has been moved to github... <i>(which doesn't support PHP)</i> a lot of content has to be recoded. 😕</p>
-<!-- end of text -->
-<br>Updated October 26/2023
-</h1>
-</main> 
-<!-- 
-   FOOTER 
--->
-<footer>
-<h3>dag.github.io (c)2023 v0.001</h3>
-</footer>
-<!-- end of Flex container -->
-</div>
-<!-- 
-JavaScript include 
--->
-<!-- Jquery -->
-<script src="js/jquery-3.4.0.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<!-- Custom -->
-<!-- functions to fire -->
+<!-- MAIN r3 -->
+<main class="asection tborder">
+<p>I'm a web developer in Caledon, ON, Canada. &#127809; I've worked in IT/Web Development for over 15 years.</p>
+<p>My goal when developing a website is to make it with <strong>clean, simple UI</strong>, <strong>functional components</strong> and <strong>responsive to different media</strong>.</p>
+<p>I've completed the Humber's Web Design & Development <a href='https://mediastudies.humber.ca/programs/web-design-and-development.html' title='Link to the Humber Web Design & Development Program' target='_blank'>Program</a> with excellent marks! <i>Surgite!</i></p>
+<P><strong>NOTE!</strong> This site is under development as it has been moved from another platform. Due to github's limited programming language availability on their web server, this site is in the process of being redesigned... </P>
+</main>
+<!-- FOOTER r4 -->
+<footer class="asection">
+<p>code and design by DAG &copy; 2023</p>
 </body>
 </html>
