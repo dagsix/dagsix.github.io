@@ -14,7 +14,7 @@ html {
     margin:0;
     font-family: system-ui;
     font-size: 1.125rem;
-    background: url('../img/trianglify.png');
+    background: url('../img/waves.jpg');
     background-size: cover;
   }
   
@@ -184,11 +184,30 @@ FOOTER
   border-top: 1px dashed #000000;
   text-align: center;
   }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
   
+li {
+  margin-left: 1em;
+}
+
   h1 {
     color:aliceblue;
     font-size: 2rem;
     text-align: center;
+  }
+
+  /* for page titles */
+  h6 {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    margin:0;
+    padding:0;
   }
   
   /* bottom border */
@@ -197,6 +216,13 @@ FOOTER
     border-bottom: solid 4px;
     animation: borderani 5s infinite alternate;
   }
+
+.ptext
+{
+  color:#6600ff;
+  font-weight: bold;
+}
+
   
 /* *******************************************
 NAV BUTTONS
@@ -204,88 +230,71 @@ NAV BUTTONS
 
   /* contact nav button */
   
-  .contact
-  {
+.navbutton
+{
   border: 2px solid #000;
-  background-color: cornflowerblue;
   margin:1em;
   padding: 1em;
   color:#000;
   text-decoration: none;
   transition: 1s;
+}
+
+  .contact
+  {
+
+  background-color: cornflowerblue;
   }
   
   .contact:hover
   {
-  border: 2px dashed #000;
   background-color: #ffffff;
-  margin:1em;
-  padding: 1em;
-  text-decoration: none;
   }
   
   /* work nav button */
   
   .work
   {
-  border: 2px solid #000;
   background-color:slateblue;
-  margin:1em;
-  padding: 1em;
-  color:#000;
-  text-decoration: none;
-  transition: 1s;
   }
   
   .work:hover
   {
-  border: 2px dashed #000;
   background-color: #ffffff;
-  margin:1em;
-  padding: 1em;
-  text-decoration: none;
   }
   
   /* testing nav button */
   
   .testing
   {
-  border: 2px solid #000;
   background-color:darkseagreen;
-  margin:1em;
-  padding: 1em;
-  color:#000;
-  text-decoration: none;
-  transition: 1s;
   }
   
   .testing:hover
   {
-  border: 2px dashed #000;
   background-color: #ffffff;
-  margin:1em;
-  padding: 1em;
-  text-decoration: none;
   }
   
   /* home nav button */
   
   .home
   {
-  border: 2px solid #000;
   background-color:lightslategrey;
-  margin:1em;
-  padding: 1em;
-  color:#000;
-  text-decoration: none;
-  transition: 1s;
   }
   
   .home:hover
   {
-  border: 2px dashed #000;
   background-color: #ffffff;
-  margin:1em;
-  padding: 1em;
-  text-decoration: none;
   }
+
+    /* home nav button */
+  
+    .about
+    {
+    background-color:burlywood;
+    }
+    
+    .about:hover
+    {
+    background-color: #ffffff;
+    }
