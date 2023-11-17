@@ -48,11 +48,10 @@ dagsix.github.io
     
     main {
     padding: 1em;
-    margin: 0;
+    margin: 1em;
     border-left: 1px solid var(--accent-colour);
     border-right: 1px solid var(--accent-colour);
     background-color: var(--bg-colour);
-    width: 100%;
     font-size: 1em;
     line-height: 1.2;
     font-family: 'Roboto',Verdana,Arial,sans-serif;
@@ -184,5 +183,9 @@ dagsix.github.io
     color:var(--text-colour);
     }
     
-
+.container
+{
+  width:90%;
+  margin:0 auto;
+}
 
