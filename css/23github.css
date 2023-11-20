@@ -22,11 +22,11 @@ html {
 CONTEXT GRID 
 ******************************************* */ 
 
-  .content
+  main
   {
-    /* grid doc: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout */
-    /* https://mastery.games/post/overlapping-grid-items/ */
-    display: grid;
+  /* grid doc: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout */
+  /* https://mastery.games/post/overlapping-grid-items/ */
+  display: grid;
   /* header nav main footer */
   grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr;
@@ -123,6 +123,7 @@ HERO
 /* *******************************************
 INVADER
 ******************************************* */ 
+
 .invader
 {
     margin:0;
@@ -144,6 +145,16 @@ INVADER
     position:relative;left:800px;top:-20px;
 }
 
+/* *******************************************
+SIDE BORDERS
+******************************************* */
+article, section, nav, footer
+{
+  border-left: 1px solid #000000; 
+  border-right: 1px solid #000000; 
+}
+
+
 
 /* *******************************************
 NAV
@@ -153,21 +164,17 @@ NAV
   {
   grid-row: 2/3;
   grid-column: 1;
-  border-left: 1px solid #000000; 
-  border-right: 1px solid #000000; 
   text-align: center;
   }
 
 /* *******************************************
-MAIN
+article (main content)
 ******************************************* */  
   
-  main
+  article
   {
   grid-row: 3/5;
   grid-column: 1;
-  border-left: 1px solid #000000; 
-  border-right: 1px solid #000000; 
   }
 
 /* *******************************************
@@ -178,8 +185,6 @@ FOOTER
   {
   grid-row: 5/6;
   grid-column: 1;
-  border-left: 1px solid #000000; 
-  border-right: 1px solid #000000; 
   border-bottom: 5px solid #000000;
   border-top: 1px dashed #000000;
   text-align: center;
