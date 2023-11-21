@@ -35,7 +35,7 @@
 
 
   /*****
-  HERO RESIZING! 
+  RESIZING for Various Media! 
   **************/
   
   /* all below 299px */
@@ -44,6 +44,18 @@
    {
     height:50px;
    } 
+   .navbutton
+    {
+      margin: 1rem;
+      padding: 1rem;
+    }
+      /* for page titles */
+  h6 {
+    font-size: 2em;
+    line-height: 1em;
+     }
+
+
   }
   
   
@@ -53,6 +65,19 @@
    {
     height:80px;
    } 
+   .navbutton
+    {
+      margin: 1rem;
+      padding: 1rem;
+
+    }
+      /* for page titles */
+  h6 {
+    font-size: 2em;
+    line-height: 1em;
+     }
+
+
   }
   
   
@@ -62,6 +87,19 @@
    {
     height:100px;
    } 
+   .navbutton
+    {
+      margin: 1rem;
+      padding: 1rem;
+    }
+      /* for page titles */
+  h6 {
+    font-size: 2em;
+    line-height: 1em;
+    color:green;
+     }
+
+
   }
   
   
@@ -71,6 +109,17 @@
    {
     height:150px;
    } 
+   main
+    {
+      display: flex;
+    }
+      /* for page titles */
+  h6 {
+    font-size: 2em;
+    line-height: 1em;
+    color:red;
+     }
+
   }
   
   
@@ -80,6 +129,15 @@
    {
     height:180px;
    } 
+   /* nav no longer fits on one line at 780px */
+  h6 {
+    font-size: 1em;
+    color:aqua;
+     }
+  main{
+    display:inline-flex;
+  }
+
   }
   
   /* 981 - 1200px */
@@ -88,6 +146,18 @@
    {
     height:220px;
    } 
+   main
+    {
+      display: grid;
+    }
+      /* for page titles */
+  h6 {
+    font-size: 3em;
+    line-height: 1em;
+    color: black;
+     }
+
+
   }
   
   /* 981 - 1200px */
