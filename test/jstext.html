@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<script src="../js/jquery.js"></script>
+<!-- JQuery HTML includes -->
+<script> 
+/* NAV INC */
+$(function()
+{
+    $("#includeTestNav").load("testnav.html"); 
+});
+
+/* footer inc */
+$(function()
+{
+    $("#includeFooter").load("footer.html"); 
+});
+</script> 
+
+</head>
+<style>
+    #mytext {
+	background: linear-gradient(-45deg, #6600ff, #ffffff, #0C19A8, #c0c0c0);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 5vw;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+     animation: animatedtext 6s ease-in-out infinite;
+	-moz-animation: animatedtext 6s ease-in-out infinite;
+	-webkit-animation: animatedtext 6s ease-in-out infinite;
+}
+
+@keyframes animatedtext {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}   
+</style>  
+<body>
+<!--
+<code class="codebox">
+&lt;progress&gt;&lt;/progress&gt;
+</code>
+--> 
+<div class="container">
+  <nav class="item" id="includeTestNav"></nav>
+<main class="item">
+<h1 id="mytext">ANIMATED TEXT IS AWESOME!</h1>
+</main>
+</div>
+</body>
+<script>
+/* the next four functions from https://stackoverflow.com/questions/3080421/javascript-color-gradient */
+function hexToRgb(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : null;
+  }
+
+function map(value, fromSource, toSource, fromTarget, toTarget) {
+    return (value - fromSource) / (toSource - fromSource) * (toTarget - fromTarget) + fromTarget;
+  }
+  
+  function getColour(startColour, endColour, min, max, value) {
+    var startRGB = hexToRgb(startColour);
+    var endRGB = hexToRgb(endColour);
+    var percentFade = map(value, min, max, 0, 1);
+  
+    var diffRed = endRGB.r - startRGB.r;
+    var diffGreen = endRGB.g - startRGB.g;
+    var diffBlue = endRGB.b - startRGB.b;
+  
+    diffRed = (diffRed * percentFade) + startRGB.r;
+    diffGreen = (diffGreen * percentFade) + startRGB.g;
+    diffBlue = (diffBlue * percentFade) + startRGB.b;
+  
+    var result = "rgb(" + Math.round(diffRed) + ", " + Math.round(diffGreen) + ", " + Math.round(diffBlue) + ")";
+    return result;
+  }
+
+  /*
+  random hex colour
+  */
+
+function rndColour() {
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            const random = Math.random();
+            const bit = (random * 16) | 0;
+            color += (bit).toString(16);
+        };
+        return color;
+}
+
+  function changeBackgroundColour() {
+    var count = 0;
+      window.setInterval(function() {
+        x = rndColour();
+        w = rndColour();
+        y = rndColour();
+        z = rndColour();
+        var myid = document.getElementById("mytext");
+        myid.style.background = 'linear-gradient(-45deg,' + w + ',' + x + ',' + y + ',' + z + ')';
+        myid.style["-webkit-background-clip"] = "text";
+        myid.style["-webkit-text-fill-color"] = "transparent";
+        myid.style["-webkit-text-stroke-width"] = "1px";
+        myid.style["-webkit-text-stroke-color"] = "black";
+        myid.style["background-size"] = "300%";
+        myid.style["animation"] = "animatedtext 6s ease-in-out infinite";
+        myid.style["-moz-animation"] = "animatedtext 6s ease-in-out infinite";
+        myid.style["-webkit-animation"] = "animatedtext 6s ease-in-out infinite";
+      }, 2000);
+
+  }
+
+
+changeBackgroundColour();
+</script>
+</html>

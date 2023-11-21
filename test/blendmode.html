@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - CSS Blend Modes</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <script src="../js/jquery.js"></script>
+    <!-- JQuery HTML includes -->
+    <script> 
+    /* NAV INC */
+    $(function()
+    {
+        $("#includeTestNav").load("testnav.html"); 
+    });
+    
+    /* footer inc */
+    $(function()
+    {
+        $("#includeFooter").load("footer.html"); 
+    });
+    </script>  
+</head>
+<body>
+<style>
+.box {
+background: url('./flower.jpg'),url('./gulls.jpg');
+background-size: cover;
+width: 640px;
+min-height: 480px;
+border: 1px solid #000;
+padding: 1em;
+}    
+.multiply
+{
+ background-blend-mode: multiply;
+}
+.darken
+{
+ background-blend-mode:darken;
+}
+.screen
+{
+ background-blend-mode:screen;
+}
+.overlay
+{
+ background-blend-mode:overlay;
+}
+.dodge
+{
+ background-blend-mode:color-dodge;
+}
+.burn
+{
+ background-blend-mode:color-burn;
+}
+.lighten
+{
+ background-blend-mode:lighten;
+}
+.soft
+{
+ background-blend-mode:soft-light;
+}
+.hard
+{
+ background-blend-mode:hard-light;
+}
+.diff
+{
+ background-blend-mode:difference;
+}
+.ex
+{
+ background-blend-mode:exclusion;
+}
+.sat
+{
+ background-blend-mode:saturation;
+}
+.hue
+{
+ background-blend-mode:hue;
+}
+.ccolor
+{
+ background-blend-mode:color;
+}
+.lumin
+{
+ background-blend-mode:luminosity;
+}
+</style>
+
+    <div class="container">
+  <header class="item"><h1>CSS Blend Modes</h1></header>
+  <nav class="item" id="includeTestNav"></nav>
+   <main class="item">
+       <p>Background-blend-mode requires two images and a blend mode (effect). <br>The modes are: <br>normal <br>multiply <br>screen <br>overlay <br>darken <br>lighten <br>color-dodge <br>color-burn <br>hard-light <br>soft-light <br>difference <br>exclusion <br>hue <br>saturation <br>color <br>and luminosity</p>
+<br>Image one: <a href="https://www.pexels.com/photo/pink-and-white-flower-in-tilt-shift-lens-11556653/">Photo by Ellie Burgin from Pexels</a> (It has been cropped)
+<br>Image two: <a href="https://www.pexels.com/photo/gray-scale-photo-of-sea-waves-crashing-on-shore-11124058/">Photo by Евгений Качин from Pexels</a> (It has been cropped)
+<br>
+<br>Image one: (unmodified): <br><img src="./flower.jpg" alt="Photo by Ellie Burgin from Pexels" title="Photo by Ellie Burgin from Pexels">
+<br>Image two: (unmodified): <br><img src="./gulls.jpg" alt="Photo by Евгений Качин from Pexels" title="Photo by Евгений Качин from Pexels">
+<br><h3>Background Blend Mode - multiply</h3>
+<div class="box multiply"></div>
+<br><h3>Background Blend Mode - Darken</h3>
+<div class="box darken"></div>
+<br><h3>Background Blend Mode - Screen</h3>
+<div class="box screen"></div>
+<br><h3>Background Blend Mode - Overlay</h3>
+<div class="box overlay"></div>
+<br><h3>Background Blend Mode - Lighten</h3>
+<div class="box lighten"></div>
+<br><h3>Background Blend Mode - Color-Dodge</h3>
+<div class="box dodge"></div>
+<br><h3>Background Blend Mode - Color Burn</h3>
+<div class="box burn"></div>
+<br><h3>Background Blend Mode - Soft-Light</h3>
+<div class="box soft"></div>
+<br><h3>Background Blend Mode - Hard-Light</h3>
+<div class="box hard"></div>
+<br><h3>Background Blend Mode - Difference</h3>
+<div class="box diff"></div>
+<br><h3>Background Blend Mode - Exclusion</h3>
+<div class="box ex"></div>
+<br><h3>Background Blend Mode - Hue</h3>
+<div class="box hue"></div>
+<br><h3>Background Blend Mode - Saturation</h3>
+<div class="box sat"></div>
+<br><h3>Background Blend Mode - Color</h3>
+<div class="box ccolor"></div>
+<br><h3>Background Blend Mode - luminocity</h3>
+<div class="box lumin"></div>
+</main>
+</body>
+</html>
+

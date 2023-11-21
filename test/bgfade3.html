@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+
+<style>
+ #bg {
+    /* background-image: url('../img/22bg.jpg'); */
+    background: url('../img/22bg.jpg'), url('../img/code.jpg');
+    animation-name: bgani;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    background-size: cover;
+}
+
+
+/*
+background
+*/
+
+@keyframes bgani
+{
+    0% {
+        background-color: rgba(255, 255, 255, 0.1);
+        background-blend-mode: luminosity;
+     }
+     50% {
+        
+        background-color: rgba(255, 255, 255, 0.9);
+        background-blend-mode: luminosity;
+     }
+    100% {
+        /* background-image: linear-gradient(to bottom, rgba(255,255,0,0.6), rgba(0,0,255,0.1)),  url('../img/code.jpg'); */
+        background-color: rgba(255, 255, 255, 0.1);
+        background-blend-mode: luminosity;
+     }
+}
+
+
+</STYLE>
+<script src="../js/jquery.js"></script>
+<!-- JQuery HTML includes -->
+<script> 
+/* NAV INC */
+$(function()
+{
+    $("#includeTestNav").load("testnav.html"); 
+});
+
+/* footer inc */
+$(function()
+{
+    $("#includeFooter").load("testfooter.html"); 
+});
+</script>  
+
+
+</head>
+<body id="bg">
+<div class="container">
+<header class="item"><h1>Testing background-blend-mode: luminosity;</h1></header>
+<!-- nav -->
+<nav class="item" id="includeTestNav"></nav>
+<main class="item">
+</main>
+<!-- footer -->
+<footer id="includeFooter"></footer>
+</body>
+</html>

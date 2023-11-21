@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clamp Font Sizes: Min, Max, Clamp with Media Queries</title>
+	<!-- based on Kevin Powell's video https://www.youtube.com/watch?v=U9VF-4euyRo -->
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <!-- JQuery HTML includes -->
+    <script> 
+    /* NAV INC */
+    $(function()
+    {
+        $("#includeTestNav").load("testnav.html"); 
+    });
+    
+    /* footer inc */
+    $(function()
+    {
+        $("#includeFooter").load("testfooter.html"); 
+    });
+    </script>  
+
+<style>
+html {font-family: sans-serif;}
+.highlight {color:green; font-weight: bold;}
+
+/*
+phones
+*/
+@media only screen and (max-width: 600px)  
+{
+	.mytitle{font-size: clamp(1.5rem, 1rem + 0.85vw, 2.25rem); color:darkorange;}
+.subtitle{font-size: clamp(1.25rem, 1rem + 0.5vw, 1.875rem);}
+p {font-size: font-size: clamp(1rem, 1rem + 0.6761vw, 1.6rem);}
+aside { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width:min(600px, 70%);}
+.myaside { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width:max(600px, 70%);}
+.myclamp { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width: clamp(300px, 600px, 70%);}
+}
+/*
+tablets
+*/
+@media only screen and (max-width: 768px) and (min-width: 601px)
+{
+.mytitle{font-size: clamp(2rem, 1.799rem + 0.85vw, 2.75rem); color:green;}
+.subtitle{font-size: clamp(1.25rem, 2vw + 1rem, 1.875rem);}
+p {font-size: font-size: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);}
+aside { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width:min(600px, 70%);}
+.myaside { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width:max(600px, 70%);}
+.myclamp { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width: clamp(300px, 600px, 70%);}
+}
+/*
+laptops
+*/
+@media only screen and (max-width: 992px) and (min-width: 769px)
+{
+.mytitle{font-size: clamp(2rem, 1.799rem + 0.85vw, 2.75rem); color:blue;}
+.subtitle{font-size: clamp(1.25rem, 2vw + 1rem, 1.875rem);}
+p {font-size: font-size: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);}
+aside { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width:min(600px, 70%);}
+.myaside { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width:max(600px, 70%);}
+.myclamp { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width: clamp(300px, 600px, 70%);}
+}
+/*
+large
+*/
+@media only screen and (min-width: 993px)  
+{
+.mytitle{font-size: clamp(2.5rem, 1.5rem + 0.85vw, 3rem); color: red;}
+.subtitle{font-size: clamp(2rem, 1rem + 0.5vw, 2.5rem;);}
+p {font-size: font-size: clamp(1.25rem, 1rem + 0.5vw, 1.75rem);}
+aside { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width:min(600px, 70%);}
+.myaside { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width:max(600px, 70%);}
+.myclamp { box-shadow: 0 0 3em rgba(0, 0, 0, .15); height: auto; margin: 1em auto; padding: 1em; border:1px dashed #000; width: clamp(300px, 600px, 70%);}
+}
+</style>
+
+
+</head>
+
+<!-- min -->
+<body>
+	<div class="container">
+<!-- nav -->
+<nav class="item" id="includeTestNav"></nav>
+
+<aside>
+<p class='mytitle'>This element is controlled by min()</p>
+<p class='subtitle'>This is my equally wonderful sub-title, now with even more exciting text</p>
+<P>Based on <a href='https://www.youtube.com/watch?v=U9VF-4euyRo' target="_blank" title="Youtube video link">Kevin Powell's video</a></P> 
+<p><strong>width: min(600px, 70%);</strong> The <span class='highlight'>*smaller*</span> of the two min values (either 600px or 70%) will be applied to the element. You can use math calculations (like you would with calc() right in the min() <u>without</u> using calc().</p>
+</aside>
+
+<!-- max -->
+<div class="myaside">
+<p class='mytitle'>This element is controlled by max()</p>
+<p class='subtitle'>This is my equally wonderful sub-title, now with even more exciting text</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo vero adipisci animi numquam accusantium, quos consequuntur ullam, reiciendis modi laborum ut assumenda sunt tenetur dolorem laudantium, corrupti harum quae.</p>
+<P>Based on <a href='https://www.youtube.com/watch?v=U9VF-4euyRo' target="_blank" title="Youtube video link">Kevin Powell's video</a></P> 
+<p><strong>width: max(600px, 70%);</strong> The <span class='highlight'>*larger*</span> of the two max values (either 600px or 70%) will be applied to the element.</p>
+</div>
+
+<!-- clamp -->
+<div class="myclamp">
+<p class='mytitle'>This element is controlled by clamp()</p>
+<p class='subtitle'>This is my equally wonderful sub-title, now with even more exciting text</p>
+<P>Based on <a href='https://www.youtube.com/watch?v=U9VF-4euyRo' target="_blank" title="Youtube video link">Kevin Powell's video</a></P> 
+<p><strong>clamp(300px, 600px, 70%);</strong> Must have three values. clamp(min, ideal setting, max). The element won't go smaller than the min or larger than the max. At either extreme it opts for the ideal setting.</p>
+</div>
+
+
+<p><a href="../index.php?pg=testing" title="Return to test menu">Return to test menu</a> Found this great tool to create your clamp() font size <a href="https://modern-fluid-typography.vercel.app/" title="Clamp font tool" target="_blank">definitions</a>. Amazing! I guess there are a few Generators out there. <a target="_blank" title="Clamp Generator" href="https://clamp.font-size.app/">This one</a> is good too.</p>
+<!-- footer -->
+<footer id="includeFooter"></footer>
+</div>
+</body>
+</html>

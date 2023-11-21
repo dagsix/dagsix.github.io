@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <!-- JQuery HTML includes -->
+    <script> 
+    /* NAV INC */
+    $(function()
+    {
+        $("#includeTestNav").load("testnav.html"); 
+    });
+    
+    /* footer inc */
+    $(function()
+    {
+        $("#includeFooter").load("testfooter.html"); 
+    });
+    </script>  
+</head>
+
+<style>
+#animated {
+	background: url('rainbow2.jpg');
+	background-size: 300%;
+	font-weight: 900;
+	font-size: 5vw;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animatedtext 12s ease-in-out infinite;
+	-moz-animation: animatedtext 12s ease-in-out infinite;
+	-webkit-animation: animatedtext 12s ease-in-out infinite;
+}
+
+@keyframes animatedtext {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}    
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+code {
+    border: 1px solid #999;
+    padding: 1em;
+    margin: 1em;
+    width: 95%;
+}
+
+.codebox {
+    display: block;
+    overflow:auto;
+    resize: none;
+    padding: 1em;
+    border: dashed 2px springgreen;
+    background-color: rgba(0, 0, 0, .8);
+    color: springgreen;
+    font-size: 1em;
+    margin: 1em;
+    white-space: pre;
+    width: clamp(350px, 40%, 800px); /* 350px smallest size, 40% ideal/target size, 800px largest size */
+}
+</style>    
+<body>
+<div class="container">
+<header class="item"><h1>Animated Text</h1></header>
+<!-- nav -->
+<nav class="item" id="includeTestNav"></nav>
+<main class="item">
+<a target="_blank" alt="Art by Sharon McCutcheon at Pexels" title="Art by Sharon McCutcheon at Pexels" href="https://www.pexels.com/photo/multicolored-abstract-illustration-1212406/">Image source - Art by Sharon McCutcheon at Pexels</a> This is pretty nuts.
+<h1 id="animated">ANIMATED TEXT IS AWESOME!</h1>
+</main>
+<!-- footer -->
+<footer id="includeFooter"></footer>
+</body>
+</html>

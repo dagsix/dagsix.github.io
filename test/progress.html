@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <!-- JQuery HTML includes -->
+    <script> 
+    /* NAV INC */
+    $(function()
+    {
+        $("#includeTestNav").load("testnav.html"); 
+    });
+    
+    /* footer inc */
+    $(function()
+    {
+        $("#includeFooter").load("testfooter.html"); 
+    });
+    </script>  
+</head>
+<body>
+<div class="container">
+<header class="flexitem"><h1>Progress Tag from @frontendcharm</h1></header>
+<!-- nav -->
+<nav class="item" id="includeTestNav"></nav>
+<main>
+<p>Progress tag with attributes. It shows the progress through 'max'. Nice little visual item for the right application.<p>
+<progress value="57" max="100"></progress>
+<code class="codebox">
+&lt;progress value="57" max="100"&gt;&lt;/progress&gt;
+</code>
+<p>Progress tag <em>without</em> attributes. Easy loading bar.<p>
+<progress></progress>
+<code class="codebox">
+&lt;progress&gt;&lt;/progress&gt;
+</code>
+</main>
+<!-- footer -->
+<footer id="includeFooter"></footer>
+</div>
+</body>
+</html>

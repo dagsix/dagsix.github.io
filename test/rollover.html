@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing Animations</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script src="../js/jquery.js"></script>
+    <!-- JQuery HTML includes -->
+    <script> 
+    /* NAV INC */
+    $(function()
+    {
+        $("#includeTestNav").load("testnav.html"); 
+    });
+    
+    /* footer inc */
+    $(function()
+    {
+        $("#includeFooter").load("testfooter.html"); 
+    });
+    </script>  
+</head>
+<body>
+<style>
+.glow {
+display: inline-block;
+text-decoration: none;
+color: #fff;
+padding: 4px;
+border-radius: 6px;
+position: relative;
+overflow: hidden;
+}
+
+.glow::before
+{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(115deg,#6600ff,#cccccc,#1f004e,#ffffff,#06edfd);
+  background-size: 50% 100%;
+  border-radius: inherit;
+}
+.glow:hover::before {
+  animation: animateborder .75s infinite;
+  animation-timing-function: linear;
+}
+
+.glow span {
+display: block;
+background-color: #000;
+padding: 11px 20px;
+border-radius: 3px;
+position: relative;
+z-index: 2;
+}
+
+@keyframes animateborder {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+</style>
+<body>
+    <div class="container">
+  <header class="item"><h1>Rollover Border Animation from @juliocodes</h1></header>
+  <nav class="item" id="includeTestNav"></nav>
+   <main class="item">
+       <p><a href="#" class="glow"><span>Rollover Border Animation</span></a></p>
+       <p>I added <strong>animation-timing-function: linear;</strong> and I think it is much smoother.</p>
+<!-- footer -->
+<footer id="includeFooter"></footer>
+</body>
+</html>

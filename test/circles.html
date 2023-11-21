@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+</head>
+<body>
+<div class="container">
+<header class="item"><h1>CSS Circles</h1></header>
+<nav class="item"><?php include"testnav.php"; ?></nav>
+<main class="item">
+<style>
+</style>
+<div id="circle"></div>
+</main>
+<script>
+// Change this constant to values from 1 ... 100
+// and re-execute the program
+const noShapes = 1;
+
+var arFunctions = [ randomLine1, randomLine2, randomLine3, randomCircle, randomCircles, randomCircles2, randomCircles3, randomRect, randomTriangle, randomEllipse, randomChar ];
+var currFunction = 0;
+
+function loop()
+{
+    drawFrame();
+}
+
+function mouseClicked()
+{
+    clear();
+    currFunction = (currFunction + 1) % arFunctions.length;
+}
+
+
+function drawFrame()
+{
+    var fn = arFunctions[ currFunction ];
+    
+    push();
+
+    for(var i = 0; i < noShapes; i++)
+    {
+        fn();
+    }
+
+    pop();
+}
+
+function randomLine1()
+{
+    var y = random(height);
+    
+    stroke(random(255), random(255), random(255));
+    line(0, y, width, y);
+}
+
+function randomLine2()
+{
+    var x = random(width);
+    
+    stroke(random(255), random(255), random(255));
+    line(x, 0, x, height);
+}
+
+function randomLine3()
+{
+    var x1 = random(width);
+    var y1 = random(height);
+    
+    var x2 = random(width);
+    var y2 = random(height);
+    
+    stroke(random(255), random(255), random(255));
+    line(x1, y1, x2, y2);
+}
+
+
+function randomCircle()
+{
+    var x = random(width);
+    var y = random(height);
+    
+    var r = random(100);
+    
+    stroke(random(255), random(255), random(255));
+    circle(x, y, r);
+}
+
+
+function randomCircles()
+{
+    var x = random(width);
+    var y = random(height);
+    
+    var r = random(100);
+    
+    for(var i = 0; i <= r; i += 3)
+    {
+        stroke(random(255), random(255), random(255));
+        circle(x, y, i);
+    }
+}
+
+function randomCircles2()
+{
+    var x = random(width);
+    var y = random(height);
+    
+    var r = random(30, 100);
+    
+    fill(random(255), random(255), random(255));
+    circle(x, y, r);
+}
+
+function randomCircles3()
+{
+    var x = random(width);
+    var y = random(height);
+    
+    var r = random(30, 100);
+    
+    for(var i = r; i >= 0; i -= 3)
+    {
+        fill(random(255), random(255), random(255));
+        circle(x, y, i);
+    }
+}
+
+
+function randomEllipse()
+{
+    var x = random(width);
+    var y = random(height);
+    
+    var d1 = random(100);
+    var d2 = random(100);
+    
+    stroke(random(255), random(255), random(255));
+    ellipse(x, y, d1, d2);
+}
+
+
+function randomRect()
+{
+    var x = random(width);
+    var y = random(height);
+    
+    var w = random(100);
+    var h = random(100);
+    
+    stroke(random(255), random(255), random(255));
+    rect(x, y, w, h);
+}
+
+
+function randomTriangle()
+{
+    var x = random(width);
+    var y = random(height);
+    
+    var dx1 = random(-100, 0);
+    var dy1 = random(100);
+
+    var dx2 = random(100);
+    var dy2 = random(100);
+
+    stroke(random(255), random(255), random(255));
+    triangle(x, y, x + dx1, y + dy1, x + dx2, y + dy2);
+}
+
+
+function randomChar()
+{
+    var chars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    var char = random(chars);
+    
+    var x = random(width);
+    var y = random(height);
+
+    var size = random(5, 25);
+    
+    stroke(random(255), random(255), random(255));
+    textSize(size);
+    text(char, x, y)
+}
+randomCircles();
+</script>
+
+
+
+</body>
+</html>
