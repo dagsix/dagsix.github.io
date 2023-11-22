@@ -12,6 +12,7 @@ html {
   
   body {
     margin:0;
+    margin-bottom: 1em;
     font-family: system-ui;
     font-size: 1.125rem;
     background: url('../img/waves.jpg');
