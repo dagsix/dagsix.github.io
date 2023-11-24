@@ -14,7 +14,8 @@ html {
     margin:0;
     margin-bottom: 1em;
     font-family: system-ui;
-    font-size: 1.125rem;
+    /* font size clamp code from https://blog.logrocket.com/fluid-vs-responsive-typography-css-clamp/ */
+    font-size: clamp(1rem, 0.31vw + 0.938rem, 1.19rem);
     background: url('../img/waves.jpg');
     background-size: cover;
   }
