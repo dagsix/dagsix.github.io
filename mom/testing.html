@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bg">
+<script>
+function status(response) {
+  if (response.status >= 200 && response.status < 300) {
+    return Promise.resolve(response)
+  } else {
+    return Promise.reject(new Error(response.statusText))
+  }
+}
+
+function json(response) {
+  return response.json()
+}
+
+fetch('https://api.unsplash.com/photos/random?client_id=fba66b053360b9beaf303f316ad8fa7d7dc5fa90d114ff42b89a9adca3538be2')
+  .then(status)
+  .then(json)
+  .then(function(data) {
+    console.log('Request succeeded with JSON response', data);
+    document.getElementById('bg').style.backgroundImage = "url(" + data.urls.regular + ")";
+    document.getElementById('bg').style.backgroundSize = "cover";
+    document.getElementById('bg').style.opacity = "0.5";
+    document.getElementById('picloc').innerHTML = "Image source: <a target='_blank' title='unsplash image' href='" + data.urls.regular + "'>" + data.urls.regular + "</a>";
+    /* new background */
+    document.getElementById("picloc").innerHTML += "<br><a href='#' onclick='getRandomBackground();'>Get new background</a>";
+  })
+  .catch(function(error) {
+    console.log('Request failed', error);
+  });
+</script>
+</body>
+</html>

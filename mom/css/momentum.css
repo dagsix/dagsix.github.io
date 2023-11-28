@@ -1,0 +1,188 @@
+/*
+***************************************
+Momentum code
+Coding by Dave Guzda
+Make Swanky Code!
+April 2019
+*******************************************
+*/
+html > *
+{
+  /* font-family:"Ubuntu", sans-serif; */
+  font-family: 'Passion One', cursive;
+  background-color: #000;
+}
+
+body {
+  overflow:hidden; /*should hide scrollbars */
+}
+
+a {
+  color: #ffffff;
+}
+
+#weather
+{
+  position: fixed;
+  top: 15px;
+  right:15px;
+  text-shadow: 3px 3px #333333;
+}
+
+#quote
+{
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+transform: translateX(-50%);
+}
+
+#todolist
+{
+  position: fixed;
+  right:15px;
+top: 50%;
+transform: translateY(-50%);
+  border:1px solid #fff;
+  padding:7px;
+}
+
+#info
+{
+  position:fixed;
+  top:15px;
+  left:15px;
+  color:#fff;
+  text-shadow: 3px 3px #333333;
+}
+
+#countdown
+{
+  position:fixed;
+  top:15px;
+  left:50px;
+  color:#fff;
+  text-shadow: 3px 3px #333333;
+}
+
+#gdiv
+{
+  /*position:fixed;
+  top:15px;
+  left:400px; */
+  position:relative;
+  color:#fff;
+}
+
+#googleid
+{
+  color:#fff;
+  border:2px solid white;
+  padding:3px;
+  font-size:5rem;
+  font-family: 'Passion One', cursive;
+  background: transparent;
+}
+.googleform
+{
+  padding-top: 10px;
+}
+
+
+#picloc
+{
+  position: fixed;
+  left:15px;
+  bottom: 25px;
+  color: #fff;
+  text-shadow: 3px 3px #333333;
+}
+
+#newpic
+{
+  position: fixed;
+  left:15px;
+  bottom: 5px;
+  color: #fff;
+}
+
+#infobox
+{
+  position: fixed;
+  left:15px;
+top: 50%;
+transform: translateY(-50%);
+  border:1px solid #fff;
+  padding:7px;
+  width:25%;
+  color: #fff;
+}
+
+/*
+cool! centering fixed items:
+*****************************
+horizontal center;
+left: 50%;
+transform: translateX(-50%);
+
+Vertical center:
+top: 50%;
+transform: translateY(-50%);
+
+Both horizontal and vertical:
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+*/
+
+#todo
+{
+  position: fixed;
+  bottom: 15px;
+  right:15px;
+}
+
+.clockface
+{
+  /* was 9 */
+  font-size:9vw;
+  text-shadow: 3px 3px #333333;
+  font-family: 'Passion One', cursive;
+}
+
+.inputface
+{
+  font-size:5rem;
+}
+
+.myform
+{
+  font-size:5rem;
+  font-family: 'Passion One', cursive;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+}
+
+#gettodo
+{
+  padding:3px;
+  border: 1px solid white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+#getfocus, #getname, #displayfocus
+{
+  color:white;
+    text-shadow: 3px 3px #333333;
+}
+
+.mystrike
+{
+  text-decoration: line-through;
+}
