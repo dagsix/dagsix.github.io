@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+##########################################################
+Coding by Dave Guzda
+PSD to HTML/CSS Assignment WDDM 116
+>>> make swanky code! <<<
+###########################################################
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/frompsd.css">
+    <!-- load font from external source / this is for Hobo from Adobe -->
+    <link rel="stylesheet" href="https://use.typekit.net/axj3okv.css">
+    <!-- load font from external source / Roboto is the substitute for Myriad Pro which is a pay font from Adobe -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>PSD to HTML/CSS</title>
+    <!-- form notice! -->
+    <script>
+        function notify() {
+            alert("This form is for display purposes only. Hopefully the backend dev will link it up soon. :)");
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img src="img/foodifylogo.jpg" alt="Foodify Logo">
+        </header>
+        <nav>
+            <!-- font is myriad pro -->
+            <span class="navitems"><a href="#home">HOME</a> | <a href="#about">ABOUT</a> | <a href="#choices">CHOICES</a> | <a href="#getapp">APP</a></span>
+        </nav>
+        <aside id="meals">
+            <!-- meals chosen image -->
+        </aside>
+        <main id="about">
+            <!-- about us -->
+            <span class="ftitle aboutus">About Us</span>
+            <section class="staff">
+                <span class="aboutleft">
+                    <span class="aboutt">Meet Thomas</span>
+                    <span class="abouttext">I am currently focusing all of my energy and time into perfecting my web design and development skills, this includes web graphics, animation, writing as well as programming.</span>
+                </span>
+                <img src="img/thomas1.jpg" alt="Thomas photo one" class="aboutimg" title="Thomas Photo">
+                <img src="img/thomas2.jpg" alt="Thomas photo two" class="aboutimg" title="Thomas Photo">
+                <img src="img/thomas3.jpg" alt="Thomas photo three" class="aboutimg" title="Thomas Photo">
+
+            </section>
+            <section class="staff">
+                <span class="aboutleft">
+                    <span class="aboutt">Meet Mark Anthony</span>
+                    <span class="abouttext">With 15 years of design experience, I have developed, managed and executed various print-related and digital design projects that cater to the needs and goals of medium to large-scale institutions and businesses. </span>
+                </span>
+                <img src="img/mark1.jpg" alt="Mark photo one" class="aboutimg" title="Mark Photo">
+                <img src="img/mark2.jpg" alt="Mark photo two" class="aboutimg" title="Mark Photo">
+                <img src="img/mark3.jpg" alt="Mark photo three" class="aboutimg" title="Mark Photo">
+
+            </section>
+        </main>
+        <!-- choices -->
+        <section id="choices">
+            <span class="ftitle choicest">Choices</span>
+            <!-- row one of photos -->
+            <span class="choicesrow">
+                <img src="img/breakfast.jpg" alt="breakfast" title="breakfast" class="choiceimg">
+                <img src="img/lunch.jpg" alt="lunch" title="lunch" class="choiceimg">
+                <img src="img/dinner.jpg" alt="dinner" title="dinner" class="choiceimg">
+                <img src="img/popcorn.jpg" alt="mmm popcorn!" title="mmm popcorn!" class="choiceimg">
+            </span>
+            <!-- row two of images -->
+            <span class="choicesrow">
+                <img src="img/healthy.jpg" alt="healthy option" title="healthy option" class="choiceimg">
+                <img src="img/cake.jpg" alt="mmm cake!" title="mmm cake!" class="choiceimg">
+                <img src="img/fruit.jpg" alt="fruit" title="fruit" class="choiceimg">
+                <img src="img/drinks.jpg" alt="drinks" title="drinks" class="choiceimg">
+            </span>
+        </section>
+
+        <!--- clear -->
+        <span class="clearit"></span>
+
+        <!-- choices -->
+        <section id="getapp">
+            <!-- about us color is the same -->
+            <span class="ftitle aboutus">Get the App</span>
+            <span id="appleft">
+                <img src="img/devices.png" alt="devices">
+            </span>
+            <!-- dummy registration form -->
+            <span id="appform">
+                <form action="#" onsubmit="return notify(this);">
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="Your Name" class="myinput" autofocus>
+                    <label for="email"></label>
+                    <input type="text" id="email" placeholder="Your E-mail Address" class="myinput">
+                    <!-- this will have to be a graphic? -->
+                    <input type="submit" value="" id="submit" title="submit">
+
+                </form>
+            </span>
+        </section>
+        <!--- clear -->
+        <span class="clearit"></span>
+
+        <footer>
+            <div id="socialbox">
+                <img src="img/fb.png" alt="facebook!" title="facebook!" class="smedia">
+                <img src="img/twitter.png" alt="twitter" title="twitter" class="smedia">
+                <img src="img/gplus.png" alt="Google+" title="Google+" class="smedia">
+                <img src="img/pin.png" alt="Pinterest" title="Pinterest" class="smedia">
+                <img src="img/www.png" alt="Visit our website?" title="Visit our website?" class="smedia">
+            </div>
+            <div id="tothetop">
+                Back to top <a href="#top"><img src="img/backtotop.jpg" alt="Back to the top" title="Back to the top"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+/* 
+##########################################################
+Coding by Dave Guzda
+Prototype # 1 
+Caledon Hiking Trails
+>>> make swanky code! <<<
+###########################################################
+*/
+
+html {
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    /* I like a little gap at the bottom to show the background */
+    border: 0;
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+body {
+    background: url("../img/hikebg05.jpg") #fff;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* structure */
+
+header {
+    float: left;
+    box-sizing: border-box;
+    height: 275px;
+    float: left;
+    width: 960px;
+    margin: 0;
+    padding: 0;
+    /* background from index.php php code */
+}
+
+
+nav {
+    /* height: 43px; */
+    /* was 50 */
+    border-bottom: 1px solid #000;
+    float: left;
+    box-sizing: border-box;
+    width: 960px;
+    background-color: #a09574;
+}
+
+
+/* 
+cool for colour palettes 
+http://colorpalettes.net/color-palette-3009/
+*/
+
+main {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 5px 5px 5px 15px;
+    box-sizing: border-box;
+    height: auto;
+    /* was 550px */
+    background-color: #e7efcd;
+}
+
+/* one big column */
+#bigmain {
+    width: 960px;
+    min-width: 100%;
+    /* nothing seems to fill the space except content?? */
+    height: auto;
+    float: left;
+    min-height: 400px;
+    /* mainly for the short pages like dologon so they look a bit nicer */
+    padding: 5px 5px 5px 15px;
+    background-color: #e7efcd;
+    height: auto;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 5px;
+    height: auto;
+    /* was 550px */
+    background-color: #e7efcd;
+}
+
+
+
+
+footer {
+    background-color: #a09574;
+    border-top: 1px solid #000;
+    border-bottom: 2px #000 dotted;
+    height: auto;
+    width: 960px;
+    float: left;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.footertitles {
+    color: #000;
+    font-weight: bold;
+}
+
+footer a {
+    color: #fff;
+}
+
+td {
+    vertical-align: top;
+    padding: 3px;
+}
+
+
+/* form style class */
+
+.forms {
+    padding: 3px;
+    border: 1px solid black;
+    background: rgba(160, 149, 116, 0.4);
+    font-size: 130%;
+}
+
+.submit {
+    padding: 3px;
+    margin-left: 20px;
+    border: 1px solid black;
+    background: rgba(160, 149, 116, 0.4);
+    font-size: 130%;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.mylabel {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+/* links */
+
+a {
+    color: #706851;
+    /* a darker version of the footer and nav colour */
+}
+
+/* custom ID tags */
+
+#container {
+    width: 960px;
+    /* top right bottom left*/
+    margin: 10px auto 10px auto;
+    /* min-height: 100%; */
+    /* new */
+    position: relative;
+    box-sizing: border-box;
+    background: #e7efcd;
+    /* the default content background colour */
+    height: auto;
+    /* 100% works but bleeds slightly at the bottom */
+}
+
+/* behind main and aside */
+#maincontent {
+    background: #e7efcd;
+    height: auto;
+    float: left;
+}
+
+#headerTitle {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 300%;
+    color: #fff;
+    padding: 15px 0px 0 15px;
+    /* This odd tag adds a stroke to the google font and shows in Edge, Firefox, Chrome and Opera */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    float: left;
+    /* 1em = 12pt = 16px = 100% */
+}
+
+
+.subtitle {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 150%;
+    color: #000;
+    /* was white with the stroke below */
+    padding: 15px 0px 0 10px;
+    /* changed to black for accessiblity but I think it is fine with a 2px black stroke */
+    /*
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    */
+    float: left;
+    /* 1em = 12pt = 16px = 100% */
+}
+
+#logo {
+    padding: 20px 15px 0 0;
+    float: right;
+}
+
+/* social media placement in footer */
+#social {
+    margin: 5px;
+    font-size: 100%;
+    color: #000;
+}
+
+/* social media icon spacing */
+.socialized {
+    padding: 10px;
+}
+
+
+/* custom classes */
+
+.clearb {
+    clear: both;
+}
+
+/* for small images */
+.simage {
+    margin: 10px 10px 5px 10px;
+    border: 1px solid black;
+}
+
+/* to use for thumbnails for lightbox */
+
+.thumb {
+    width: 175px;
+    height: 125px;
+    border: 1px solid #000;
+    margin-right: 15px;
+}
+
+/* 
+simple way to preload images 
+idea from : https://perishablepress.com/a-way-to-preload-images-without-javascript-that-is-so-much-better/
+*/
+
+div#preload {
+    display: none;
+}
+
+
+/* 
+drop down menu from 
+https://codepen.io/philhoyt/pen/ujHzd
+I tried the W3 Menu but the hover state would only function on the text :/
+*/
+
+#primary_nav_wrap {
+    margin-top: 1px;
+}
+
+#primary_nav_wrap ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: #a09574;
+}
+
+#primary_nav_wrap ul a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 120%;
+    /* what is best for text? */
+    line-height: 32px;
+    padding: 0 15px;
+    border-right: solid 1px black;
+    /* create illusion of a button */
+}
+
+#primary_nav_wrap ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#primary_nav_wrap ul li.current-menu-item {
+    background: #ddd;
+}
+*/
+
+#primary_nav_wrap ul li:hover {
+    background: #ffffff;
+    /* was acbb7d */
+}
+
+#primary_nav_wrap ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #a09574;
+    padding: 0;
+}
+
+#primary_nav_wrap ul ul li {
+    float: none;
+    width: 200px;
+}
+
+#primary_nav_wrap ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+    color: #000;
+}
+
+#primary_nav_wrap ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+#primary_nav_wrap ul li:hover > ul {
+    display: block;
+    color: #ffffff;
+}

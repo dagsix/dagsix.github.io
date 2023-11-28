@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" id="topofthepage">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WDDM 113 Static Store via JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="css/sone.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- fixed top nav (running total cost) bar -->
+    <nav id="top">
+        <div id="maint">Welcome to the Sabres' Store</div>
+
+        <strong>Your total :</strong> $<span id="tcost">0.00</span> You have <span id="dpcount">0</span> item(s) in your cart. <input type="button" id="checkout" value="Checkout" class="button"> <input type="button" id="clearcart" value="Clear cart" class="button">
+    </nav>
+
+    <!-- main content -->
+    <main>
+        <!-- 
+       plus and minus images from:
+       https://iconmonstr.com/
+       -->
+        <!-- the purchase div -->
+
+
+        <div id="thetotal">
+            <span class="big">Your purchase summary :</span>
+            <span id="itemlist"></span>
+            <span id="othercharges"></span>
+            <span id="thetotaltext" class="big"></span>
+            <input type="button" id="keepshopping" value="Keep Shopping" class="button">
+        </div>
+
+        <span class="clear"></span>
+        <!-- next product -->
+        <div class="product">
+            <img class="pimage" src="img/prod1.jpg" alt="Sabres' Product One - Jersey">
+            <div class="description">
+                The classic Sabres' Home Jersey in the royal blue. Number and name plate included in cost. The same jersey as worn by the pros!
+                <br><br><span class="big">$250.00</span>
+                <img class="plus" src="img/plus.png" alt="Add an item to cart" id="addone" class="plus">
+                <span id="onecount" class="big">0</span><img src="img/minus.png" id="minusone" class="minus">
+            </div>
+        </div>
+
+
+        <span class="clear"></span>
+        <!-- next product -->
+        <div class="product">
+            <img class="pimage" src="img/prod2.jpg" alt="Sabres' Product Two - Jeersey">
+            <div class="description">
+                The classic Sabres' Away Jersey in white. Number and name plate included in cost. The same jersey as worn by the pros!
+                <br><br><span class="big">$250.00</span>
+                <img class="plus" src="img/plus.png" alt="Add an item to cart" id="addtwo" class="plus">
+                <span id="twocount" class="big">0</span><img src="img/minus.png" id="minustwo" class="minus">
+            </div>
+        </div>
+
+        <span class="clear"></span>
+        <!-- next product -->
+        <div class="product">
+            <img class="pimage" src="img/prod3.jpg" alt="Sabres' Product Three - Touque">
+            <div class="description">
+                Keep your head warm while supporting your team! With the Sabres' official touque!
+                <br><br><span class="big">$25.50</span>
+                <img class="plus" src="img/plus.png" alt="Add an item to cart" id="addthree" class="plus">
+                <span id="threecount" class="big">0</span><img src="img/minus.png" id="minusthree" class="minus">
+            </div>
+        </div>
+
+        <span class="clear"></span>
+        <!-- next product -->
+        <div class="product">
+            <img class="pimage" src="img/prod4.jpg" alt="Sabres' Product Four - Hat">
+            <div class="description">
+                The popular way to show your support! The official Sabres' cap!
+                <br><br><span class="big">$20.75</span>
+                <img class="plus" src="img/plus.png" alt="Add an item to cart" id="addfour" class="plus">
+                <span id="fourcount" class="big">0</span><img src="img/minus.png" id="minusfour" class="minus">
+            </div>
+        </div>
+
+        <span class="clear"></span>
+        <!-- next product -->
+        <div class="product">
+            <img class="pimage" src="img/prod5.jpg" alt="Sabres' Product Four - Beer Stein">
+            <div class="description">
+                Salute your team to glory with the official stien of the Sabres! Cheers!
+                <br><br><span class="big">$20.50</span>
+                <img class="plus" src="img/plus.png" alt="Add an item to cart" id="addfive" class="plus">
+                <span id="fivecount" class="big">0</span><img src="img/minus.png" id="minusfive" class="minus">
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- the javaScript include -->
+    <script src="js/sone.js"></script>
+</body>
+
+</html>
