@@ -17,8 +17,9 @@ html {
     /* font size clamp code from https://blog.logrocket.com/fluid-vs-responsive-typography-css-clamp/ */
     font-size: clamp(1rem, 0.31vw + 0.938rem, 1.19rem);
     background: url('../img/cloud01.png');
-    background-repeat: repeat;
-    background-size: contain;
+    /* background: url('../img/cloud01.png'); */
+    background-repeat: no-repeat;
+    background-size:cover;
     background-position: top left;
   }
   
