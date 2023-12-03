@@ -23,7 +23,7 @@ html {
     https://www.laurentvw.com/tools/seamless-pattern-generator/
     background: url('../img/cloud01.png'); 
     */
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     background-position: top left;
   }
   
