@@ -16,10 +16,14 @@ html {
     font-family: system-ui;
     /* font size clamp code from https://blog.logrocket.com/fluid-vs-responsive-typography-css-clamp/ */
     font-size: clamp(1rem, 0.31vw + 0.938rem, 1.19rem);
-    background: url('../img/cloud01.png');
-    /* background: url('../img/cloud01.png'); */
-    background-repeat: no-repeat;
-    background-size:cover;
+    background: url('../img/wave06.jpg');
+    /*
+    background generated at:
+    -
+    https://www.laurentvw.com/tools/seamless-pattern-generator/
+    background: url('../img/cloud01.png'); 
+    */
+    background-repeat: repeat-y;
     background-position: top left;
   }
   
