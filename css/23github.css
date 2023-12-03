@@ -16,13 +16,7 @@ html {
     font-family: system-ui;
     /* font size clamp code from https://blog.logrocket.com/fluid-vs-responsive-typography-css-clamp/ */
     font-size: clamp(1rem, 0.31vw + 0.938rem, 1.19rem);
-    background: url('../img/wave08.png');
-    /*
-    background generated at:
-    -
-    https://www.laurentvw.com/tools/seamless-pattern-generator/
-    background: url('../img/cloud01.png'); 
-    */
+    background: url('../img/hexellence.png');
     background-repeat: repeat;
     background-position: top left;
   }
