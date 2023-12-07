@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News API</title>
+</head>
+<body>
+<script>    
+var url = 'https://newsapi.org/v2/top-headlines?country=ca&apiKey=fba7ce880876420d95014cd5d6b85c14';
+var req = new Request(url);
+fetch(req)
+.then(function(response) {
+  console.log(response.json());
+});
+</script>   
+</body>
+</html>
