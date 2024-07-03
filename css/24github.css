@@ -96,3 +96,26 @@ h4
     text-align: center;
     margin: 0 auto;
 }
+
+.main
+{
+    order: 1;
+}
+
+.boxone
+{
+    order: 2;
+    width:50%;
+    height:auto;
+    background-color: cadetblue;
+}
+
+.boxtwo
+{
+    order: 2;
+    width:50%;
+    height:auto;
+    background-color:cornflowerblue;
+}
+
+
