@@ -97,6 +97,23 @@ h4
     margin: 0 auto;
 }
 
+/* new row */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+/* new column item */ 
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+
 .main
 {
     order: 1;
