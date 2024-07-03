@@ -141,4 +141,19 @@ main
     border:1px solid cadetblue;
 }
 
+.boxthree
+{
+    background-color:darkgrey;
+    border:1px solid lightgray;
+}
 
+.boxfour
+{
+    background-color:lightgray;
+    border:1px solid darkgray;
+}
+
+
+footer{
+    padding:1em;
+}
