@@ -51,6 +51,11 @@ table {
 POST RESET
 */
 
+html {
+    background-color: #c0c0c0;
+}
+
+
 #container{
     display:flex;
     flex-direction: column;
@@ -61,5 +66,5 @@ POST RESET
     margin:1em;
     justify-content: center;
     align-items: center;
-    background-color: #c0c0c0;
+    background-color: #ffffff;
 }
