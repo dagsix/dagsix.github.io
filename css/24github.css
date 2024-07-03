@@ -162,3 +162,20 @@ footer{
     margin: 1em;
     border:dashed 2px #6600ff;
 }
+
+/*
+MOBILE
+*/
+@media screen and (max-width: 800px) 
+{
+h6 
+{
+    font-size: 4em;
+}
+h4 
+{
+font-size: 2em;
+}
+
+
+}
