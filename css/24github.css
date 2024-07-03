@@ -159,9 +159,10 @@ footer{
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: bold;
-    margin: 1em;
+    margin: 2em 1em 1em 1em; 
     border:dashed 2px #6600ff;
-    width: 100%;
+    width: 80%;
+    
 }
 
 /*
