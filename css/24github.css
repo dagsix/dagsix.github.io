@@ -76,4 +76,17 @@ h6
   font-style: normal;
    color:#6600ff;
    font-size: 5em; 
+   text-stroke: 1px #000000; 
+   -webkit-text-stroke: 1px #000000;
+}
+
+h4
+{
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+  font-style: normal;
+   color:cadetblue;
+   font-size: 3em; 
+   text-stroke: 1px #000000; 
+   -webkit-text-stroke: 1px #000000;
 }
