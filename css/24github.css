@@ -156,4 +156,9 @@ main
 
 footer{
     padding:1em;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    margin: 1em;
+    border:dashed 2px #6600ff;
 }
