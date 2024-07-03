@@ -62,8 +62,8 @@ html {
     width:90%;
     border:1px solid #6600ff;
     height:auto;
-    padding: auto 1em;
-    margin:1em;
+    padding: 1em;
+    margin:auto;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
