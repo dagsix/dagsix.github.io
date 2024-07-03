@@ -58,7 +58,7 @@ html {
 
 #container{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     width:90%;
     border:2px dashed #6600ff;
     height:auto;
@@ -102,19 +102,24 @@ h4
     order: 1;
 }
 
+.allboxes
+{
+    padding:1em;
+    width:50%;
+    height:auto;
+}
+
 .boxone
 {
     order: 2;
-    width:50%;
-    height:auto;
+
     background-color: cadetblue;
+   
 }
 
 .boxtwo
 {
     order: 2;
-    width:50%;
-    height:auto;
     background-color:cornflowerblue;
 }
 
