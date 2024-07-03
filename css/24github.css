@@ -60,11 +60,20 @@ html {
     display:flex;
     flex-direction: column;
     width:90%;
-    border:1px solid #6600ff;
+    border:2px dashed #6600ff;
     height:auto;
     padding: 1em;
     margin: 1em auto;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+}
+
+.h6
+{
+   font-family: "Rowdies", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   color:#6600ff;
+   font-size: large; 
 }
