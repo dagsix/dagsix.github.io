@@ -161,6 +161,7 @@ footer{
     font-style: bold;
     margin: 1em;
     border:dashed 2px #6600ff;
+    width: 100%;
 }
 
 /*
