@@ -117,6 +117,7 @@ h4
 .main
 {
     order: 1;
+    padding-bottom: 3em;
 }
 
 .allboxes
@@ -133,13 +134,14 @@ h4
 {
     order: 2;
     background-color: cadetblue;
-   
+   border: 1px solid cornflowerblue;
 }
 
 .boxtwo
 {
     order: 2;
     background-color:cornflowerblue;
+    border:1px solid cadetblue;
 }
 
 
