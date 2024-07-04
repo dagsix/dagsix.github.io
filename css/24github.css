@@ -188,14 +188,17 @@ BOX FOUR
 
 .boxfour
 {
-    background-color:lightgray;
+    background-image: url('img/html-bw.jpg'); 
+    background-size: cover;
     border:1px solid darkgray;
 }
 
 
 .boxfour:hover
 {
-    background-color: coral;
+    background-image: url('img/html-rbg.jpg'); 
+    background-size: cover;
+    opacity: 0.4;
 }
 
 /*
