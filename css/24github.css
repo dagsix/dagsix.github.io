@@ -131,16 +131,10 @@ main
     margin:0;
 }
 
-.allboxes:has(hover)
+.boxone:hover
 {
     background-color: coral;
 }
-
-.allboxes:not(hover)
-{
-    opacity: 0.5;
-}
-
 
 .boxone
 {
