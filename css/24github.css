@@ -141,7 +141,7 @@ nav{
 .allboxes
 {
     padding:1em;
-    height:auto;
+    min-height: 350px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
