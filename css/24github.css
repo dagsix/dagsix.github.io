@@ -132,6 +132,12 @@ main
     margin:0;
 }
 
+/*
+BOX ONE
+*/
+
+
+
 .boxone:hover
 {
     background-color: coral;
@@ -143,11 +149,26 @@ main
    border: 1px solid cornflowerblue;
 }
 
+/*
+BOX TWO
+*/
+
+
 .boxtwo
 {
     background-color:cornflowerblue;
     border:1px solid cadetblue;
 }
+
+.boxtwo:hover
+{
+    background-color: coral;
+}
+
+/*
+BOX THREE
+*/
+
 
 .boxthree
 {
@@ -155,11 +176,31 @@ main
     border:1px solid lightgray;
 }
 
+.boxthree:hover
+{
+    background-color: coral;
+}
+
+/*
+BOX FOUR
+*/
+
+
 .boxfour
 {
     background-color:lightgray;
     border:1px solid darkgray;
 }
+
+
+.boxfour:hover
+{
+    background-color: coral;
+}
+
+/*
+FOOTER
+*/
 
 
 footer{
