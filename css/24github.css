@@ -166,6 +166,7 @@ BOX ONE
     background-image: url("/img/code.jpg"); 
     background-size: cover;
    border:1px solid #6600ff;
+   background-blend-mode: soft-light;
 }
 
 /*
@@ -178,6 +179,7 @@ BOX TWO
     background-image: url("/img/storyboard.jpg"); 
     background-size: cover;
     border:1px solid black;
+    background-blend-mode: soft-light;
 }
 
 .boxtwo:hover
@@ -197,6 +199,7 @@ BOX THREE
     background-image: url("/img/wordpress.jpg"); 
     background-size: cover;
     border:1px dotted black;
+    background-blend-mode: soft-light;
 }
 
 .boxthree:hover
@@ -216,7 +219,7 @@ BOX FOUR
     background-image: url("/img/html-rgb.jpg"); 
     background-size: cover;
     border:1px dashed black;
-
+    background-blend-mode: soft-light;
 }
 
 
