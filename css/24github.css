@@ -167,7 +167,7 @@ BOX ONE
     background-size: cover;
    border:1px solid #6600ff;
    background-blend-mode: screen;
-   background-color:#c0c0c0;
+   background-color:mediumslateblue
 }
 
 /*
@@ -181,7 +181,7 @@ BOX TWO
     background-size: cover;
     border:1px solid black;
     background-blend-mode: screen;
-    background-color:#c0c0c0;
+    background-color:#333333;
 }
 
 .boxtwo:hover
@@ -202,7 +202,7 @@ BOX THREE
     background-size: cover;
     border:1px dotted black;
     background-blend-mode: screen;
-    background-color:#c0c0c0;
+    background-color:#999999;
 }
 
 .boxthree:hover
@@ -223,7 +223,7 @@ BOX FOUR
     background-size: cover;
     border:1px dashed black;
     background-blend-mode: screen;
-    background-color:#c0c0c0;
+    background-color:#666666;
 }
 
 
