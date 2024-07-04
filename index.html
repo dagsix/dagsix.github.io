@@ -163,5 +163,69 @@ git push origin main
 <footer class="centerthis column">DAG (C) 2024</footer>
 </div>
 <!-- end of content -->
+
+<script>
+    var a,b,c,x,y,z,bb;
+    var max=99;
+    var i=1;
+    var myVar = setInterval(newshape, 1);
+    
+    
+    function newshape()
+    {
+    if (i>100)
+    {
+        clearInterval(setInterval);
+    }
+    else
+    {
+     i++
+    var wid = window.innerWidth;
+    var hei = window.innerHeight;
+    // create new object
+    var myDiv = document.createElement('div');
+    document.body.appendChild(myDiv);
+    myDiv.id= "blob" + i;
+    document.getElementById("blob"+i).style.zIndex = i;
+    //
+    document.getElementById('blob'+i).style.position = "absolute";
+    console.log("new shape! is blob"+i);
+    a=Math.floor(Math.random() * max);
+    b=Math.floor(Math.random() * max);
+    c=Math.floor(Math.random() * max);
+    d=Math.floor(Math.random() * max);
+    w=Math.floor(Math.random() * max);
+    x=Math.floor(Math.random() * max);
+    y=Math.floor(Math.random() * max);
+    z=Math.floor(Math.random() * max);
+    // random colour
+    var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    document.getElementById('blob'+i).style.background = "#" + randomColor;
+    // random size
+    var wid = screen.width;
+    var hei = screen.height;
+    var newwid = Math.floor(Math.random() * wid);
+    var newhei = Math.floor(Math.random() * hei);
+    document.getElementById('blob'+i).style.width = newwid + "px";
+    document.getElementById('blob'+i).style.height = newhei+ "px";
+    // x and y positions
+    var newx = Math.floor(Math.random() * wid);
+    var newy = Math.floor(Math.random() * hei);
+    console.log("New x is "+newx);
+    console.log("New y is "+newy);
+    document.getElementById('blob'+i).style.top = newx;
+    document.getElementById('blob'+i).style.left = newy;
+    bb= a + "% " + b + "% " + c + "% " + d + "% " + "/ " + w + "% " + x + "% " + y + "% " + z + "% ";
+    document.getElementById("blob"+i).style.borderRadius = bb;
+    // set opacity
+    // var opac = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("blob"+i).style.opacity = 0.3;
+    }
+    }
+    
+    newshape();
+    document.getElementById("blob").style.borderRadius = bb; 
+    </script>
+
 </body>
 </html>
