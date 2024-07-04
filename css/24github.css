@@ -217,7 +217,8 @@ BOX FOUR
 
 .boxfour:hover
 {
-    background-blend-mode: lighten;
+    background-color:#6600ff;;
+    background-blend-mode: screen;
     border:1px solid #6600ff;
 }
 
