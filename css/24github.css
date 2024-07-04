@@ -157,12 +157,14 @@ BOX ONE
 .boxone:hover
 {
     background-color: coral;
+    border: 1px groove black;
 }
 
 .boxone
 {
     background-color: cadetblue;
-   border: 1px solid cornflowerblue;
+   
+   border:1px solid #6600ff;
 }
 
 /*
@@ -173,12 +175,13 @@ BOX TWO
 .boxtwo
 {
     background-color:cornflowerblue;
-    border:1px solid cadetblue;
+    border:1px solid black;
 }
 
 .boxtwo:hover
 {
     background-color: coral;
+    border:1px solid #6600ff;
 }
 
 /*
@@ -189,12 +192,13 @@ BOX THREE
 .boxthree
 {
     background-color:darkgrey;
-    border:1px solid lightgray;
+    border:1px dotted black;
 }
 
 .boxthree:hover
 {
     background-color: coral;
+    border:1px solid #6600ff;
 }
 
 /*
@@ -206,13 +210,15 @@ BOX FOUR
 {
     background-image: url("/img/html-rgb.jpg"); 
     background-size: cover;
-    border:1px solid darkgray;
+    border:1px dashed black;
+
 }
 
 
 .boxfour:hover
 {
     background-blend-mode: lighten;
+    border:1px solid #6600ff;
 }
 
 /*
