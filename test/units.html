@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <script src="../js/jquery.js"></script>
+    <!-- JQuery HTML includes -->
+    <script> 
+    /* NAV INC */
+    $(function()
+    {
+        $("#includeTestNav").load("testnav.html"); 
+    });
+    
+    /* footer inc */
+    $(function()
+    {
+        $("#includeFooter").load("testfooter.html"); 
+    });
+    </script>  
+</head>
+<body>
+<div class="container">
+<header class="item"><h1>Best use for various CSS Units</h1></header>
+<!-- nav -->
+<nav class="item" id="includeTestNav"></nav>
+<main class="item">
+<p><strong>EM</strong> Multiple of root font-size for the specified element.</p>    
+<p><strong>REM</strong> Multiple of root font-size.</p>   
+<p><strong>PX</strong> Absolute value.</p>   
+</main>
+<!-- footer -->
+<footer id="includeFooter"></footer>
+</div>
+</body>
+</html>

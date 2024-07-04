@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <script src="../js/jquery.js"></script>
+<!-- JQuery HTML includes -->
+<script> 
+/* NAV INC */
+$(function()
+{
+    $("#includeTestNav").load("testnav.html"); 
+});
+
+/* footer inc */
+$(function()
+{
+    $("#includeFooter").load("footer.html"); 
+});
+</script> 
+</head>
+<body>
+<div class="container">
+<header class="item"><h1>JavaScript Date function</h1></header>
+<nav class="item" id="includeTestNav"></nav>
+<main class="item">
+    <p>With code from <a title="toptal.com" target="_blank" href="https://www.toptal.com/software/definitive-guide-to-datetime-manipulation">toptal.com</a></p>
+<div id="output01"></div>
+<div id="output02"></div>
+<div id="output04"></div>
+<div id="output05"></div>
+<script>
+// one
+const currentDate1 = new Date(); //returns date object of current date and time
+document.getElementById("output01").innerHTML="1. Default date: "+currentDate1;
+// two
+const currentDate = new Date();
+const currentDayOfMonth = currentDate.getDate();
+const currentMonth = currentDate.getMonth(); // Be careful! January is 0, not 1
+const currentYear = currentDate.getFullYear();
+const dateString = (currentMonth + 1) + "-" + currentDayOfMonth + "-" + currentYear;
+document.getElementById("output02").innerHTML="2. (Month starts at 0 - it is fixed) Date with specific parameters: "+dateString;
+// three
+var monthNames = [
+    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+];
+var Days = [
+    "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
+];
+var currentDate3 = new Date();
+var date3 = currentDate3.getDate();
+var month3 = currentDate3.getMonth(); 
+var year3 = currentDate3.getFullYear();
+var dateString3 = Days[currentDate.getDay()] + " " + monthNames[month3] + " " + date3; 
+document.getElementById("output03").innerHTML="3. Date Text: "+dateString3;
+// four
+let time = new Date().toLocaleTimeString();
+document.getElementById("output04").innerHTML="4. Time Text using toLocaleTimeString : "+time;
+// five
+const dateFromAPI = "2022-01-10T00:00:00Z";
+const now = new Date();
+const datefromAPITimeStamp = (new Date(dateFromAPI)).getTime();
+const nowTimeStamp = now.getTime();
+const microSecondsDiff = Math.abs(datefromAPITimeStamp - nowTimeStamp);
+// Math.round is used instead of Math.floor to account for certain DST cases
+// Number of milliseconds per day =
+//   24 hrs/day * 60 minutes/hour * 60 seconds/minute * 1000 ms/second
+const daysDiff = Math.round(microSecondsDiff / (1000 * 60 * 60  * 24));
+document.getElementById("output05").innerHTML="5. Calculating Days since Jan 1/2022 : "+daysDiff;
+</script>
+</main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <script src="../js/jquery.js"></script>
+    <!-- JQuery HTML includes -->
+    <script> 
+    /* NAV INC */
+    $(function()
+    {
+        $("#includeTestNav").load("testnav.html"); 
+    });
+    
+    /* footer inc */
+    $(function()
+    {
+        $("#includeFooter").load("footer.html"); 
+    });
+    </script>     
+</head>
+<body>
+<div class="container">
+<header class="item"><h1>JavaScript Countdown</h1></header>
+<nav class="item" id="includeTestNav"></nav>
+<main class="item">
+    <div id="output"></div>
+<script>
+/* seconds to next background 60s*30m */
+bgdelay = 1800;
+bgcount = 0;
+
+/* clock - update every second */
+setInterval(function(){
+    countdown();
+    if (bgcount>=bgdelay)
+    {
+        bgcount=0;
+        // newbg();
+    }
+
+}, 1000);
+
+/* 30 minutes from now */
+function countdown()
+{
+bgcount++;
+var remaining = bgdelay - bgcount;    
+document.getElementById("output").innerHTML = "Seconds to new bg: "+remaining;
+document.getElementById("output").innerHTML += " bgCount: "+bgcount;
+}
+</script>
+</main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<script src="../js/jquery.js"></script>
+<!-- JQuery HTML includes -->
+<script> 
+/* NAV INC */
+$(function()
+{
+    $("#includeTestNav").load("testnav.html"); 
+});
+
+/* footer inc */
+$(function()
+{
+    $("#includeFooter").load("testfooter.html"); 
+});
+</script>  
+</head>
+<style>
+.videoitem {
+
+height: 100%;
+position: relative;
+width: 100%;
+    background-color: #000;
+    text-align: center;
+}    
+.videoitem video {
+    width: 100%;
+height: 100%;
+position: absolute;
+top:0;
+left:0;
+object-fit: cover;
+}
+#animated {
+    width: 100%;
+height: 100%;
+background-color: #000;
+font-size: 4em;
+mix-blend-mode: multiply;
+color:#fff;
+}
+</style>    
+<body>
+<div class="container">
+<header class="item"><h1>Animated Text</h1> by <a target="_blank" title="Tutorial by code with Random on instagram" href="https://www.instagram.com/reel/Cc1vWffv-43/?igshid=MDJmNzVkMjY=">@codewith_random</a>
+<p>Video by Uzunov Rostislav from <a target="_blank" title="Pexels video link" href="https://www.pexels.com/video/lava-explosion-in-the-galaxy-6151238/">Pexels</a> 
+</header>
+<!-- nav -->
+<nav class="item" id="includeTestNav"></nav>
+<main class="item">
+    <section class="videoitem">
+<video src="pan.mp4" autoplay loop muted></video>
+<h1 id="animated">VIDEO ANIMATED TEXT IS AMAZING!</h1>
+</section>
+</main>
+<!-- footer -->
+<footer id="includeFooter"></footer>
+</body>
+</html>

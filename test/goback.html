@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <script src="../js/jquery.js"></script>
+    <!-- JQuery HTML includes -->
+    <script> 
+    /* NAV INC */
+    $(function()
+    {
+        $("#includeTestNav").load("testnav.html"); 
+    });
+    
+    /* footer inc */
+    $(function()
+    {
+        $("#includeFooter").load("footer.html"); 
+    });
+    </script>  
+</head>
+<body>
+    <style> 
+    .output {
+    width:80%;
+    }
+    </style>
+<div class="container">
+<header class="item"><h1>JavaScript Page Go Back</h1></header>
+<nav class="item" id="includeTestNav"></nav>
+<main class="item">
+<p>Go back to the last page with JavaScript</p>
+<button onclick="history.back()"> Go Back </button>    
+</main>
+</body>
+</html>

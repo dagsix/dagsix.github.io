@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The is Pseudo Class - CSS</title>
+<style>
+	.example :is(a, h1) {color:red;}
+	.example a:is(:hover, :focus) {color:purple; text-decoration:line-through; }
+</style>
+
+</head>
+<body>
+<section>
+<h1>Learning About Is() This section does NOT have is() applied</h1>
+<p>Allows you to target elements within a class</p>
+<p>Quam assumenda odio sunt aperiam soluta incidunt vero doloremque <a href="#" title="Going nowhere">suscipit</a> sequi ipsam enim numquam quidem accusantium consequatur cupiditate quibusdam laborum esse dignissimos maiores totam ratione consectetur, aut quos in? Minima.<p>
+<p>Pariatur veritatis voluptatem dicta minima eos repudiandae voluptate rem minus laudantium, alias, cupiditate impedit quaerat nesciunt omnis iste blanditiis vero <a href="#" title="Also going nowhere!">corporis</a> vel placeat rerum consequatur ab dolore ea expedita. Quidem.</p>
+</section>	
+<section class="example">
+<h1>Learning About Is() This section has is() applied</h1>
+<p>Allows you to target elements within a class. It has a fairly high level of specificity for elements. </p>
+<p>Quam assumenda odio sunt aperiam soluta incidunt vero doloremque <a href="#" title="Going nowhere">suscipit</a> sequi ipsam enim numquam quidem accusantium consequatur cupiditate quibusdam laborum esse dignissimos maiores totam ratione consectetur, aut quos in? Minima.<p>
+<p>Inspired by Kevin Powells <a href="https://www.youtube.com/watch?v=3ncFpP8GP4g" target="_blank" title="The new CSS pseudo-classes explained">video</a>.</p>
+</section>	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Allan Guzda - Testing</title>
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <!-- JQuery HTML includes -->
+    <script> 
+    /* NAV INC */
+    $(function()
+    {
+        $("#includeTestNav").load("testnav.html"); 
+    });
+    
+    /* footer inc */
+    $(function()
+    {
+        $("#includeFooter").load("testfooter.html"); 
+    });
+    </script>  
+</head>    
+<body>
+<div class="container">
+<header class="item"><h1>CSS Clamp</h1></header>
+<!-- nav -->
+<nav class="item" id="includeTestNav"></nav>
+<main class="item">
+<style>
+    .box 
+    {
+        width: clamp(250px, 50%, 500px);
+        background-color: yellow;
+        height: auto;
+        padding: 5px;
+        margin: 5px;
+    }
+</style>
+<p><strong>width: clamp(250px, 50%, 500px);</strong><br>Clamp: will get no smaller than 250px, 50% is the ideal/target size, 500px is the maximum size </p>
+<div class="box">Special weather statements are in effect for a low pressure system that threatens heavy rain across parts of southern Ontario through Tuesday. With the rain comes a thunderstorm threat as well, which could bump up rainfall totals in areas that receive locally heavy downpours. Drivers are urged to watch for water pooling and ponding on roads, especially in poorly drain sections of major highways. The wet weather however, won't last long with a more persistent dry stretch and warming conditions expected into next week. More on the timing and impacts, below.</div>
+</main>
+<!-- footer -->
+<footer id="includeFooter"></footer>
+</body>
+</html>
