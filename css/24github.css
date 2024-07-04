@@ -157,7 +157,7 @@ BOX ONE
 .boxone:hover
 {
     background-blend-mode: screen;
-    border:1px solid #6600ff;
+    background-color:#6600ff;
     border: 1px groove black;
 }
 
@@ -183,6 +183,7 @@ BOX TWO
 .boxtwo:hover
 {
     background-blend-mode: screen;
+    background-color:#6600ff;
     border:1px solid #6600ff;
 }
 
@@ -201,6 +202,7 @@ BOX THREE
 .boxthree:hover
 {
     background-blend-mode: screen;
+    background-color:#6600ff;
     border:1px solid #6600ff;
 }
 
@@ -220,7 +222,7 @@ BOX FOUR
 
 .boxfour:hover
 {
-    background-color:#6600ff;;
+    background-color:#6600ff;
     background-blend-mode: screen;
     border:1px solid #6600ff;
 }
