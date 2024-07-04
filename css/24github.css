@@ -156,14 +156,15 @@ BOX ONE
 
 .boxone:hover
 {
-    background-color: coral;
+    background-blend-mode: screen;
+    border:1px solid #6600ff;
     border: 1px groove black;
 }
 
 .boxone
 {
-    background-color: cadetblue;
-   
+    background-image: url("/img/code.jpg"); 
+    background-size: cover;
    border:1px solid #6600ff;
 }
 
@@ -174,13 +175,14 @@ BOX TWO
 
 .boxtwo
 {
-    background-color:cornflowerblue;
+    background-image: url("/img/storyboard.jpg"); 
+    background-size: cover;
     border:1px solid black;
 }
 
 .boxtwo:hover
 {
-    background-color: coral;
+    background-blend-mode: screen;
     border:1px solid #6600ff;
 }
 
@@ -191,13 +193,14 @@ BOX THREE
 
 .boxthree
 {
-    background-color:darkgrey;
+    background-image: url("/img/wordpress.jpg"); 
+    background-size: cover;
     border:1px dotted black;
 }
 
 .boxthree:hover
 {
-    background-color: coral;
+    background-blend-mode: screen;
     border:1px solid #6600ff;
 }
 
