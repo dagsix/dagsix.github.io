@@ -212,8 +212,6 @@ BOX FOUR
 
 .boxfour:hover
 {
-    background-image: url("/img/html-rgb.jpg"); 
-    background-size: cover;
     background-blend-mode: lighten;
 }
 
