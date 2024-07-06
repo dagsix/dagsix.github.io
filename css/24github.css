@@ -314,7 +314,7 @@ font-size: 1.25em;
 /* drop 2 columns to 1 column */
 .column
 {
-display: block;
+display: none;
 }
 }
 
