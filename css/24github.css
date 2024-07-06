@@ -197,14 +197,14 @@ BOX ONE
 {
     background-blend-mode: screen;
     background-color:#6600ff;
-    border: 1px groove black;
+    border:2px dashed #6600ff;
 }
 
 .boxone
 {
     background-image: url("/img/code.jpg"); 
     background-size: cover;
-   border:1px solid #6600ff;
+    border:2px dashed black;
    background-blend-mode: screen;
    background-color:mediumslateblue
 }
@@ -218,7 +218,7 @@ BOX TWO
 {
     background-image: url("/img/storyboard.jpg"); 
     background-size: cover;
-    border:1px solid black;
+    border:2px dashed black;
     background-blend-mode: screen;
     background-color:#333333;
 }
@@ -227,7 +227,7 @@ BOX TWO
 {
     background-blend-mode: screen;
     background-color:#6600ff;
-    border:1px solid #6600ff;
+    border:2px dashed #6600ff;
 }
 
 /*
@@ -239,7 +239,7 @@ BOX THREE
 {
     background-image: url("/img/wordpress.jpg"); 
     background-size: cover;
-    border:1px dotted black;
+    border:2px dashed black;
     background-blend-mode: screen;
     background-color:#999999;
 }
@@ -248,7 +248,7 @@ BOX THREE
 {
     background-blend-mode: screen;
     background-color:#6600ff;
-    border:1px solid #6600ff;
+    border:2px dashed #6600ff;
 }
 
 /*
