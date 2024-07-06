@@ -270,8 +270,7 @@ FOOTER
 footer{
     padding:1em;
     font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: bold;
+    font-weight:bold;
     margin: 2em 1em 1em 1em; 
     border:dashed 2px #6600ff;
     width: 100%;
