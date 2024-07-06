@@ -153,14 +153,25 @@ CLIP
 */
 
 .fancy {
-    @supports (background-clip: text) or (-webkit-background-clip: text) {
-      background-image: 
-        url("/img/clip.jpg");
-      background-size: 110% auto;
-      background-position: center;
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text; /* Edge, Chrome */
+    background-clip: text; /* Safari, FF */
+    background-image: 
+      url(/img/clip.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    -webkit-text-stroke: 1px #000;
+    text-stroke: 1px #000;
+    animation: gradientAnimation 30s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0;
+    }
+    to {
+      background-position: 100%;
     }
   }
 
