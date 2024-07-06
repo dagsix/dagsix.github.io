@@ -197,7 +197,7 @@ BOX ONE
 {
     background-blend-mode: screen;
     background-color:#6600ff;
-    border:2px dashed #6600ff;
+    border:2px solid #6600ff;
 }
 
 .boxone
@@ -227,7 +227,7 @@ BOX TWO
 {
     background-blend-mode: screen;
     background-color:#6600ff;
-    border:2px dashed #6600ff;
+    border:2px solid #6600ff;
 }
 
 /*
@@ -248,7 +248,7 @@ BOX THREE
 {
     background-blend-mode: screen;
     background-color:#6600ff;
-    border:2px dashed #6600ff;
+    border:2px solid #6600ff;
 }
 
 /*
