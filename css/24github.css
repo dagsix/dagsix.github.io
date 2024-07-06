@@ -282,6 +282,21 @@ footer{
 margin:2em;
 }
 
+/*
+MOBILE 1600
+*/
+@media screen and (max-width: 1600px) 
+{
+h6 
+{
+font-size: 3.5em;
+}
+h4 
+{
+font-size: 2em;
+}
+}
+
 
 /*
 MOBILE 1200
@@ -290,7 +305,7 @@ MOBILE 1200
 {
 h6 
 {
-font-size: 4em;
+font-size: 3.5em;
 }
 h4 
 {
