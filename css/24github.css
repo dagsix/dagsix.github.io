@@ -189,6 +189,11 @@ BOX ONE
     border: 1px groove black;
 }
 
+.boxone:hover h4
+{
+    color:#6600ff;
+}
+
 .boxone
 {
     background-image: url("/img/code.jpg"); 
