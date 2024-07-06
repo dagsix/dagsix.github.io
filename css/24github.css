@@ -314,14 +314,10 @@ font-size: 1.25em;
 /* drop 2 columns to 1 column */
 .column
 {
-flex-direction: row;
-flex-wrap: wrap;
+flex-direction:none;
+flex-wrap:nowrap;
 width: auto;
 }
-
-
-
-
 }
 
 
