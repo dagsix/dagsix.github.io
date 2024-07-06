@@ -149,6 +149,28 @@ nav{
 }
 
 /*
+VIDEO
+*/
+
+
+.videoitem {
+
+    height: 100%;
+    position: relative;
+    width: 100%;
+        background-color: #000;
+        text-align: center;
+    }    
+    .videoitem video {
+        width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    }
+
+/*
 BOX ONE
 */
 
