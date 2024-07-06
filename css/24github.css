@@ -148,6 +148,12 @@ nav{
     margin:0;
 }
 
+.allboxes:hover > h4
+{
+    color:#6600ff;
+}
+
+
 /*
 CLIP
 https://www.sitepoint.com/css-animate-text-gradients-patterns/
@@ -187,11 +193,6 @@ BOX ONE
     background-blend-mode: screen;
     background-color:#6600ff;
     border: 1px groove black;
-}
-
-.boxone:hover > h4
-{
-    color:#6600ff;
 }
 
 .boxone
@@ -254,7 +255,7 @@ BOX FOUR
 {
     background-image: url("/img/html-rgb.jpg"); 
     background-size: cover;
-    border:1px dashed black;
+    border:2px dashed black;
     background-blend-mode: screen;
     background-color:#666666;
 }
@@ -264,14 +265,8 @@ BOX FOUR
 {
     background-color:#6600ff;
     background-blend-mode: screen;
-    border:1px solid #6600ff;
+    border:2px solid #6600ff;
 }
-
-.boxfour:hover h4
-{
-    color:#6600ff;
-}
-
 
 /*
 FOOTER
