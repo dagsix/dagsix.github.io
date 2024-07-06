@@ -150,6 +150,7 @@ nav{
 
 /*
 CLIP
+https://www.sitepoint.com/css-animate-text-gradients-patterns/
 */
 
 .fancy {
@@ -283,17 +284,35 @@ margin:2em;
 
 
 /*
-MOBILE
+MOBILE 1200
+*/
+@media screen and (max-width: 1200px) 
+{
+h6 
+{
+font-size: 4em;
+}
+h4 
+{
+font-size: 2em;
+}
+
+
+}
+
+
+/*
+MOBILE 800
 */
 @media screen and (max-width: 800px) 
 {
 h6 
 {
-    font-size: 4em;
+font-size: 3em;
 }
 h4 
 {
-font-size: 2em;
+font-size: 1.5em;
 }
 
 
