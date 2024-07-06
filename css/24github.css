@@ -174,7 +174,7 @@ https://www.sitepoint.com/css-animate-text-gradients-patterns/
     background-size: 120%;
     -webkit-text-stroke: 1px #000;
     text-stroke: 1px #000;
-    animation: gradientAnimation 15s linear infinite;
+    animation: gradientAnimation 8s linear infinite;
     animation-direction: alternate;
 }
 
