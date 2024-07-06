@@ -156,6 +156,7 @@ VIDEO
 height: 100%;
 position: relative;
 width: 100%;
+background-color: #fff;
 text-align: center;
 }    
 
@@ -171,8 +172,10 @@ object-fit: cover;
 #animated {
 width: 100%;
 height: 100%;
+background-color: #fff;
 font-size: 4em;
 mix-blend-mode: multiply;
+color:#fff;
 }
 
 
