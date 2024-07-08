@@ -94,6 +94,12 @@ h4
    -webkit-text-stroke: 1px #000000;
 }
 
+h4 > p
+{
+    font-weight: bold;
+}
+
+
 .centerthis
 {
     text-align: center;
