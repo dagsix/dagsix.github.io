@@ -170,7 +170,7 @@ nav{
 .allboxes:hover > h4
 {
     color:var(--accent);
-    transition: 0.4s;
+    transition: 1s;
     opacity: 0.6;
 }
 
@@ -226,7 +226,7 @@ BOX ONE
     background-image: url("/img/code.jpg"); 
     background-size: cover;
     border:2px dashed black;
-   background-blend-mode: screen;
+   background-blend-mode: multiply; /* screen */
    background-color:mediumslateblue
 }
 
