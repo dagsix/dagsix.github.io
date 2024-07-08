@@ -214,6 +214,7 @@ BOX ONE
     border:2px solid #6600ff;
     background-image: url("/img/code-rgb.jpg"); 
     transition: 1.5s;
+    opacity: 1;
 }
 
 .boxone
@@ -241,6 +242,7 @@ BOX TWO
     background-image: url("/img/storyboard-rgb.jpg"); 
     border:2px solid #6600ff;
     transition: 1.5s;
+    opacity: 1;
 }
 
 /*
@@ -261,6 +263,7 @@ BOX THREE
     background-image: url("/img/wordpress-rgb.jpg"); 
     border:2px solid #6600ff;
     transition: 1.5s;
+    opacity: 1;
 }
 
 /*
@@ -281,6 +284,7 @@ BOX FOUR
     background-image: url("/img/html-rgb.jpg"); 
     border:2px solid #6600ff;
     transition: 1.5s;
+    opacity: 1;
 }
 
 /*
