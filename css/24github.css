@@ -161,7 +161,7 @@ nav{
     padding:1em;
     min-height: 350px;
     font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
     margin:0.5em;
     opacity: 1;
@@ -250,7 +250,8 @@ BOX TWO
 
 .boxtwo:hover
 {
-    background-blend-mode: screen;
+    /* was screen */
+    background-blend-mode: color;
     background-color:var(--boxaccent);
     border:2px solid #6600ff;
 }
@@ -271,7 +272,8 @@ BOX THREE
 
 .boxthree:hover
 {
-    background-blend-mode: screen;
+    /* was screen */
+    background-blend-mode:luminosity;
     background-color:var(--boxaccent);
     border:2px solid #6600ff;
 }
@@ -294,7 +296,8 @@ BOX FOUR
 .boxfour:hover
 {
     background-color:var(--boxaccent);
-    background-blend-mode: screen;
+    /* was screen */
+    background-blend-mode:hue;
     border:2px solid #6600ff;
 }
 
