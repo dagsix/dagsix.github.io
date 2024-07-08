@@ -168,12 +168,14 @@ nav{
     transition: 1s;
 }
 
+/*
 .allboxes:hover > h4
 {
     color:var(--accent);
     transition: 1s;
     opacity: 0.8;
 }
+*/
 
 /*
 CLIP
