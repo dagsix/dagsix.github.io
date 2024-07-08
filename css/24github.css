@@ -56,7 +56,7 @@ POST RESET
 :root 
 {
     /* background for nav and footer --alpha-dark: rgba(0,0,0,0.3); */
-    --navbg: rgba(83,77,97,0.5);
+    --navbg: rgba(174,197,235,0.5);
     /* border and accent colour */
     --accent: rgba(102, 0, 255, 0.5);
     /* hover box background blend colour */
