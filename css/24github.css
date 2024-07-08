@@ -178,6 +178,7 @@ nav{
 .allboxes:hover
 {
     color:#ffffff;
+    transition: 1s;
 }
 
 
