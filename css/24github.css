@@ -229,8 +229,8 @@ BOX ONE
     background-size: cover;
     border:2px dashed black;
    /* was: screen; multiply is very dark; overlay is very blue; */
-   /* darken / */
-   background-blend-mode: difference; 
+   /* darken, difference / */
+   background-blend-mode: exclusion; 
    background-color:mediumslateblue;
 }
 
