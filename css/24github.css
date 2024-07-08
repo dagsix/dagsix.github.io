@@ -213,8 +213,8 @@ WORK
     background-image: url("/img/code-bw.jpg"); 
     background-size: cover;
     border:2px dashed black;
-    transition: 0.6s;
-    opacity: 1;
+    transition: 2s;
+    opacity: 0.6;
 }
 
 .boxone:hover
@@ -237,7 +237,7 @@ EXPERIENCE
     background-image: url("/img/storyboard-bw.jpg"); 
     background-size: cover;
     border:2px dashed black;
-    transition: 1.5s;
+    transition: 2s;
     opacity: 0.6;
 }
 
@@ -260,7 +260,7 @@ CONTACT
     background-image: url("/img/wordpress-bw.jpg"); 
     background-size: cover;
     border:2px dashed black;
-    transition: 1.5s;
+    transition: 2s;
     opacity: 0.6;
 }
 
@@ -283,7 +283,7 @@ TESTING
     background-image: url("/img/html-bw.jpg"); 
     background-size: cover;
     border:2px dashed black;
-    transition: 1.5s;
+    transition: 2s;
     opacity: 0.6;
 }
 
