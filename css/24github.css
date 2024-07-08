@@ -226,9 +226,9 @@ BOX ONE
     background-image: url("/img/code.jpg"); 
     background-size: cover;
     border:2px dashed black;
-   /* was: screen; multiply is very dark */
-   
-   background-blend-mode: overlay; 
+   /* was: screen; multiply is very dark; overlay is very blue; */
+   /* darken */
+   background-blend-mode: darken; 
    background-color:mediumslateblue;
 }
 
