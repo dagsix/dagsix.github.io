@@ -51,6 +51,18 @@ table {
 POST RESET
 */
 
+
+/* colour constants */
+:root 
+{
+    /* background for nav and footer */
+    --navbg: rgb(#b8a2ed);
+    /* border and accent colour */
+    --accent: rgb(#6600ff);
+    /* hover box background blend colour */
+    --boxaccent: rgb(#6600ff);
+}
+
 html {
     background-color: #ffffff;
     width:100%;
@@ -66,7 +78,7 @@ html {
 #container{
 
     width:90%;
-    border:2px dashed #6600ff;
+    border:2px dashed var(--accent);
     padding: 1em;
     margin: 1em;
     background-image: linear-gradient(to right, #d4c5f9,#ffffff);
@@ -77,7 +89,7 @@ h6
     font-family: "Francois One", sans-serif;
     font-weight: 400;
   font-style: normal;
-   color:#6600ff;
+   color: var(--accent);
    font-size: 5em; 
    text-stroke: 1px #000000; 
    -webkit-text-stroke: 1px #000000;
@@ -139,7 +151,7 @@ nav{
     font-weight: 400;
     font-style: bold;
     margin: 2em 0em; 
-    border:dashed 2px #6600ff;
+    border:dashed 2px var(--accent);
     width: 100%;
     background-color: #d4c5f9;
 }
@@ -156,7 +168,7 @@ nav{
 
 .allboxes:hover > h4
 {
-    color:#6600ff;
+    color:var(--accent);
 }
 
 .allboxes:hover
@@ -202,7 +214,7 @@ BOX ONE
 .boxone:hover
 {
     background-blend-mode: screen;
-    background-color:#6600ff;
+    background-color:var(--boxaccent);
     border:2px solid #6600ff;
 }
 
@@ -232,7 +244,7 @@ BOX TWO
 .boxtwo:hover
 {
     background-blend-mode: screen;
-    background-color:#6600ff;
+    background-color:var(--boxaccent);
     border:2px solid #6600ff;
 }
 
@@ -253,7 +265,7 @@ BOX THREE
 .boxthree:hover
 {
     background-blend-mode: screen;
-    background-color:#6600ff;
+    background-color:var(--boxaccent);
     border:2px solid #6600ff;
 }
 
@@ -274,7 +286,7 @@ BOX FOUR
 
 .boxfour:hover
 {
-    background-color:#6600ff;
+    background-color:var(--boxaccent);
     background-blend-mode: screen;
     border:2px solid #6600ff;
 }
@@ -291,7 +303,7 @@ footer{
     margin: 2em 0em; 
     border:dashed 2px #6600ff;
     width: 100%;
-    background-color: #d4c5f9;
+    background-color: var(--navbg);
 }
 
 /*
