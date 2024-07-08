@@ -60,7 +60,7 @@ POST RESET
     /* border and accent colour */
     --accent: rgba(102, 0, 255, 0.5);
     /* hover box background blend colour */
-    --boxaccent: rgba(102, 0, 255, 0.5);
+    --boxaccent: rgba(177, 168, 185, 0.5);
 }
 
 html {
