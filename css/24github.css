@@ -52,7 +52,7 @@ POST RESET
 */
 
 html {
-    background-color: #c0c0c0;
+    background-image: linear-gradient(#ffffff,#d4c5f9);
     width:100%;
     height: auto;
     display:flex;
