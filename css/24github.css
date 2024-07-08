@@ -55,12 +55,12 @@ POST RESET
 /* colour constants */
 :root 
 {
-    /* background for nav and footer */
-    --navbg: rgb(#b8a2ed);
+    /* background for nav and footer --alpha-dark: rgba(0,0,0,0.3); */
+    --navbg: rgba(83,77,97,0.5);
     /* border and accent colour */
-    --accent: rgb(#6600ff);
+    --accent: rgba(102, 0, 255, 0.5);
     /* hover box background blend colour */
-    --boxaccent: rgb(#6600ff);
+    --boxaccent: rgba(102, 0, 255, 0.5);
 }
 
 html {
