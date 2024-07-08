@@ -165,6 +165,7 @@ nav{
     font-style: normal;
     margin:0.5em;
     opacity: 1;
+    transition: 1s;
 }
 
 .allboxes:hover > h4
@@ -227,8 +228,8 @@ BOX ONE
     background-size: cover;
     border:2px dashed black;
    /* was: screen; multiply is very dark; overlay is very blue; */
-   /* darken */
-   background-blend-mode: darken; 
+   /* darken / */
+   background-blend-mode: difference; 
    background-color:mediumslateblue;
 }
 
