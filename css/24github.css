@@ -220,6 +220,7 @@ BOX ONE
 {
     border:2px solid #6600ff;
     background-image: url("/img/code-rgb.jpg"); 
+    transition: 1s;
 }
 
 .boxone
@@ -246,6 +247,7 @@ BOX TWO
     /* was screen */
     background-image: url("/img/storyboard-rgb.jpg"); 
     border:2px solid #6600ff;
+    transition: 1s;
 }
 
 /*
@@ -265,6 +267,7 @@ BOX THREE
     /* was screen */
     background-image: url("/img/wordpress-rgb.jpg"); 
     border:2px solid #6600ff;
+    transition: 1s;
 }
 
 /*
@@ -284,6 +287,7 @@ BOX FOUR
 {
     background-image: url("/img/html-rgb.jpg"); 
     border:2px solid #6600ff;
+    transition: 1s;
 }
 
 /*
