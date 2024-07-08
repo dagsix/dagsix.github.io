@@ -153,7 +153,7 @@ nav{
     margin: 2em 0em; 
     border:dashed 2px var(--accent);
     width: 100%;
-    background-color: #d4c5f9;
+    background-color: var(--navbg);
 }
 
 .allboxes
@@ -301,7 +301,7 @@ footer{
     font-family: "Ubuntu", sans-serif;
     font-weight:bold;
     margin: 2em 0em; 
-    border:dashed 2px #6600ff;
+    border:dashed 2px var(--accent);
     width: 100%;
     background-color: var(--navbg);
 }
