@@ -226,8 +226,10 @@ BOX ONE
     background-image: url("/img/code.jpg"); 
     background-size: cover;
     border:2px dashed black;
-   background-blend-mode: multiply; /* screen */
-   background-color:mediumslateblue
+   /* was: screen; multiply is very dark */
+   
+   background-blend-mode: overlay; 
+   background-color:mediumslateblue;
 }
 
 /*
