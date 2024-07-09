@@ -213,7 +213,7 @@ WORK
     background-size: cover;
     border:2px dashed black;
     transition: 2s;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .boxone:hover
@@ -221,7 +221,8 @@ WORK
     border:2px solid #6600ff;
     background-image: url("/img/code-rgb.jpg"); 
     transition: 1.5s;
-    opacity: 1;
+    mix-blend-mode: lighten;
+    opacity: 0.6;
 }
 
 
@@ -237,7 +238,7 @@ EXPERIENCE
     background-size: cover;
     border:2px dashed black;
     transition: 2s;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .boxtwo:hover
@@ -245,7 +246,8 @@ EXPERIENCE
     /* was screen */
     background-image: url("/img/storyboard-rgb.jpg"); 
     border:2px solid #6600ff;
-    opacity: 1;
+    opacity: 0.6;
+    mix-blend-mode: lighten;
 }
 
 /*
@@ -260,7 +262,7 @@ CONTACT
     background-size: cover;
     border:2px dashed black;
     transition: 2s;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .boxthree:hover
@@ -268,7 +270,8 @@ CONTACT
     /* was screen */
     background-image: url("/img/wordpress-rgb.jpg"); 
     border:2px solid #6600ff;
-    opacity: 1;
+    opacity: 0.6;
+    mix-blend-mode: lighten;
 }
 
 /*
@@ -283,7 +286,7 @@ TESTING
     background-size: cover;
     border:2px dashed black;
     transition: 2s;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 
@@ -291,7 +294,8 @@ TESTING
 {
     background-image: url("/img/html-rgb.jpg"); 
     border:2px solid #6600ff;
-    opacity: 1;
+    opacity: 0.6;
+    mix-blend-mode: lighten;
 }
 
 /*
