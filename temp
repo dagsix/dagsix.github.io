@@ -1,0 +1,20 @@
+<!-- 
+**********************************
+    BOX one
+**********************************    
+-->
+<div class="row">
+    <section class="boxone allboxes column" onclick="work();">
+        <h4>WORK</h4><br><br><p>Examples of work I've done.</p>
+    </section>
+    <!-- 
+    **********************************
+       BOX two
+    **********************************    
+    -->
+    <section class="boxtwo allboxes column" onclick="experience();">
+        <h4>EXPERIENCE</h4><br><br><p>Relevant Web Experience.</p>
+    </section>
+    <!-- end of row -->
+     </div>
+    
