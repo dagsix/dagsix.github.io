@@ -347,11 +347,13 @@ font-size: 1.25em;
 .row
 {
 display: inline-block;
-width: 100%;
+margin-left:1em;
+margin-right: 1em;
 }
 .column
 {
-width: 100%;
+margin-left:1em;
+ margin-right: 1em;
 }
 }
 
