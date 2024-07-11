@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <title>Weather API</title>
+</head>
+<!-- don't use inline CSS at home kids :( -->
+<style>
+body
+{
+  background:silver;
+  font-family: 'Verdana', sans-serif;
+  margin: 2em;
+  padding: 1em;
+}
+.section
+{
+  border: 1px solid #fff;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  width: 50%;
+}
+#showtime, #timecomment
+{
+  font-size:9vw;
+  text-shadow: 3px 3px #333333;
+  font-family: 'Passion One', cursive;
+  display: grid;
+  color:#fff;
+  place-items: center;
+  width: 100%;
+}
+
+
+</style>
+<body id="selector">
+
+<section class="section">
+<p><span class='is-size-3' id="newtext"></span></p>
+  <p><span class='is-size-1' id="weather">Select a location!</span></p>
+<p class="is-size-7">Weather is acquired using the <a href="https://api.openweathermap.org" title="https://api.openweathermap.org" target="_blank">open weathermap.org API</a> <br>The background image is randomly selected from <a href="https://unsplash.com/" target="_blank">unsplash!</a> API.</p> 
+
+
+
+  <select id="newxselect" class="psubmit" width="50%" style="width: 50%">
+     <option value="Toronto">Toronto</option>
+    <option value="Montreal">Montreal</option>
+    <option value="Moscow">Moscow</option>
+    <option value="San Fransisco">San Fransisco</option>
+    <option value="Mexico City">Mexico City</option>
+    <option value="Halifax">Halifax</option>
+    <option value="Whitehorse">Whitehorse</option>
+    <option value="Tokyo">Tokyo</option>
+    <option value="Delhi">Delhi</option>
+     <option value="Beijing">Beijing</option>
+    <option value="New York">New York</option>
+    <option value="Los Angeles">Los Angeles</option>
+  </select>
+  <button  type="button" class="psubmit" onclick="newweather()">Get the weather!</button>
+
+  <div id="myoutput"></div>
+
+</section>
+
+<!-- just do the weather
+<div id="showtime"></div>
+<div id="timecomment"></div>
+-->
+
+
+<script>
+// https://api.apixu.com/v1/current.json?key=bad2c6e72d27a3ed813f4293073d0e6d&q=Toronto
+// change values  
+var myjson = new XMLHttpRequest();
+var newx;
+var x ="Toronto";
+var startTime, endTime;
+var picdesc, piccity, piccountry;
+var username="dag";
+var wcounter=900; /* 3590 */
+
+function start() {
+  startTime = new Date();
+};
+
+function end() {
+  endTime = new Date();
+  var timeDiff = endTime - startTime; //in ms
+  // strip the ms
+  timeDiff /= 1000;
+
+  // get seconds 
+  var seconds = Math.round(timeDiff);
+  console.log(seconds + " seconds");
+}  
+  
+function newweather()
+  {
+    var variable = document.getElementById('newxselect').value;
+     x = variable;
+    console.log("newweather is: "+x);
+     // addtwo = document.querySelector("#newtext");
+     // addtwo.innerHTML = "Current Weather in " + x;
+     displayweather();
+  }
+
+
+  /*
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+    */
+  
+function displayweather() {
+     //x = document.getElementById("newxselect").value;   
+     q="https://api.openweathermap.org/data/2.5/weather?units=metric&appid=bad2c6e72d27a3ed813f4293073d0e6d&q=" + x;
+    console.log("x is: "+x);
+    console.log("query is: "+q);
+    // get it!
+    myjson.open("GET", ""+q);
+    myjson.addEventListener("readystatechange", prepareoutput);
+    myjson.send();
+
+}
+
+function prepareoutput() {
+    var output;
+    var temp;
+    var wimg;
+
+console.log("Attempting to output weather data...");
+    // var myoutput = document.querySelector("#weather");
+    if (myjson.readyState == 4) {
+        // got data back from server
+        // data always returned in "repsonseText"
+        output = JSON.parse(myjson.responseText);
+        // clean up for testing 
+        str = JSON.stringify(output, null, 4); // (Optional) beautiful indented output.
+        console.log("Output is: "+str);
+        // Game.status[0][0].
+        // output.weather[0].icon;
+        temp = output.weather[0].description;
+        console.log("The weather is:"+temp);
+        document.getElementById('myoutput').innerHTML = "<br>" + x + " has <strong>" + temp +"</strong> and a temperature of <strong>"+output.main.temp+"&#176;C</strong>";
+        // http://openweathermap.org/img/wn/10d@2x.png
+        // grab the icon id
+        wimg = output.weather[0].icon;
+        document.getElementById('myoutput').innerHTML += "<br>" + "&nbsp;<img style='transform: scale(2);' src='http://openweathermap.org/img/wn/" + wimg + ".png'>";
+        // var weatherpic = document.createElement("img");
+        // set attribute
+        //weatherpic.setAttribute("src", output.weather_descriptions.0);
+        // used to add a dynamically created object to the DOM???
+        // weatherdesc=output.weather_description.0;
+        // myoutput.appendChild(weatherdesc);
+
+    }
+}
+
+function getRandomBackground()
+  {
+     console.log("** GETTING BACKGROUND IMAGE!");
+    //
+    // source code: https://gist.github.com/0asa/3b7ffdd04e35b161e038cc2a71be4b7f > really just W3 example
+    //
+    var app_id = 'fba66b053360b9beaf303f316ad8fa7d7dc5fa90d114ff42b89a9adca3538be2'
+    var url = 'https://api.unsplash.com/photos/random?client_id=' + app_id;
+    $.ajax({
+    url: url,
+    dataType: 'json',
+    success: function(json) {
+    var src = json.urls.regular;
+    piccountry = json.user.location;
+    picid= json.id;
+    picpath= "https://unsplash.com/photos/" + picid;
+    console.log("The background image city is:"+piccity);
+    console.log("The country is "+piccountry);
+    console.log("The id is "+picid);
+    // set photo location
+    if (piccountry == null)
+    {
+      piccountry = "Not specified. :(";
+    }
+    $('#picloc').empty().append("<a alt='The image id is:"+picid+"' title='"+src+"' class='has-text-white' target='blank' href='"+picpath+"'>Photo Link</a><br>"+piccountry);
+    // other
+    $('#selector').css('background-image','url('+src+')').css('background-size','cover');
+      }
+    });
+  }
+
+
+/*
+************************************************
+create date object
+************************************************
+*/
+function maketime()
+{
+  // console.log("*makingtime");
+  var h,m,s,c;
+  var timeis= new Date();
+  h=addZero(timeis.getHours());
+  // set comment before we clean it up
+  if (h < 4 || h > 18)
+    {
+      c="Good evening, "+ username;
+    }
+  else if (h >=5 && h<=12)
+  {
+    c="Good morning, "+ username;
+  }
+  else
+    {
+      c="Good afternoon, "+ username;
+    }
+
+  timecommentlink = document.querySelector("#timecomment");
+  timecommentlink.innerHTML =c;
+  if (h>12)
+    {
+      h=h-12;
+    }
+    // fix zero
+    if (h==0)
+    {
+      h=12;
+    }
+  m=addZero(timeis.getMinutes());
+  // s=addZero(timeis.getSeconds());
+  timeis = h + ":" + m;
+  return timeis;
+}
+
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+/*
+************************************************
+every second update time
+************************************************
+*/
+setInterval(function(){
+    var temp,temptime;
+    //
+    // are things setup? if so show clock. show focuslist
+    // console.log("* username is: "+username+" and myfocus is:"+myfocus);
+
+    if (username != undefined)
+    {
+        $('#focus').hide();
+        $('#mosetup').hide();
+        temp=maketime();
+          //$('#showtime').innerHTML =temp;
+        $('#showtime').empty().append(temp);
+        $('#showtime').show();
+        $('#timecomment').show();
+        // makemefocus();
+        wcounter++;
+        // console.log("wcounter is:"+wcounter+"/"+wmax);
+        temptime=wmax-wcounter;
+        if (temptime>60)
+        {
+          temp=Math.round(temptime/60);
+        }
+        else {
+          temp=":"+temptime;
+        }
+        $('#countdown').empty().append(temp);
+    }
+
+    // 3600 seconds in an hour - update all relevant API
+      if (wcounter>=wmax)
+      {
+        updateWeather();
+      }
+
+
+    }, 1000);
+
+
+</script>
+  <!-- game setup file -->
+  <script src="jquery360.js"></script>
+<script>
+  displayweather();
+getRandomBackground();
+
+/* 60000 = 1m */
+setInterval(function()
+{ 
+  displayweather();
+getRandomBackground(); 
+}, 60000*20);
+
+</script>
+</body>
+</html>

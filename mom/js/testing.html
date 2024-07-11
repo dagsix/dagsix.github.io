@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const url = 'https://api.unsplash.com/photos/random?client_id=fba66b053360b9beaf303f316ad8fa7d7dc5fa90d114ff42b89a9adca3538be2';
+
+fetch(url)
+    .then( res => { return res.json(); } )
+    .then( data => { console.log(data); } )
+    .catch( err => { console.error(error) } )
+</script>
+
+
+    </script>
+</body>
+</html>
