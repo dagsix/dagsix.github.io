@@ -96,6 +96,20 @@ h6
    -webkit-text-stroke: 1px #000000;
 }
 
+
+h5  
+{ 
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+  font-style: normal;
+   color: var(--accent);
+   font-size: 4em; 
+   text-stroke: 1px #000000; 
+   -webkit-text-stroke: 1px #000000;
+   
+}
+
+
 h4
 {
     font-family: "Francois One", sans-serif;
