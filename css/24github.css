@@ -343,17 +343,12 @@ h4
 {
 font-size: 1.25em;
 }
-/* drop 2 columns to 1 column */
+/* drop 2 columns to 1 column but it doesn't so WTF */
 .row
 {
-display: inline-block;
-margin-left:1em;
-margin-right: 1em;
 }
 .column
 {
-margin-left:1em;
- margin-right: 1em;
 }
 }
 
