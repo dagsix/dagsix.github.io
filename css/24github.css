@@ -348,6 +348,10 @@ font-size: 1.25em;
 {
 display: inline-block;
 }
+.column
+{
+display: block;
+}
 }
 
 
