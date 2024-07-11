@@ -350,7 +350,7 @@ display: inline-block;
 }
 .column
 {
-display: block;
+display:inline-block;
 }
 }
 
