@@ -351,6 +351,7 @@ display: inline-block;
 .column
 {
 display:inline-block;
+width: 100%;
 }
 }
 
