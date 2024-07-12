@@ -244,6 +244,7 @@ WORK
     border:2px solid #6600ff;
     background-image: url("/img/code-rgb.jpg"); 
     transition: 1.5s;
+    background-color: #6600ff;
     mix-blend-mode:luminosity;
     opacity: 0.6;
 }
