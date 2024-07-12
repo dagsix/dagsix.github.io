@@ -271,8 +271,9 @@ EXPERIENCE
     /* was screen */
     background-image: url("/img/storyboard-rgb.jpg"); 
     border:2px solid #6600ff;
+    transition: 1s;
     opacity: 1;
-    mix-blend-mode:luminosity;
+    color:white;
 }
 
 /*
@@ -295,8 +296,9 @@ CONTACT
     /* was screen */
     background-image: url("/img/wordpress-rgb.jpg"); 
     border:2px solid #6600ff;
+    transition: 1s;
     opacity: 1;
-    mix-blend-mode:luminosity;
+    color:white;
 }
 
 /*
@@ -319,8 +321,9 @@ TESTING
 {
     background-image: url("/img/html-rgb.jpg"); 
     border:2px solid #6600ff;
+    transition: 1s;
     opacity: 1;
-    mix-blend-mode:luminosity;
+    color:white;
 }
 
 /*
