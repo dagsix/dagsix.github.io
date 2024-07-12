@@ -244,7 +244,7 @@ WORK
     border:2px solid #6600ff;
     background-image: url("/img/code-rgb.jpg"); 
     transition: 1.5s;
-    mix-blend-mode:hard-light;
+    mix-blend-mode:luminosity;
     opacity: 0.6;
 }
 
@@ -270,7 +270,7 @@ EXPERIENCE
     background-image: url("/img/storyboard-rgb.jpg"); 
     border:2px solid #6600ff;
     opacity: 0.6;
-    mix-blend-mode:soft-light;
+    mix-blend-mode:luminosity;
 }
 
 /*
@@ -294,7 +294,7 @@ CONTACT
     background-image: url("/img/wordpress-rgb.jpg"); 
     border:2px solid #6600ff;
     opacity: 0.6;
-    mix-blend-mode:hard-light;
+    mix-blend-mode:luminosity;
 }
 
 /*
