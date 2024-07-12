@@ -86,7 +86,7 @@ p
 #container{
 
     width:90%;
-    border:2px dashed var(--accent);
+    border:2px dashed #000;
     padding: 1em;
     margin: 1em;
     background-image: linear-gradient(to right, #d4c5f9,#ffffff);
