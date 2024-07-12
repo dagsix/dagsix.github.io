@@ -86,7 +86,7 @@ p
 #container{
 
     width:90%;
-    border:2px dashed #000;
+    border:2px solid #000;
     padding: 1em;
     margin: 1em;
     background-image: linear-gradient(to right, #d4c5f9,#ffffff);
@@ -243,10 +243,11 @@ WORK
 {
     border:2px solid #6600ff;
     background-image: url("/img/code-rgb.jpg"); 
-    transition: 1.5s;
+    transition: 1s;
     background-color: #6600ff;
     mix-blend-mode:luminosity;
-    opacity: 0.6;
+    opacity: 1;
+    color:white;
 }
 
 
