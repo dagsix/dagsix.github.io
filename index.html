@@ -203,16 +203,24 @@ git push origin main
 
 <script>
 function newGradient() {
-  var randomColor1 = "#" + Math.floor(Math.random()*16777215).toString(16),
-      randomColor2 = "#" + Math.floor(Math.random()*16777215).toString(16);
-  return 'radial-gradient(at top left, '+randomColor1+', '+randomColor2+')'
+var rand1 = Math.floor(Math.random() * 255);
+var rand2 = Math.floor(Math.random() * 255);
+var rand3 = Math.floor(Math.random() * 255);
+var rand4 = Math.floor(Math.random() * 255);
+var rand5 = Math.floor(Math.random() * 255);
+var rand6 = Math.floor(Math.random() * 255);
+//background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+//   var gradient = "linear-gradient(" + deg + "deg, " + "#" + createHex() + ", " + "#" + createHex() +")";
+var e='radial-gradient(at top left(to right, rgba(" + rand1 +" , " +rand2 +" , "+ rand3 +",0.5) , rgba(" + rand4 +" , " +rand5 +" , "+ rand6 +",0.5))';
+console.log("e is "+e);
+return e;
 }
 
 newGradient();
 
 setInterval(function() {
   $('html').css('background', newGradient())
-}, 3000)
+}, 15000)
 
 </script>
 
