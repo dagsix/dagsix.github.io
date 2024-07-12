@@ -48,7 +48,9 @@ https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
 <script src="https://kit.fontawesome.com/0674f4e27a.js" crossorigin="anonymous"></script>
 <!-- JQuery https://jquery.com/ -->
 <script src="/js/jquery.js"></script>
-<!-- JQuery HTML includes -->
+<!-- MY JS functions -->
+<script src="/js/dag22.js"></script>
+
 <script> 
 // load testing
 function testing()
@@ -200,26 +202,5 @@ git push origin main
 <footer class="centerthis column">DAG (C) 2024</footer>
 </div>
 <!-- end of content -->
-
-<script>
-
-function getRandomColor() {
-const r = Math.floor(Math.random() * 256);
-const g = Math.floor(Math.random() * 256);
-const b = Math.floor(Math.random() * 256);
-return `rgba(${r}, ${g}, ${b}, 0.5)`;
-}
-
-function setRandomGradientBackground() {
-const color1 = getRandomColor();
-const color2 = getRandomColor();
-const angle = Math.floor(Math.random() * 360);
-document.documentElement.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
-}
-
-setRandomGradientBackground();
-
-</script>
-
 </body>
 </html>

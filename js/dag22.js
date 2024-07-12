@@ -1,20 +1,4 @@
 /*
-variable init 
-*/
-var myclass = "onebg";
-// because it needs to bee visible in various fields
-var myjson = new XMLHttpRequest();
-// what field in JSON are we looking for? - can't seem to pass it to the JSONoutput so global it is. 
-var jsonfield = "nothing";
-var ip;
-/* bg variables */
-var a,b,c,x,y,z,bb;
-var max=99;
-var i = 1;
-var rotateCount = 1;
-var myjson = new XMLHttpRequest();
-
-/*
 Nav bar class changer
 */
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -34,28 +18,6 @@ function clearCookies()
 {
     console.log("Clearing all cookies");
     localStorage.clear();
-}
-
-
-/*
-the scroll to top sticky thingy 
-*/
-
-function upOver()
-{
-let bgChange = document.getElementById('toplink');
-bgChange.style.backgroundColor = "#6600ff";
-bgChange.style.borderColor = "#ffffff";
-bgChange.style.cursor = "pointer";
-bgChange.style.color = "#ffffff";
-}
-
-function upOut()
-{
-let bgChange = document.getElementById('toplink');
-bgChange.style.backgroundColor = "white";
-bgChange.style.borderColor = "black";
-bgChange.style.color = "#6600ff";
 }
 
 
@@ -95,87 +57,7 @@ function invading()
   }
 }
 
-
-
-/* the next four functions from https://stackoverflow.com/questions/3080421/javascript-color-gradient */
-function hexToRgb(hex) {
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? {
-      r: parseInt(result[1], 16),
-      g: parseInt(result[2], 16),
-      b: parseInt(result[3], 16)
-    } : null;
-  }
-
-function map(value, fromSource, toSource, fromTarget, toTarget) {
-    return (value - fromSource) / (toSource - fromSource) * (toTarget - fromTarget) + fromTarget;
-  }
-  
-  function getColour(startColour, endColour, min, max, value) {
-    var startRGB = hexToRgb(startColour);
-    var endRGB = hexToRgb(endColour);
-    var percentFade = map(value, min, max, 0, 1);
-  
-    var diffRed = endRGB.r - startRGB.r;
-    var diffGreen = endRGB.g - startRGB.g;
-    var diffBlue = endRGB.b - startRGB.b;
-  
-    diffRed = (diffRed * percentFade) + startRGB.r;
-    diffGreen = (diffGreen * percentFade) + startRGB.g;
-    diffBlue = (diffBlue * percentFade) + startRGB.b;
-  
-    var result = "rgb(" + Math.round(diffRed) + ", " + Math.round(diffGreen) + ", " + Math.round(diffBlue) + ")";
-    return result;
-  }
-
-  /*
-  random hex colour
-  */
-
-function rndColour() {
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            const random = Math.random();
-            const bit = (random * 16) | 0;
-            color += (bit).toString(16);
-        };
-        return color;
-}
-
-  function changeBackgroundColour() {
-    var count = 0;
-      window.setInterval(function ()
-      {
-        x = rndColour();
-        document.getElementById('logo').style.color = x;
-      }, 4000);
-      // console.log("setting dave to" + x);
-      // two
-      window.setInterval(function() {
-        x = rndColour();
-        w = rndColour();
-        y = rndColour();
-        z = rndColour();
-        // console.log("Colours for guzda" + w);
-        var myid = document.getElementById("logotwo");
-        myid.style["background"] = 'linear-gradient(-45deg,' + w + ',' + x + ',' + y + ',' + z + ')';
-        myid.style["-webkit-background-clip"] = "text";
-        myid.style["-webkit-text-fill-color"] = "transparent";
-        myid.style["-webkit-text-stroke-width"] = "1px";
-        myid.style["-webkit-text-stroke-color"] = "black";
-        myid.style["background-size"] = "300%";
-        myid.style["animation"] = "logotwoup 5s ease-in-out infinite";
-        myid.style["-moz-animation"] = "logotwoup 5s ease-in-out infinite";
-        myid.style["-webkit-animation"] = "logotwoup 5s ease-in-out infinite";
-     }, 10000);
-      // three
-      window.setInterval(function() {
-        x = rndColour();
-          document.getElementById('logothree').style.color = x;
-          // console.log("setting portfolio to" + x);
-      }, 3000);
-  }
-
+ 
 /*
 Resets the Dave logo back to Purple
 */
@@ -226,27 +108,6 @@ function ShowIP(response) {
     document.getElementById('locationOut').innerHTML = response.query;
 } 
 
-
-/*
-um for testing output. :D
-*/
-function test()
-{
-    console.log("TESTING");
-}
-
-/*
-fix height of this id
-*/
-function fixHeight(myid)
-{
-    console.log("id is:"+myid);
-    boxHeight = document.getElementById(myid).scrollHeight;
-    /* add pixels at the end so it actually works */
-    boxHeight += "px";
-    document.getElementById(myid).style.height=boxHeight;
-    console.log("new is: "+boxHeight);
-}
 
 function APIquery(url,keyfield,mykey,queryfield,queryname) 
 {
@@ -332,32 +193,6 @@ function JSONoutput()
 }
 
 
-/* 
-JS cookie handlers from 
-https://www.w3schools.com/js/js_cookies.asp
-*/
-
-function setCookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    let expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-  
-  function getCookie(cname) {
-    let name = cname + "=";
-    let ca = document.cookie.split(';');
-    for(let i = 0; i < ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
   
 /* Weather API grab - outputs to id=myoutput */
   
@@ -404,6 +239,24 @@ console.log("Attempting to output weather data...");
         document.getElementById('myoutput').innerHTML = "Toronto has <strong>" + temp + "</strong> and a temperature of <strong>" + Math.round(output.main.temp) + "&#176;C&nbsp;&nbsp;</strong>";
     }
 }
+
+
+function getRandomColor() {
+const r = Math.floor(Math.random() * 256);
+const g = Math.floor(Math.random() * 256);
+const b = Math.floor(Math.random() * 256);
+return `rgba(${r}, ${g}, ${b}, 0.2)`;
+}
+
+function setRandomGradientBackground() {
+const color1 = getRandomColor();
+const color2 = getRandomColor();
+const angle = Math.floor(Math.random() * 360);
+document.documentElement.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+}
+
+// Call the function to set the random gradient background
+setRandomGradientBackground();
 
 /* fire it off - it is in the footer */
 displayweather();
