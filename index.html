@@ -200,5 +200,22 @@ git push origin main
 <footer class="centerthis column">DAG (C) 2024</footer>
 </div>
 <!-- end of content -->
+
+<script>
+function newGradient() {
+  var randomColor1 = "#" + Math.floor(Math.random()*16777215).toString(16),
+      randomColor2 = "#" + Math.floor(Math.random()*16777215).toString(16);
+  return 'radial-gradient(at top left, '+randomColor1+', '+randomColor2+')'
+}
+
+
+setInterval(function() {
+  $('body').css('background', newGradient())
+}, 3000)
+
+</script>
+
+
+
 </body>
 </html>
