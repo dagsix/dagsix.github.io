@@ -194,6 +194,7 @@ nav{
 .allboxes:hover > h4
 {
     color: #ffffff;
+    transition: 1s;
 }
 
 
@@ -271,7 +272,7 @@ EXPERIENCE
     /* was screen */
     background-image: url("/img/storyboard-rgb.jpg"); 
     border:2px solid #6600ff;
-    opacity: 0.6;
+    opacity: 1;
     mix-blend-mode:luminosity;
 }
 
@@ -295,7 +296,7 @@ CONTACT
     /* was screen */
     background-image: url("/img/wordpress-rgb.jpg"); 
     border:2px solid #6600ff;
-    opacity: 0.6;
+    opacity: 1;
     mix-blend-mode:luminosity;
 }
 
@@ -319,7 +320,7 @@ TESTING
 {
     background-image: url("/img/html-rgb.jpg"); 
     border:2px solid #6600ff;
-    opacity: 0.6;
+    opacity: 1;
     mix-blend-mode:luminosity;
 }
 
