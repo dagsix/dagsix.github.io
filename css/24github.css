@@ -73,8 +73,16 @@ html {
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
 }
 
+p 
+{
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
 
 #container{
 
