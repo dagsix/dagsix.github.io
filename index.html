@@ -202,25 +202,22 @@ git push origin main
 <!-- end of content -->
 
 <script>
-function newGradient() {
-var rand1 = Math.floor(Math.random() * 255);
-var rand2 = Math.floor(Math.random() * 255);
-var rand3 = Math.floor(Math.random() * 255);
-var rand4 = Math.floor(Math.random() * 255);
-var rand5 = Math.floor(Math.random() * 255);
-var rand6 = Math.floor(Math.random() * 255);
-//background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-//   var gradient = "linear-gradient(" + deg + "deg, " + "#" + createHex() + ", " + "#" + createHex() +")";
-var e='radial-gradient(at top left(to right, rgba(" + rand1 +" , " +rand2 +" , "+ rand3 +",0.5) , rgba(" + rand4 +" , " +rand5 +" , "+ rand6 +",0.5))';
-console.log("e is "+e);
-return e;
+
+function getRandomColor() {
+const r = Math.floor(Math.random() * 256);
+const g = Math.floor(Math.random() * 256);
+const b = Math.floor(Math.random() * 256);
+return `rgba(${r}, ${g}, ${b}, 0.5)`;
 }
 
-newGradient();
+function setRandomGradientBackground() {
+const color1 = getRandomColor();
+const color2 = getRandomColor();
+const angle = Math.floor(Math.random() * 360);
+document.documentElement.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+}
 
-setInterval(function() {
-  $('html').css('background', newGradient())
-}, 15000)
+setRandomGradientBackground();
 
 </script>
 
