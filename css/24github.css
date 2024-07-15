@@ -275,6 +275,7 @@ EXPERIENCE
     transition: 1s;
     opacity: 1;
     background-blend-mode: multiply;
+    background-color: #a978f2;
 }
 
 /*
@@ -300,6 +301,7 @@ CONTACT
     transition: 1s;
     opacity: 1;
     background-blend-mode: darken;
+    background-color: #a978f2;
 }
 
 /*
@@ -325,6 +327,7 @@ TESTING
     transition: 1s;
     opacity: 1;
     background-blend-mode: color-burn;
+    background-color: #a978f2;
 }
 
 /*
