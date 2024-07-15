@@ -80,7 +80,6 @@ html {
 
 p 
 {
-    font-family: Verdana, 'Gill Sans', Tahoma, Arial, sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
     font-weight: 400;
@@ -133,12 +132,6 @@ h4
    text-stroke: 1px #000000; 
    -webkit-text-stroke: 1px #000000;
 }
-
-h4 > p
-{
-    font-weight: bold;
-}
-
 
 .centerthis
 {
