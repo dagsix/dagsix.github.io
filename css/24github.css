@@ -274,6 +274,7 @@ EXPERIENCE
     border:2px solid #6600ff;
     transition: 1s;
     opacity: 1;
+    color:#ffffff;
     background-blend-mode: multiply;
     background-color: #a978f2;
 }
@@ -300,6 +301,7 @@ CONTACT
     border:2px solid #6600ff;
     transition: 1s;
     opacity: 1;
+    color:#ffffff;
     background-blend-mode: darken;
     background-color: #a978f2;
 }
@@ -326,6 +328,7 @@ TESTING
     border:2px solid #6600ff;
     transition: 1s;
     opacity: 1;
+    color:#ffffff;
     background-blend-mode: color-burn;
     background-color: #a978f2;
 }
