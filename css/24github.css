@@ -85,7 +85,7 @@ p
     font-style: normal;
 }
 
-p > b {
+strong {
     color: #6600ff;
 }
 
