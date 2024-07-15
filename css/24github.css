@@ -247,7 +247,7 @@ WORK
     transition: 1s;
     background-color: #6600ff;
     opacity: 1;
-    background-blend-mode: screen;
+    background-blend-mode: multiply;
 }
 
 
