@@ -257,7 +257,7 @@ document.documentElement.style.background = `linear-gradient(${angle}deg, ${colo
 }
 
 // Call the function to set the random gradient background
-// setRandomGradientBackground();
+setRandomGradientBackground();
 
 /* fire it off - it is in the footer */
 displayweather();
