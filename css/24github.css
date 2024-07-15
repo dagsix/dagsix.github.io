@@ -85,6 +85,7 @@ p
     font-style: normal;
 }
 
+/*
 p > b
 {
     font-family: "Lato Bold", sans-serif;
@@ -93,6 +94,7 @@ p > b
     font-weight: 700;
     font-style: normal;
 }
+    */
 
 
 #container{
