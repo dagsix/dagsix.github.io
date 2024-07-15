@@ -74,27 +74,19 @@ html {
     font-family: "Rubik", sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
+    font-family: Verdana, 'Gill Sans', Tahoma, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 p 
 {
-    font-family: "Lato Regular", sans-serif;
+    font-family: Verdana, 'Gill Sans', Tahoma, Arial, sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
     font-weight: 400;
     font-style: normal;
 }
-
-/*
-p > b
-{
-    font-family: "Lato Bold", sans-serif;
-    font-size: 1.2em;
-    line-height: 1.3em;
-    font-weight: 700;
-    font-style: normal;
-}
-    */
 
 
 #container{
@@ -185,7 +177,6 @@ NAV
 
 nav{
     padding:1em;
-    font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-style: bold;
     margin: 2em 0em; 
@@ -198,7 +189,6 @@ nav{
 {
     padding:1em;
     min-height: 350px;
-    font-family: "Rubik", sans-serif;
     font-weight: bold;
     font-style: normal;
     margin:0.5em;
