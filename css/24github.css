@@ -302,7 +302,7 @@ CONTACT
     transition: 1s;
     opacity: 1;
     color:#ffffff;
-    background-blend-mode: darken;
+    background-blend-mode: color-burn;
     background-color: #a978f2;
 }
 
