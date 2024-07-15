@@ -78,18 +78,18 @@ html {
 
 p 
 {
-    font-family: "Rubik", sans-serif;
+    font-family: "Lato Regular", sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 p > b
 {
-    font-family: "Rubik Medium", sans-serif;
+    font-family: "Lato Bold", sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 
