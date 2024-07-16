@@ -257,28 +257,7 @@ document.documentElement.style.background = `linear-gradient(${angle}deg, ${colo
 }
 
 
-// Function to generate a random gradient
-function getRandomGradient() {
-const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#00ffff', '#ff00ff'];
-const randomColor1 = colors[Math.floor(Math.random() * colors.length)];
-const randomColor2 = colors[Math.floor(Math.random() * colors.length)];
-const randomColor3 = colors[Math.floor(Math.random() * colors.length)];
-const randomColor4 = colors[Math.floor(Math.random() * colors.length)];
-const angle = Math.floor(Math.random() * 360);
-//return `linear-gradient(${angle}deg, ${randomColor1}, ${randomColor2})`;
-return `linear-gradient(90deg, ${randomColor1}, ${randomColor2}, ${randomColor3}, ${randomColor4})`;
-}
 
-function newFade()
-{
-// Apply the gradient and animation
-console.log("** newFade()");
-document.getElementById('topani').style.backgroundSize = '200% 200%'; 
-document.getElementById('topani').style.webkitBackgroundClip = 'text';
-document.getElementById('topani').style.color = 'transparent';
-document.getElementById('topani').style.animation = 'animatedtext 3s ease-in-out infinite';
-document.getElementById('topani').style.background = getRandomGradient();
-}
 
 // date and time
 function getDateTime() {
