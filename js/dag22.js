@@ -2,7 +2,8 @@
 let dagani = document.getElementById('dagani');
 
 let siteversion = "0.36";
-document.getElementById('version').innerHTML = siteversion;
+// document.getElementById("demo").innerHTML = "I have changed!";
+document.getElementById("version").innerHTML = "" + siteversion;
 
 /*
 Nav bar class changer
