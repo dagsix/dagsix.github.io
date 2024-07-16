@@ -1,7 +1,7 @@
 // change header title text animation after 5s
 let dagani = document.getElementById('dagani');
 
-let siteversion = "0.35";
+let siteversion = "0.36";
 document.getElementById('version').innerHTML = siteversion;
 
 /*
@@ -269,7 +269,8 @@ const randomColor1 = colors[Math.floor(Math.random() * colors.length)];
 const randomColor2 = colors[Math.floor(Math.random() * colors.length)];
 const randomColor3 = colors[Math.floor(Math.random() * colors.length)];
 const randomColor4 = colors[Math.floor(Math.random() * colors.length)];
-return `linear-gradient(90deg, ${randomColor1}, ${randomColor2}`;
+const angle = Math.floor(Math.random() * 360);
+return `linear-gradient(${angle}deg, ${randomColor1}, ${randomColor2})`;
 // return `linear-gradient(90deg, ${randomColor1}, ${randomColor2}, ${randomColor3}, ${randomColor4})`;
 }
 
