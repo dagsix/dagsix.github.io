@@ -1,3 +1,4 @@
+let version="0.156";
 
 /*
 Nav bar class changer
@@ -314,7 +315,7 @@ function getDateTime() {
 // add date to footer
 function footerUpdate()
 {
-  document.getElementById("dagFooter").innerHTML = "Design and Coding by DAG " + getDateTime();
+  document.getElementById("dagFooter").innerHTML = "Design and Coding by DAG " + getDateTime() + " " + version;
 }
 
 
