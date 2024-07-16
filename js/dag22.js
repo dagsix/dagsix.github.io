@@ -1,9 +1,10 @@
 // change header title text animation after 5s
 let dagani = document.getElementById('dagani');
+let myv = document.getElementById("version");
 
 let siteversion = "0.36";
 // document.getElementById("demo").innerHTML = "I have changed!";
-document.getElementById("version").innerHTML = "" + siteversion;
+myv.innerHTML = siteversion;
 
 /*
 Nav bar class changer
