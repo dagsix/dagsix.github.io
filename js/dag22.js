@@ -311,7 +311,7 @@ function getDateTime() {
 }
 
 // init gradient
-newFade();
+// newFade();
 
 // new gradient every 5s for header text
 setInterval(newFade, 5000);
