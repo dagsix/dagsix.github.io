@@ -270,6 +270,7 @@ return `linear-gradient(90deg, ${randomColor1}, ${randomColor2}`;
 function newFade()
 {
 // Apply the gradient and animation
+console.log("** newFade()");
 dagani.style.background = getRandomGradient();
 dagani.style.backgroundSize = '200% 200%'; // Ensure the gradient spans the entire element
 dagani.style.webkitBackgroundClip = 'text';
@@ -281,14 +282,11 @@ dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
 newFade();
 
 // change header title text animation after 5s
-const dagani = document.getElementById('dagani');
+let dagani = document.getElementById('dagani');
+
+// randomly select bg gradients for header text
 setInterval(newFade, 5000);
 
 // Call the function to set the random gradient background
 setRandomGradientBackground();
 
-/* fire it off - it is in the footer */
-displayweather();
-  
-/* clear email on contact */  
-clearEmail();
