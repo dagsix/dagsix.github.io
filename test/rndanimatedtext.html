@@ -29,10 +29,11 @@ const b = Math.floor(Math.random() * 256);
 return `rgba(${r}, ${g}, ${b}, 0.6)`;
 }
 
+
+function setRandomGradientBackground() 
+{
 // mine as well go for a soda
 let dagani = document.getElementById('animated');
-
-function setRandomGradientBackground() {
 const color1 = getRandomColor();
 const color2 = getRandomColor();
 const color3 = getRandomColor();
@@ -102,7 +103,7 @@ h1 {
 <!-- nav -->
 <nav class="item" id="includeTestNav"></nav>
 <main class="item">
-<h1 id="animated" onClick="newFade();">ANIMATED TEXT IS AWESOME! v1.11</h1>
+<h1 id="animated" onClick="newFade();">ANIMATED TEXT IS AWESOME! v1.12</h1>
 </main>
 <!-- footer -->
 <footer id="includeFooter"></footer>
