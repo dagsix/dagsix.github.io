@@ -305,16 +305,20 @@ function getDateTime() {
        second = '0'+second;
   }   
   var dateTime = year+'-'+month+'-'+day+' '+hour+':'+minute+':'+second;   
-   return dateTime;
+   //return dateTime;
+   //currentTime = getDateTime();
+   document.getElementById("myversion").innerHTML = currentTime;
 }
 
 // init Fade
-//newFade();
+newFade();
 
 // randomly select bg gradients for header text
-//setInterval(newFade, 5000);
+setInterval(newFade, 5000);
 
 // Call the function to set the random gradient background
 setRandomGradientBackground();
+
+
 
 
