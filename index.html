@@ -123,12 +123,22 @@ function newFade()
 // Apply the gradient and animation
 console.log("** newFade()");
 
-let x = document.getElementById("topani").value; 
+let x = document.getElementById("topani");
+if (x != null)
+{ 
 x.style.backgroundSize = '200% 200%'; 
 document.getElementById('topani').style.webkitBackgroundClip = 'text';
 document.getElementById('topani').style.color = 'transparent';
 document.getElementById('topani').style.animation = 'animatedtext 3s ease-in-out infinite';
 document.getElementById('topani').style.background = getRandomGradient();
+}
+else
+{
+console.log("** Sigh. topani was not found.");
+}
+
+
+
 }
 
 // randomly select bg gradients for header text
