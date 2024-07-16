@@ -13,6 +13,12 @@
       color: transparent;
       background-size: 200% 200%;
       animation: animatedtext 6s ease-in-out infinite;
+      -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     }
 
     .ani
@@ -38,7 +44,7 @@
   </style>
 </head>
 <body>
-  <div id="dagani" class="ani" onClick="getRandomGradient();">Your Text Here V23</div>
+  <div id="dagani" class="ani" onClick="newFade();">Your Text Here V24</div>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const dagani = document.getElementById('dagani');
@@ -61,6 +67,16 @@
       dagani.style.color = 'transparent';
       dagani.style.animation = 'animatedtext 6s ease-in-out infinite';
     });
+
+    function newFade()
+    {
+    // Apply the gradient and animation
+      dagani.style.background = getRandomGradient();
+      dagani.style.backgroundSize = '200% 200%'; // Ensure the gradient spans the entire element
+      dagani.style.webkitBackgroundClip = 'text';
+      dagani.style.color = 'transparent';
+      dagani.style.animation = 'animatedtext 6s ease-in-out infinite';
+    }
   </script>
 </body>
 </html>
