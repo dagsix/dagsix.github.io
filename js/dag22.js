@@ -281,16 +281,9 @@ dagani.style.color = 'transparent';
 dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
 }
 
-// set version FFS
-function setVersion()
-{
-  var temp = document.getElementById('myversion');
-  temp.innerHTML="test";
-}
-
-
 // set version
-setVersion();
+let temp = document.getElementById('myversion');
+temp.innerHTML="test";
 
 // init Fade
 newFade();
