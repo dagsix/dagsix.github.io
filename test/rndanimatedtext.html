@@ -44,7 +44,7 @@
   </style>
 </head>
 <body>
-  <div id="dagani" class="ani" onClick="newFade();">Your Text Here V28</div>
+  <div id="dagani" class="ani" onClick="newFade();">Your Text Here V29</div>
   <script>
       const dagani = document.getElementById('dagani');
       setInterval(newFade, 5000);
@@ -56,17 +56,9 @@
         const randomColor2 = colors[Math.floor(Math.random() * colors.length)];
         const randomColor3 = colors[Math.floor(Math.random() * colors.length)];
         const randomColor4 = colors[Math.floor(Math.random() * colors.length)];
-        
-        return `linear-gradient(90deg, ${randomColor1}, ${randomColor2}, ${randomColor3}, ${randomColor4})`;
+        return `linear-gradient(90deg, ${randomColor1}, ${randomColor2}`;
+        // return `linear-gradient(90deg, ${randomColor1}, ${randomColor2}, ${randomColor3}, ${randomColor4})`;
       }
-
-      // Apply the gradient and animation
-      dagani.style.background = getRandomGradient();
-      dagani.style.backgroundSize = '200% 200%'; // Ensure the gradient spans the entire element
-      dagani.style.webkitBackgroundClip = 'text';
-      dagani.style.color = 'transparent';
-      dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
-
 
     function newFade()
     {
@@ -77,6 +69,16 @@
       dagani.style.color = 'transparent';
       dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
     }
-  </script>
+
+          // Apply the gradient and animation
+          dagani.style.background = getRandomGradient();
+      dagani.style.backgroundSize = '200% 200%'; // Ensure the gradient spans the entire element
+      dagani.style.webkitBackgroundClip = 'text';
+      dagani.style.color = 'transparent';
+      dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
+
+
+
+</script>
 </body>
 </html>
