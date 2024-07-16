@@ -312,7 +312,10 @@ function getDateTime() {
    document.getElementById("myversion").innerHTML = currentTime;
 }
 
-// s
+// init gradient
+newFade();
+
+// new gradient every 5s for header text
 setInterval(newFade, 5000);
 
 // Call the function to set the random gradient background
