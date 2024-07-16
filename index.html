@@ -131,10 +131,9 @@ document.getElementById('topani').style.animation = 'animatedtext 3s ease-in-out
 document.getElementById('topani').style.background = getRandomGradient();
 }
 
-newFade();
-
 // randomly select bg gradients for header text
-setInterval(newFade, 5000);
+document.addEventListener("DOMContentLoaded",newFade);
+// setInterval(newFade, 5000);
 </script>
 <!-- My Scripts -->
 </body>
