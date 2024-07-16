@@ -311,10 +311,10 @@ function getDateTime() {
 }
 
 // init Fade
-newFade();
+//newFade();
 
 // randomly select bg gradients for header text
-setInterval(newFade, 5000);
+//setInterval(newFade, 5000);
 
 // Call the function to set the random gradient background
 setRandomGradientBackground();
