@@ -1,10 +1,3 @@
-// change header title text animation after 5s
-const dagani = document.getElementById('dagani');
-const myv = document.getElementById('version');
-const siteversion = "0.37";
-
-// document.getElementById("demo").innerHTML = "I have changed!";
-myv.innerHTML = siteversion;
 
 /*
 Nav bar class changer
@@ -280,12 +273,23 @@ function newFade()
 {
 // Apply the gradient and animation
 console.log("** newFade()");
+const dagani = document.getElementById('topani');
 dagani.style.background = getRandomGradient();
 dagani.style.backgroundSize = '200% 200%'; // Ensure the gradient spans the entire element
 dagani.style.webkitBackgroundClip = 'text';
 dagani.style.color = 'transparent';
 dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
 }
+
+// set version FFS
+function setVersion()
+{
+  document.getElementById('version').innerHTML="V0.38";
+}
+
+
+// set version
+siteversion();
 
 // init Fade
 newFade();
@@ -295,4 +299,5 @@ setInterval(newFade, 5000);
 
 // Call the function to set the random gradient background
 setRandomGradientBackground();
+
 
