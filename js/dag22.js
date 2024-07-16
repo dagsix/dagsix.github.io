@@ -310,9 +310,18 @@ function getDateTime() {
    document.getElementById("myversion").innerHTML = currentTime;
 }
 
+// add date to footer
+function footerUpdate()
+{
+  document.getElementById("dagFooter").innerHTML = "Design and Coding by DAG " + getDateTime();
+}
+
+
+
 // init gradient
 document.addEventListener('DOMContentLoaded', function() {
   newFade();
+  footerUpdate();
 }, false);
 
 // new gradient every 5s for header text
