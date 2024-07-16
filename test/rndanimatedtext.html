@@ -21,13 +21,16 @@
         $("#includeFooter").load("testfooter.html"); 
     });
 
-    function getRandomColor() {
+function getRandomColor() {
 const r = Math.floor(Math.random() * 256);
 const g = Math.floor(Math.random() * 256);
 const b = Math.floor(Math.random() * 256);
 /* opacity of 0.4 is very ligh */
 return `rgba(${r}, ${g}, ${b}, 0.6)`;
 }
+
+// mine as well go for a soda
+let dagani = document.getElementById('animated');
 
 function setRandomGradientBackground() {
 const color1 = getRandomColor();
@@ -37,11 +40,11 @@ const color4 = getRandomColor();
 const angle = Math.floor(Math.random() * 360);
 // document.querySelector("body").style.
 // document.documentElement.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
-document.querySelector("#animated").style.background = `linear-gradient(${angle}deg, ${color1}, ${color2} , ${color3} , ${color4})`;
-document.querySelector("#animated").style.backgroundClip = `text`;
+dagani.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2} , ${color3} , ${color4})`;
+dagani.style.backgroundClip = `text`;
 //  document.querySelector("#item").style.animation = "moveBack 1.5s forwards";
-document.querySelector("#animated").style.animation = `animatedtext 6s ease-in-out infinite`;
-document.querySelector("#animated").style.textFillColor = `transparent`;
+dagani.style.animation = `animatedtext 6s ease-in-out infinite`;
+dagani.style.textFillColor = `transparent`;
 }
 
 
@@ -71,6 +74,12 @@ function newFade()
 	animation: animatedtext 6s ease-in-out infinite;
 	-moz-animation: animatedtext 6s ease-in-out infinite;
 	-webkit-animation: animatedtext 6s ease-in-out infinite;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @keyframes animatedtext {
