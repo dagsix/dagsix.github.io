@@ -282,8 +282,7 @@ dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
 }
 
 // set version
-let temp = document.getElementById('myversion');
-temp.innerText="test";
+document.getElementById('myversion').innerHTML="v56";
 
 // init Fade
 newFade();
