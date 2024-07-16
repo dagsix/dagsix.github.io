@@ -94,7 +94,7 @@ function newFade()
 <nav class="item" id="includeTestNav"></nav>
 <main class="item">
 
-    <div id="dagani" class="animated" onClick="newFade();">Animating Text is awesome v.15</div>
+    <div id="dagani" class="animated" onClick="newFade();">Animating Text is awesome v.16</div>
     <script>
       const dagani = document.getElementById('dagani');
   
@@ -109,6 +109,7 @@ function newFade()
       // Set the initial gradient and animation
       dagani.style.background = getRandomGradient();
       dagani.style.animation = 'animatedtext 6s ease-in-out infinite';
+      dagani.style.backgroundClip = 'text';
     </script>
 
 
