@@ -283,7 +283,7 @@ dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
 
 // set version
 let temp = document.getElementById('myversion');
-temp.innerHTML="test";
+temp.innerText="test";
 
 // init Fade
 newFade();
