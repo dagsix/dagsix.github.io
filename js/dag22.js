@@ -240,7 +240,6 @@ console.log("Attempting to output weather data...");
     }
 }
 
-
 function getRandomColor() {
 const r = Math.floor(Math.random() * 256);
 const g = Math.floor(Math.random() * 256);
@@ -255,6 +254,35 @@ const color2 = getRandomColor();
 const angle = Math.floor(Math.random() * 360);
 document.documentElement.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
 }
+
+
+// Function to generate a random gradient
+function getRandomGradient() {
+const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#00ffff', '#ff00ff'];
+const randomColor1 = colors[Math.floor(Math.random() * colors.length)];
+const randomColor2 = colors[Math.floor(Math.random() * colors.length)];
+const randomColor3 = colors[Math.floor(Math.random() * colors.length)];
+const randomColor4 = colors[Math.floor(Math.random() * colors.length)];
+return `linear-gradient(90deg, ${randomColor1}, ${randomColor2}`;
+// return `linear-gradient(90deg, ${randomColor1}, ${randomColor2}, ${randomColor3}, ${randomColor4})`;
+}
+
+function newFade()
+{
+// Apply the gradient and animation
+dagani.style.background = getRandomGradient();
+dagani.style.backgroundSize = '200% 200%'; // Ensure the gradient spans the entire element
+dagani.style.webkitBackgroundClip = 'text';
+dagani.style.color = 'transparent';
+dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
+}
+
+// init Fade
+newFade();
+
+// change header title text animation after 5s
+const dagani = document.getElementById('dagani');
+setInterval(newFade, 5000);
 
 // Call the function to set the random gradient background
 setRandomGradientBackground();
