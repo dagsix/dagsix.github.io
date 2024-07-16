@@ -284,7 +284,7 @@ dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
 // set version FFS
 function setVersion()
 {
-  document.querySelector('#version').innerHTML="V0.38";
+  document.querySelector('#myversion').innerHTML="V0.38";
 }
 
 
