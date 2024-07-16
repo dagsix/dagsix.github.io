@@ -1,7 +1,7 @@
 // change header title text animation after 5s
 let dagani = document.getElementById('dagani');
 
-let siteversion = "0.34";
+let siteversion = "0.35";
 document.getElementById('version').innerHTML = siteversion;
 
 /*
