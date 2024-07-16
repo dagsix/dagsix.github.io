@@ -289,7 +289,7 @@ function setVersion()
 
 
 // set version
-siteVersion();
+setVersion();
 
 // init Fade
 newFade();
