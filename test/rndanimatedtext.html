@@ -44,7 +44,7 @@ const angle = Math.floor(Math.random() * 360);
 dagani.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2} , ${color3} , ${color4})`;
 dagani.style.backgroundClip = `text`;
 //  document.querySelector("#item").style.animation = "moveBack 1.5s forwards";
-// dagani.style.animation = `animatedtext 6s ease-in-out infinite`;
+dagani.style.animation = `animatedtext 6s ease-in-out infinite`;
 dagani.style.textFillColor = `transparent`;
 // stripe.classList.add('animate');
 dagani.classList.add('jsanimate');
@@ -64,8 +64,7 @@ function newFade()
     </script> 
 </head>
 <style>
-#animated {
-	background: linear-gradient(-45deg, #6600ff, #ffffff, #0C19A8, #c0c0c0); 
+.animated {
 	background-size: 300%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 900;
@@ -74,37 +73,19 @@ function newFade()
 	text-transform: uppercase;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: animatedtext 6s ease-in-out infinite;
-	-moz-animation: animatedtext 6s ease-in-out infinite;
-	-webkit-animation: animatedtext 6s ease-in-out infinite;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-#jsanimate
-{
-    animation: animatedtext 6s ease-in-out infinite;
-	-moz-animation: animatedtext 6s ease-in-out infinite;
-	-webkit-animation: animatedtext 6s ease-in-out infinite; 
-}
-
-@keyframes animatedtext {
-	0% { background-position: 0px 50%; }
-	50% { background-position: 100% 50%; }
-	100% { background-position: 0px 50%; }
-}    
-
-h1 {
     font-family: 'Anton', sans-serif;
     font-size: 3em;
     font-weight: bold;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
+
 </style>    
 <body>
 <div class="container">
@@ -112,7 +93,26 @@ h1 {
 <!-- nav -->
 <nav class="item" id="includeTestNav"></nav>
 <main class="item">
-<h1 id="animated" onClick="newFade();">ANIMATED TEXT IS AWESOME! v1.14</h1>
+
+    <div id="dagani" class="animated" onClick="newFade();">Animating Text is awesome v.14</div>
+    <script>
+      const dagani = document.getElementById('dagani');
+  
+      // Function to generate a random gradient
+      function getRandomGradient() {
+        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#00ffff', '#ff00ff'];
+        const randomColor1 = colors[Math.floor(Math.random() * colors.length)];
+        const randomColor2 = colors[Math.floor(Math.random() * colors.length)];
+        return `linear-gradient(90deg, ${randomColor1}, ${randomColor2})`;
+      }
+  
+      // Set the initial gradient and animation
+      dagani.style.background = getRandomGradient();
+      dagani.style.animation = 'animatedtext 6s ease-in-out infinite';
+    </script>
+
+
+
 </main>
 <!-- footer -->
 <footer id="includeFooter"></footer>
