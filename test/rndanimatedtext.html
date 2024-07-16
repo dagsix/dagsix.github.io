@@ -1,92 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dave Allan Guzda - Testing</title>
-    <link rel="stylesheet" type="text/css" href="./test.css">
-    <script src="../js/jquery.js"></script>
-    <!-- JQuery HTML includes -->
-    <script> 
-    /* NAV INC */
-    $(function()
-    {
-        $("#includeTestNav").load("testnav.html"); 
-    });
-    
-    /* footer inc */
-    $(function()
-    {
-        $("#includeFooter").load("testfooter.html"); 
-    });
-
-function getRandomColor() {
-const r = Math.floor(Math.random() * 256);
-const g = Math.floor(Math.random() * 256);
-const b = Math.floor(Math.random() * 256);
-/* opacity of 0.4 is very ligh */
-return `rgba(${r}, ${g}, ${b}, 0.6)`;
-}
-
-
-function setRandomGradientBackground() 
-{
-// mine as well go for a soda
-let dagani = document.getElementById('animated');
-const color1 = getRandomColor();
-const color2 = getRandomColor();
-const color3 = getRandomColor();
-const color4 = getRandomColor();
-const angle = Math.floor(Math.random() * 360);
-// document.querySelector("body").style.
-// document.documentElement.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
-dagani.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2} , ${color3} , ${color4})`;
-dagani.style.backgroundClip = `text`;
-//  document.querySelector("#item").style.animation = "moveBack 1.5s forwards";
-dagani.style.animation = `animatedtext 6s ease-in-out infinite`;
-dagani.style.textFillColor = `transparent`;
-// stripe.classList.add('animate');
-dagani.classList.add('jsanimate');
-}
-
-
-// Call the function to set the random gradient background
-setRandomGradientBackground();
-
-
-function newFade()
-{
-    setRandomGradientBackground();
-    console.log("newFade");
-}
-
-    </script> 
-</head>
-<style>
-.animated {
-	background-size: 300%;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 900;
-	font-size: 5vw;
-	letter-spacing: -5px;
-	text-transform: uppercase;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-family: 'Anton', sans-serif;
-    font-size: 3em;
-    font-weight: bold;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Text</title>
+  <style>
     #dagani {
       background: linear-gradient(90deg, #ff0000, #0000ff); /* Example gradient */
       -webkit-background-clip: text;
@@ -106,19 +24,14 @@ function newFade()
         background-position: 0% 50%;
       }
     }
-
-</style>    
+  </style>
+</head>
 <body>
-<div class="container">
-<header class="item"><h1>Animated Text</h1></header>
-<!-- nav -->
-<nav class="item" id="includeTestNav"></nav>
-<main class="item">
-
-    <div id="dagani" class="animated" onClick="newFade();">Animating Text is awesome v.18</div>
-    <script>
+  <div id="dagani">Your Text Here V20</div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
       const dagani = document.getElementById('dagani');
-  
+
       // Function to generate a random gradient
       function getRandomGradient() {
         const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#00ffff', '#ff00ff'];
@@ -126,15 +39,14 @@ function newFade()
         const randomColor2 = colors[Math.floor(Math.random() * colors.length)];
         return `linear-gradient(90deg, ${randomColor1}, ${randomColor2})`;
       }
-  
-      // Set the initial gradient and animation
+
+      // Apply the gradient and animation
       dagani.style.background = getRandomGradient();
+      dagani.style.backgroundSize = '200% 200%'; // Ensure the gradient spans the entire element
       dagani.style.webkitBackgroundClip = 'text';
       dagani.style.color = 'transparent';
       dagani.style.animation = 'animatedtext 6s ease-in-out infinite';
-</script>
-</main>
-<!-- footer -->
-<footer id="includeFooter"></footer>
+    });
+  </script>
 </body>
-</html>1
+</html>
