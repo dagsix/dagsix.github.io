@@ -273,12 +273,11 @@ function newFade()
 {
 // Apply the gradient and animation
 console.log("** newFade()");
-const dagani = document.getElementById('topani');
-dagani.style.background = getRandomGradient();
-dagani.style.backgroundSize = '200% 200%'; // Ensure the gradient spans the entire element
-dagani.style.webkitBackgroundClip = 'text';
-dagani.style.color = 'transparent';
-dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
+document.getElementById('topani').style.background = getRandomGradient();
+document.getElementById('topani').style.backgroundSize = '200% 200%'; 
+document.getElementById('topani').style.webkitBackgroundClip = 'text';
+document.getElementById('topani').style.color = 'transparent';
+document.getElementById('topani').style.animation = 'animatedtext 3s ease-in-out infinite';
 }
 
 // init Fade
