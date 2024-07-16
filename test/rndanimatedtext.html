@@ -35,7 +35,8 @@ const color2 = getRandomColor();
 const color3 = getRandomColor();
 const color4 = getRandomColor();
 const angle = Math.floor(Math.random() * 360);
-document.getElementById('animated').style.background = `linear-gradient(${angle}deg, ${color1}, ${color2}) , ${color3}) , ${color4})`;
+// document.querySelector("body").style.
+document.querySelector("animated").style.background = `linear-gradient(${angle}deg, ${color1}, ${color2}) , ${color3}) , ${color4})`;
 }
 
 // Call the function to set the random gradient background
@@ -45,6 +46,7 @@ setRandomGradientBackground();
 function newFade()
 {
     setRandomGradientBackground();
+    console.log("newFade");
 }
 
     </script> 
