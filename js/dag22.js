@@ -307,7 +307,7 @@ function getDateTime() {
   var dateTime = year+'-'+month+'-'+day+' '+hour+':'+minute+':'+second;   
    //return dateTime;
    //currentTime = getDateTime();
-   document.getElementById("myversion").innerHTML = currentTime;
+   //document.getElementById("myversion").innerHTML = currentTime;
 }
 
 // add date to footer
