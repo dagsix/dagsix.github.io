@@ -305,6 +305,7 @@ function getDateTime() {
        second = '0'+second;
   }   
   var dateTime = year+'-'+month+'-'+day+' '+hour+':'+minute+':'+second;   
+  dateTime.toLocaleString(); 
   return dateTime;
    //currentTime = getDateTime();
    //document.getElementById("myversion").innerHTML = currentTime;
