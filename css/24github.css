@@ -200,14 +200,14 @@ nav{
 /*
 CLIP
 https://www.sitepoint.com/css-animate-text-gradients-patterns/
+for header animation Welcome to...
 */
 
 .fancy {
     color: transparent;
     -webkit-background-clip: text; /* Edge, Chrome */
     background-clip: text; /* Safari, FF */
-    background-image: 
-      url(/img/clip.jpg);
+    background-image: url(/img/clip.jpg);
     background-repeat: no-repeat;
     background-size: 120%;
     -webkit-text-stroke: 1px #000;
@@ -217,12 +217,9 @@ https://www.sitepoint.com/css-animate-text-gradients-patterns/
 }
 
 @keyframes gradientAnimation {
-    0% {
-      background-position: 0;
-    }
-    to {
-      background-position: 100%;
-    }
+    0%    { background-position: 0; }
+    50%  { background-position: 100%; }
+    100%  { background-position: 0%; }
   }
 
 /*
@@ -235,7 +232,6 @@ WORK
     background-image: url("/img/code-bw.jpg"); 
     background-size: cover;
     border:2px dashed black;
-    transition: 2s;
     opacity: 1;
 }
 
@@ -262,7 +258,6 @@ EXPERIENCE
     background-image: url("/img/storyboard-bw.jpg"); 
     background-size: cover;
     border:2px dashed black;
-    transition: 2s;
     opacity: 1;
 }
 
@@ -289,8 +284,7 @@ CONTACT
     background-image: url("/img/wordpress-bw.jpg"); 
     background-size: cover;
     border:2px dashed black;
-    transition: 2s;
-    opacity: 1;
+     opacity: 1;
 }
 
 .boxthree:hover
@@ -316,7 +310,6 @@ TESTING
     background-image: url("/img/html-bw.jpg"); 
     background-size: cover;
     border:2px dashed black;
-    transition: 2s;
     opacity: 1;
 }
 
@@ -376,11 +369,9 @@ h4
 font-size: 1.25em;
 }
 /* drop 2 columns to 1 column but it doesn't so WTF */
-.row
+.html
 {
-}
-.column
-{
+    display: grid;
 }
 }
 
