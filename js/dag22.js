@@ -273,13 +273,11 @@ function getRandomGradient() {
   {
   // Apply the gradient and animation
   console.log("** newFade()");
-  
-  let x = document.getElementById("topani");
-  x.style.background = getRandomGradient();
-  x.style.backgroundSize = '200% 200%'; 
-  x.style.webkitBackgroundClip = 'text';
-  x.style.color = 'transparent';
-  x.style.animation = 'animatedtext 3s ease-in-out infinite';
+  document.getElementById("topani").style.background = getRandomGradient();
+  document.getElementById("topani").style.backgroundSize = '200% 200%'; 
+  document.getElementById("topani").style.webkitBackgroundClip = 'text';
+  document.getElementById("topani").style.color = 'transparent';
+  document.getElementById("topani").style.animation = 'animatedtext 3s ease-in-out infinite';
   }
 
 // date and time
