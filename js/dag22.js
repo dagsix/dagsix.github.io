@@ -1,3 +1,9 @@
+// change header title text animation after 5s
+let dagani = document.getElementById('dagani');
+
+let siteversion = "0.34";
+document.getElementById('version').innerHTML = siteversion;
+
 /*
 Nav bar class changer
 */
@@ -280,9 +286,6 @@ dagani.style.animation = 'animatedtext 3s ease-in-out infinite';
 
 // init Fade
 newFade();
-
-// change header title text animation after 5s
-let dagani = document.getElementById('dagani');
 
 // randomly select bg gradients for header text
 setInterval(newFade, 5000);
