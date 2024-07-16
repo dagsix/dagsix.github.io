@@ -40,7 +40,7 @@ const angle = Math.floor(Math.random() * 360);
 document.querySelector("#animated").style.background = `linear-gradient(${angle}deg, ${color1}, ${color2} , ${color3} , ${color4})`;
 document.querySelector("#animated").style.backgroundClip = `text`;
 // animation: animatedtext 6s ease-in-out infinite;
-document.querySelector("#animated").animation = `animatedtext 6s ease-in-out infinite`;
+document.querySelector("#animated").style.animation = `animatedtext 6s ease-in-out infinite`;
 }
 
 // Call the function to set the random gradient background
@@ -91,7 +91,7 @@ h1 {
 <!-- nav -->
 <nav class="item" id="includeTestNav"></nav>
 <main class="item">
-<h1 id="animated" onClick="newFade();">ANIMATED TEXT IS AWESOME! v1.7</h1>
+<h1 id="animated" onClick="newFade();">ANIMATED TEXT IS AWESOME! v1.8</h1>
 </main>
 <!-- footer -->
 <footer id="includeFooter"></footer>
