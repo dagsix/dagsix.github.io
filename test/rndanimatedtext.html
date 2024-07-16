@@ -86,6 +86,27 @@ function newFade()
     -webkit-text-stroke-color: black;
 }
 
+
+    #dagani {
+      background: linear-gradient(90deg, #ff0000, #0000ff); /* Example gradient */
+      -webkit-background-clip: text;
+      color: transparent;
+      background-size: 200% 200%;
+      animation: animatedtext 6s ease-in-out infinite;
+    }
+
+    @keyframes animatedtext {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
 </style>    
 <body>
 <div class="container">
@@ -108,8 +129,9 @@ function newFade()
   
       // Set the initial gradient and animation
       dagani.style.background = getRandomGradient();
+      dagani.style.webkitBackgroundClip = 'text';
+      dagani.style.color = 'transparent';
       dagani.style.animation = 'animatedtext 6s ease-in-out infinite';
-      dagani.style.backgroundClip = 'text';
     </script>
 
 
