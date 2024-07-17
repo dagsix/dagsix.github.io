@@ -214,7 +214,6 @@ nav a:hover
     font-style: normal;
     margin:0.5em;
     opacity: 1;
-    transition: 1s;
 }
 
 .allboxes:hover > h4
@@ -258,13 +257,13 @@ WORK
 {
     background-image: url("/img/code-bw.jpg"); 
     background-size: cover;
-    border:2px dashed black;
+    border:2px solid black;
     opacity: 1;
 }
 
 .boxone:hover
 {
-    border:2px solid #6600ff;
+    border:2px dashed #6600ff;
     background-image: url("/img/code-rgb.jpg"); 
     transition: 1s;
     background-color: #a978f2;
@@ -284,7 +283,7 @@ EXPERIENCE
 {
     background-image: url("/img/storyboard-bw.jpg"); 
     background-size: cover;
-    border:2px dashed black;
+    border:2px solid black;
     opacity: 1;
 }
 
@@ -292,7 +291,7 @@ EXPERIENCE
 {
     /* was screen */
     background-image: url("/img/storyboard-rgb.jpg"); 
-    border:2px solid #6600ff;
+    border:2px dashed #6600ff;
     transition: 1s;
     opacity: 1;
     color:#ffffff;
@@ -310,7 +309,7 @@ CONTACT
 {
     background-image: url("/img/wordpress-bw.jpg"); 
     background-size: cover;
-    border:2px dashed black;
+    border:2px solid black;
      opacity: 1;
 }
 
@@ -318,7 +317,7 @@ CONTACT
 {
     /* was screen */
     background-image: url("/img/wordpress-rgb.jpg"); 
-    border:2px solid #6600ff;
+    border:2px dashed #6600ff;
     transition: 1s;
     opacity: 1;
     color:#ffffff;
@@ -336,7 +335,7 @@ TESTING
 {
     background-image: url("/img/html-bw.jpg"); 
     background-size: cover;
-    border:2px dashed black;
+    border:2px solid black;
     opacity: 1;
 }
 
@@ -344,7 +343,7 @@ TESTING
 .boxfour:hover
 {
     background-image: url("/img/html-rgb.jpg"); 
-    border:2px solid #6600ff;
+    border:2px dashed #6600ff;
     transition: 1s;
     opacity: 1;
     color:#ffffff;
