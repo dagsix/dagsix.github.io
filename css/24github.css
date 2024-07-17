@@ -96,6 +96,7 @@ strong {
     border-radius: 15px;
     padding: 1em;
     margin: 1em;
+    opacity: 1;
     background-image: linear-gradient(to right, #d4c5f9,#ffffff);
 }
 
