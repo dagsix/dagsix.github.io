@@ -180,7 +180,7 @@ nav{
 }
 
 
-nav > a
+nav a:link
 {
     padding:1em;
     margin: 1em;
@@ -189,7 +189,7 @@ nav > a
     background-color: #ffffff;
 }
 
-nav > a:hover
+nav a:hover
 {
     padding:1em;
     margin: 1em;
