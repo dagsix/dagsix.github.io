@@ -172,7 +172,6 @@ NAV
 nav{
     padding:1em;
     font-weight: 400;
-    font-style: bold;
     margin: 2em 0em; 
     border:dashed 2px var(--accent);
     width: 100%;
@@ -189,6 +188,8 @@ nav a:link
     text-decoration: none;
     background-color: #ffffff;
     border-radius: 15px;
+    font-size: 1.25em;
+    font-style: bold;
 }
 
 nav a:hover
