@@ -246,15 +246,15 @@ function getRandomColor() {
 const r = Math.floor(Math.random() * 256);
 const g = Math.floor(Math.random() * 256);
 const b = Math.floor(Math.random() * 256);
-/* opacity of 0.4 is very ligh */
-return `rgba(${r}, ${g}, ${b}, 0.6)`;
+/* opacity of 0.4 is very light */
+return `rgba(${r}, ${g}, ${b}, 0.8)`;
 }
 
 function setRandomGradientBackground() {
 const color1 = getRandomColor();
 const color2 = getRandomColor();
 const angle = Math.floor(Math.random() * 360);
-document.documentElement.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+document.documentElement.style.background = `linear-gradient(${angle}deg, white, ${color1}, ${color2})`;
 }
 
 
