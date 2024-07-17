@@ -177,6 +177,7 @@ nav{
     border:dashed 2px var(--accent);
     width: 100%;
     background-color: var(--navbg);
+    height: auto;
 }
 
 
@@ -187,6 +188,7 @@ nav a:link
     border: 1px solid #000;
     text-decoration: none;
     background-color: #ffffff;
+    border-radius: 15px;
 }
 
 nav a:hover
