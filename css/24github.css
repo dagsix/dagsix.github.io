@@ -263,7 +263,7 @@ WORK
 
 .boxone:hover
 {
-    border:2px dashed #6600ff;
+    border:2px dashed #ffffff;
     background-image: url("/img/code-rgb.jpg"); 
     transition: 1s;
     background-color: #a978f2;
@@ -291,7 +291,7 @@ EXPERIENCE
 {
     /* was screen */
     background-image: url("/img/storyboard-rgb.jpg"); 
-    border:2px dashed #6600ff;
+    border:2px dashed #ffffff;
     transition: 1s;
     opacity: 1;
     color:#ffffff;
@@ -317,7 +317,7 @@ CONTACT
 {
     /* was screen */
     background-image: url("/img/wordpress-rgb.jpg"); 
-    border:2px dashed #6600ff;
+    border:2px dashed #ffffff;
     transition: 1s;
     opacity: 1;
     color:#ffffff;
@@ -343,7 +343,7 @@ TESTING
 .boxfour:hover
 {
     background-image: url("/img/html-rgb.jpg"); 
-    border:2px dashed #6600ff;
+    border:2px dashed #ffffff;
     transition: 1s;
     opacity: 1;
     color:#ffffff;
