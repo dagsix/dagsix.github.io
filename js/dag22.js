@@ -247,7 +247,7 @@ const r = Math.floor(Math.random() * 256);
 const g = Math.floor(Math.random() * 256);
 const b = Math.floor(Math.random() * 256);
 /* opacity of 0.4 is very light */
-return `rgba(${r}, ${g}, ${b}, 0.8)`;
+return `rgba(${r}, ${g}, ${b}, 1)`;
 }
 
 function setRandomGradientBackground() {
