@@ -97,7 +97,7 @@ strong {
     padding: 1em;
     margin: 1em;
     opacity: 1;
-    background-image: linear-gradient(to right, #d4c5f9,#ffffff);
+    background-image: linear-gradient(to right, rgb(121, 117, 240), rgba(255,255,255,1));
 }
 
 h6
