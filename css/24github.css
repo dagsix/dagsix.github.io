@@ -190,6 +190,7 @@ nav a:link
     border-radius: 15px;
     font-size: 1.25em;
     font-style: bold;
+    color: var(--accent);
 }
 
 nav a:hover
@@ -200,6 +201,7 @@ nav a:hover
     text-decoration: none;
     background-color: var(--accent);
     transition: 1s;
+    color:#ffffff;
 }
 
 
