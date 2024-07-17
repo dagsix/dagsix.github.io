@@ -256,7 +256,7 @@ const color2 = getRandomColor();
 const angle = Math.floor(Math.random() * 360);
 document.documentElement.style.background = `linear-gradient(${angle}deg, white, ${color1}, ${color2})`;
 // not multiply
-document.documentElement.style.mixBlendMode = "luminosity";
+document.documentElement.style.mixBlendMode = "color";
 }
 
 
