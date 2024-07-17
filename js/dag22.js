@@ -243,9 +243,9 @@ console.log("Attempting to output weather data...");
 }
 
 function getRandomColor() {
-const r = Math.floor(Math.random() * 256);
-const g = Math.floor(Math.random() * 256);
-const b = Math.floor(Math.random() * 256);
+const r = Math.floor(Math.random() * 128)+128;
+const g = Math.floor(Math.random() * 128)+128;
+const b = Math.floor(Math.random() * 128)+128;
 /* opacity of 0.4 is very light */
 return `rgba(${r}, ${g}, ${b}, 1)`;
 }
