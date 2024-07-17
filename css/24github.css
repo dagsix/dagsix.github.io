@@ -176,7 +176,7 @@ nav{
     border:dashed 2px var(--accent);
     width: 100%;
     background-color: var(--navbg);
-    height: auto;
+    height: 2em;
 }
 
 
