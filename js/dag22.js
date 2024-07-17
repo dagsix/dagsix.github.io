@@ -332,6 +332,6 @@ setInterval(newFade, 5000);
 // Call the function to set the random gradient background
 setRandomGradientBackground();
 
-
-
+// new background every 15s
+setInterval(setRandomGradientBackground, 15000);
 
