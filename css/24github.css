@@ -179,6 +179,27 @@ nav{
     background-color: var(--navbg);
 }
 
+
+nav > a
+{
+    padding:1em;
+    margin: 1em;
+    border: 1px solid #000;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+nav > a:hover
+{
+    padding:1em;
+    margin: 1em;
+    border: 1px solid #000;
+    text-decoration: none;
+    background-color: var(--accent);
+    transition: 1s;
+}
+
+
 .allboxes
 {
     padding:1em;
