@@ -316,7 +316,7 @@ function getDateTime() {
    //document.getElementById("myversion").innerHTML = currentTime;
 }
 
-// add date to footer
+// add date to footer lsat modified
 function footerUpdate()
 {
   let lm= document.lastModified;
