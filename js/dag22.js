@@ -77,16 +77,16 @@ Populates showme with my e-mail address onRollover
 function hideEmail()
 {
   var img = document.getElementById('showme');
-  img.style.visibility = 'visible';
+  img.style.visibility = 'hidden';
 }
 
 /*
 Clears the e-mail once the field is left
 */
-function clearEmail()
+function showEmail()
 {
-    document.getElementById('showme').innerHTML = "Rollover to reveal. <i class='far fa-hand-pointer'></i>";
-    console.log("Removing e-mail address");
+  var img = document.getElementById('showme');
+  img.style.visibility = 'visible';
 }
 
 /*
