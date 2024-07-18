@@ -74,12 +74,10 @@ function resetLogo()
 /*
 Populates showme with my e-mail address onRollover
 */
-function showEmail()
+function hideEmail()
 {
-    var name = "dguzda";
-    var domain = "gmail.com";
-    document.getElementById('showme').innerHTML = name + "@" + domain;
-    console.log("Showing e-mail address");
+  var img = document.getElementById('showme');
+  img.style.visibility = 'visible';
 }
 
 /*
