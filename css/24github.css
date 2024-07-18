@@ -404,6 +404,7 @@ header animations
     width:405px;
     height:61px;
     background-color: var(--accent);
+    border:2px dashed white;
   }
 
 
