@@ -319,7 +319,8 @@ function getDateTime() {
 // add date to footer
 function footerUpdate()
 {
-  document.getElementById("dagFooter").innerHTML = "<b>Design and Coding by DAG </b>" + getDateTime() + " V" + version;
+  let lm= document.lastModified;
+  document.getElementById("dagFooter").innerHTML = "<b>Design and Coding by DAG </b> <i>Last modified:</i> " + lm + " V" + version;
 }
 
 
