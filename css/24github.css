@@ -399,6 +399,12 @@ header animations
     }
   }
 
+  #emaildiv
+  {
+    width:405px;
+    height:61px;
+    background-color: var(--accent);
+  }
 
 
 /*
