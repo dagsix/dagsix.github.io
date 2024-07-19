@@ -111,6 +111,17 @@ strong {
     color: #6600ff;
 }
 
+/*
+other image rollovers - working page
+*/
+
+.workimg
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 .workimg:hover
 {
