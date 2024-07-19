@@ -112,12 +112,11 @@ strong {
 }
 
 
-img:hover
+.workimg:hover
 {
     transition: 1s;
     background-color: #a978f2;
     opacity: 1;
-    color:#ffffff;
     background-blend-mode: multiply;
 }
 
