@@ -143,6 +143,8 @@ article, section, nav, footer
 {
   border-left: 1px solid #000000; 
   border-right: 1px solid #000000; 
+  margin: 1em;
+  padding: 1em;
 }
 
 
