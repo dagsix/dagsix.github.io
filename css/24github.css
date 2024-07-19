@@ -89,6 +89,18 @@ strong {
     color: #6600ff;
 }
 
+
+img:hover
+{
+    transition: 1s;
+    background-color: #a978f2;
+    opacity: 1;
+    color:#ffffff;
+    background-blend-mode: multiply;
+}
+
+
+
 #container{
 
     width:90%;
@@ -251,13 +263,6 @@ for header animation Welcome to...
     50%  { background-position: 100%; }
     100%  { background-position: 0%; }
   }
-
-
-header
-{
-    background-image: linear-gradient(to bottom, rgba(255,255,255,1),  rgb(121, 117, 240));
-}
-
 
 /*
 BOX ONE
