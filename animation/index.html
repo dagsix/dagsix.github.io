@@ -43,40 +43,6 @@ https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
 -->
 <!-- font awesome! https://fontawesome.com/ -->
 <script src="https://kit.fontawesome.com/0674f4e27a.js" crossorigin="anonymous"></script>
-<!-- JQuery https://jquery.com/ -->
-<script src="./js/jquery.js"></script>
-<!-- JQuery HTML includes -->
-<script> 
-/* NAV INC */
-$(function()
-{
-    $("#includeNav").load("../nav.html"); 
-});
-
-/* TOP BORDER GFX INC */
-$(function()
-{
-    $("#includeHeader").load("header.html"); 
-});
-
-/* Headertext inc */
-$(function()
-{
-    $("#includeHeaderText").load("headertext.html"); 
-});
-
-/* invader inc */
-$(function()
-{
-    $("#includeInvader").load("invader.html"); 
-});
-
-/* footer inc */
-$(function()
-{
-    $("#includeFooter").load("../footer.html"); 
-});
-</script> 
 <!--
 ********************************** 
     google fonts!
@@ -103,19 +69,21 @@ git push origin main
     HEADER 
 *********************************    
 -->
- <header class="full bborder" id="includeHeader"></header>
+ <header>
+    <a href="../index.html" alt="Return home" title="Return home"><img src="23dagsix02.jpg" class="hero"></a>
+ </header>
 <!--
 *********************************     
     HEADERTEXT 
 *********************************
 -->
-<section class="headertext" id="includeHeaderText"></section>
+<section class="headertext" id="includeHeaderText">dagsix.github.io</section>
 <!--
 *********************************     
     INVADER
 *********************************
 -->
-<section class="invader" id="includeInvader"></section>
+<section class="invader" id="includeInvader"><img src="invader.png" class="invaderani"></section>
 <!-- 
 *********************************
     NAV  
