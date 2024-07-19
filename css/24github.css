@@ -252,6 +252,13 @@ for header animation Welcome to...
     100%  { background-position: 0%; }
   }
 
+
+header
+{
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1),  rgb(121, 117, 240));
+}
+
+
 /*
 BOX ONE
 WORK
