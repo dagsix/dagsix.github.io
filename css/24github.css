@@ -127,7 +127,7 @@ other image rollovers - working page
 
 .workimg:hover
 {
-    transition: 1s;
+    transition: 0.5s;
     opacity: 1;
     border: 1px solid #fff;
 }
