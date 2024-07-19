@@ -5,7 +5,7 @@
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, sub, sup, tt, var,
 center, dl, dt, dd, ol, ul, li,
@@ -76,6 +76,28 @@ html {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+/*
+LINKS 1 2 3 
+*/
+
+a, a:link
+{
+    color:#6600ff;
+}
+
+a:hover
+{
+    transition: 1s;
+    color:#000000;
+}
+
+a:visited, a:active
+{
+    color:#0000ff;
+}
+
+
 
 p 
 {
