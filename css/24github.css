@@ -496,6 +496,23 @@ font-size: 1.25em;
 }
 }
 
+/*
+MOBILE 1000
+*/
+@media screen and (max-width: 1000px) 
+{
+    nav{
+        padding:0.5em;
+        font-weight: 400;
+        margin: 1em 0em; 
+        width: 100%;
+        block-size: fit-content;
+        height:max-content;
+        text-align: left;
+        color: #000;
+    }
+}
+
 
 /*
 MOBILE 800
