@@ -139,10 +139,8 @@ INVADER
 /* *******************************************
 SIDE BORDERS
 ******************************************* */
-article, section, nav, footer
+article, section, nav
 {
-  border-left: 1px solid #000000; 
-  border-right: 1px solid #000000; 
   margin: 1em;
   padding: 1em;
 }
