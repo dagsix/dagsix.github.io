@@ -120,7 +120,8 @@ other image rollovers - working page
     display: block;
     width: 300px;
     height: 200px;
-    opacity:0.5;
+    opacity:0.4;
+    border: 1px solid #000;
 }
 
 
@@ -128,6 +129,7 @@ other image rollovers - working page
 {
     transition: 1s;
     opacity: 1;
+    border: 1px solid #fff;
 }
 
 
