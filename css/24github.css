@@ -499,12 +499,13 @@ MOBILE 1000
     nav{
         padding:0.5em;
         font-weight: 400;
-        margin: 1em 0em; 
+        margin: 0.5em 0em; 
         width: 100%;
         block-size: fit-content;
         height:max-content;
         text-align: left;
         color: #000;
+        font-size: 0.75em;
     }
     .column {
         display: grid;
