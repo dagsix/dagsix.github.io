@@ -494,7 +494,7 @@ font-size: 1.5em;
 /*
 MOBILE 1000
 */
-@media screen and (max-width: 1000px) 
+@media screen and (max-width: 1050px) 
 {
     nav{
         padding:0.5em;
@@ -523,7 +523,10 @@ MOBILE 1000
 .boxtwo { grid-area: 2; }
 .boxthree { grid-area: 3; }
 .boxfour { grid-area: 4; }
-
+h4 
+{
+font-size: 1.25em;
+}
 }
 
 
