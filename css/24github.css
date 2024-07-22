@@ -519,10 +519,26 @@ MOBILE 1000
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
-.boxone { grid-area: 1; }
-.boxtwo { grid-area: 2; }
-.boxthree { grid-area: 3; }
-.boxfour { grid-area: 4; }
+.boxone { 
+    grid-area: 1; 
+    display:grid; 
+}
+.boxtwo { 
+    grid-area: 2; 
+    display:grid; 
+}
+.boxthree { 
+    grid-area: 3; 
+    display:grid; 
+}
+.boxfour { 
+    grid-area: 4; 
+    display:grid; 
+}
+.row, .column
+{
+    display: block;
+}
 h4 
 {
 font-size: 1.25em;
@@ -538,6 +554,10 @@ MOBILE 930
 h6 
 {
 font-size: 3em;
+}
+h4 
+{
+font-size: 1em;
 }
 }
 
