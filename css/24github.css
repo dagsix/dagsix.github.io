@@ -542,17 +542,17 @@ font-size: 3em;
 }
 
 /*
-MOBILE 720
+MOBILE 800
 */
 @media screen and (max-width: 720px) 
 {
 h6 
 {
-font-size: 2.5em;
+font-size: 2.25em;
 }
 h4 
 {
-font-size: 1em;
+font-size: .75em;
 }
 
 
