@@ -531,9 +531,9 @@ font-size: 1.25em;
 
 
 /*
-MOBILE 900
+MOBILE 930
 */
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 930px) 
 {
 h6 
 {
