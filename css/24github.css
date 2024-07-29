@@ -155,10 +155,8 @@ h6
    font-size: 5em; 
    text-stroke: 1px #000000; 
    -webkit-text-stroke: 2px #000000;
-   margin:0;
-   border:0;
-   padding:0;
-   display:inline;
+   padding:0.5em;
+   display:inline-block;
 }
 
 /* Work titles */
