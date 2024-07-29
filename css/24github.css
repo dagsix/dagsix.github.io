@@ -145,6 +145,7 @@ other image rollovers - working page
     background-image: linear-gradient(to right, rgb(121, 117, 240), rgba(255,255,255,1));
 }
 
+/* dagsix.github.io */
 h6
 {
     font-family: "Francois One", sans-serif;
@@ -160,7 +161,7 @@ h6
    display:inline;
 }
 
-
+/* Work titles */
 h5  
 { 
     font-family: "Francois One", sans-serif;
@@ -173,7 +174,7 @@ h5
    
 }
 
-
+/* Card titles */
 h4
 {
     font-family: "Francois One", sans-serif;
@@ -185,6 +186,7 @@ h4
    -webkit-text-stroke: 1px #000000;
 }
 
+/* for the secondary text on the homepage */
 h3
 {
     font-family: "Francois One", sans-serif;
