@@ -562,6 +562,10 @@ h3
 {
    font-size: 2em; 
 }
+footer 
+{
+display: grid;
+}
 
 }
 
