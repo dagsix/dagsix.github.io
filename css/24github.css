@@ -111,6 +111,15 @@ strong {
     color: #6600ff;
 }
 
+img {
+    /* with ideas from https://www.youtube.com/watch?v=vQDgoQKfdzM */
+    max-width: 100%;
+    height: auto; /* keep aspect ratio */
+    
+
+}
+
+
 /*
 other image rollovers - working page
 */
