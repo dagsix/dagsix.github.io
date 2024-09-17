@@ -431,7 +431,8 @@ footer{
     font-weight:bold;
     margin: 2em 0em; 
     border:dashed 2px var(--accent);
-    width: 100%;
+    width: fit-content;
+    block-size: fit-content;
     background-color: var(--navbg);
 }
 
