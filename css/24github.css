@@ -431,7 +431,8 @@ footer{
     font-weight:bold;
     margin: 2em 0em; 
     border:dashed 2px var(--accent);
-    width: stretch;
+    width: 90%;
+    box-sizing: content-box;
     background-color: var(--navbg);
 }
 
