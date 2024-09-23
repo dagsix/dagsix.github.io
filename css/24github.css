@@ -249,8 +249,6 @@ nav{
     margin-right: 0;
     padding: 0.25em;
     width: 100%;
-    block-size: fit-content;
-    height:max-content;
     color: #000;
 }
 
@@ -261,7 +259,7 @@ nav a:link
     margin: .5em;
     border: 1px solid #000;
     text-decoration: none;
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,0.5);
     border-radius: 15px;
     font-size: 1.25em;
     font-style: bold;
