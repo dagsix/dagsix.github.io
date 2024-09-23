@@ -243,7 +243,10 @@ NAV
 
 nav{
     font-weight: 400;
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0.25em;
     width: 100%;
     block-size: fit-content;
