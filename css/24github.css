@@ -101,7 +101,8 @@ a:visited, a:active
 
 p 
 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 0.839rem + 1.800vw, 3rem);
     line-height: 1.5em;
     font-weight: 400;
     font-style: normal;
@@ -242,8 +243,8 @@ NAV
 
 nav{
     font-weight: 400;
-    margin: 0.5em;
-    padding: 0.5em; 
+    margin: 1em;
+    padding: 1em; 
     width: 100%;
     block-size: fit-content;
     height:max-content;
