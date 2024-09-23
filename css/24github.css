@@ -256,8 +256,8 @@ nav{
 
 nav a:link
 {
-    padding:.5em;
-    margin: .5em;
+    padding:.25em;
+    margin: .25em;
     border: 1px solid #000;
     text-decoration: none;
     background-color: rgba(255,255,255,0.5);
@@ -268,8 +268,8 @@ nav a:link
 
 nav a:hover
 {
-    padding:.5em;
-    margin: .5em;
+    padding:.25em;
+    margin: .25em;
     border: 1px solid #000;
     text-decoration: none;
     background-color: var(--accent);
