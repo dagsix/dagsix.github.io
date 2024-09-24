@@ -109,7 +109,8 @@ p
     font-weight: 400;
     font-style: normal;
     margin:0;   
-    padding:0;
+    padding:0.5em;
+    display:inline;
 }
 
 strong {
