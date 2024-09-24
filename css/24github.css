@@ -217,18 +217,23 @@ h3
 
 /* new row */
 .row {
+    /*
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: auto;
+    */
+    grid-template-columns: 1fr 1fr;
   }
   
 /* new column item */ 
   .column {
+    /*
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    */
   }
 
 
@@ -521,12 +526,17 @@ MOBILE 1000
         font-size: 0.75em;
     }
     .column {
+        /*
         display: grid;
         flex-direction: column;
         flex-basis: 100%;
         flex: 1;
+        */
+        grid-template-columns: 1fr;
       }
 /* drop 2 columns to 1 column but it doesn't so WTF */
+
+/*
 .html
 {
     display: grid;
@@ -556,6 +566,7 @@ footer
 {
 display: grid;
 }
+*/
 
 }
 
