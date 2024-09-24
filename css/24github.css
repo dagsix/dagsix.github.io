@@ -205,7 +205,6 @@ h3
     font-style: normal;
    color: var(--accent);
    font-size: 4vw;
-   padding:0.5em;
    text-stroke: 1px #000000; 
    -webkit-text-stroke: 1px #000000;
 }
