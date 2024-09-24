@@ -103,6 +103,7 @@ a:visited, a:active
 
 p 
 {
+    /*
     font-size: 1rem;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     font-style: normal;
@@ -110,6 +111,7 @@ p
     margin-right: 1em;
     margin-top: 0;
     padding:0;
+    */
 }
 
 strong {
