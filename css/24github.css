@@ -250,6 +250,9 @@ main
 NAV
 */
 
+header {
+    margin-left:0.5em;
+}
 
 nav{
     margin: 0;
