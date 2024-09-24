@@ -107,7 +107,9 @@ p
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     line-height: 1.2em;
     font-style: normal;
-    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.25em;
 }
 
 strong {
