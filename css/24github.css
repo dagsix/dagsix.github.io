@@ -265,8 +265,8 @@ font-size: clamp(0.5rem, 0.2rem + 1.5vw, 2rem);
 
 nav a:link
 {
-    padding:.25em;
-    margin: .25em;
+    padding:0;
+    margin-right: .25em;
     border: 1px solid #000;
     text-decoration: none;
     background-color: rgba(255,255,255,0.5);
@@ -277,8 +277,8 @@ nav a:link
 
 nav a:hover
 {
-    padding:.25em;
-    margin: .25em;
+    padding:0;
+    margin-right: .25em;
     border: 1px solid #000;
     text-decoration: none;
     background-color: var(--accent);
