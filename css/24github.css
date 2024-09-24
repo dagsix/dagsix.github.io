@@ -258,8 +258,8 @@ nav{
     color: #000;
     font-size: 0.5em;
     */
-    font-size: 0.5rem;
-font-size: clamp(0.5rem, 0.2rem + 1.5vw, 2rem);
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
 
@@ -270,8 +270,6 @@ nav a:link
     text-decoration: none;
     font-style: bold;
     color: #000;
-    font-size: 1rem;
-    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
 nav a:hover
@@ -281,8 +279,6 @@ nav a:hover
     text-decoration: none;
     transition: 1s;
     color:#ffffff;
-    font-size: 1rem;
-    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
 
