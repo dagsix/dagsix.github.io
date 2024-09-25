@@ -211,6 +211,7 @@ h3
    font-size: 4vw;
    text-stroke: 1px #000000; 
    -webkit-text-stroke: 1px #000000;
+   text-align: left;
 }
 
 .centerthis
